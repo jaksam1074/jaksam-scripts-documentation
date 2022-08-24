@@ -1,4 +1,4 @@
-# getPlayerArmoryWeapons
+# Get player armory weapons
 
 To get a list of weapons of a player stored in a specific armory ID.
 

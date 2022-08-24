@@ -1,4 +1,4 @@
-# removeWeaponFromArmory
+# Remove weapon from armory
 
 To add a weapon in a marker ID for a specific player
 

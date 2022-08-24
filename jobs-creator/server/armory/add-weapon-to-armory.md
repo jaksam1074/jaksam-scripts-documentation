@@ -1,4 +1,4 @@
-# addWeaponToArmory
+# Add weapon to armory
 
 To add a weapon in a marker ID for a specific player
 

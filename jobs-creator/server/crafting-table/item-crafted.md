@@ -1,4 +1,4 @@
-# craftedItem
+# Item crafted
 
 Triggered when a player crafts an item in crafting table marker
 

@@ -1,4 +1,4 @@
-# getAllArmoryWeapons
+# Get all armory weapons
 
 To get a list of all weapons stored in a specific armory ID.
 
