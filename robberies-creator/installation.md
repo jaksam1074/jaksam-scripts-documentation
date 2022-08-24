@@ -9,9 +9,9 @@ The installation of the script is extremely easy
 3. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `robberies_creator/sql/` folder
 4. Download and start the [cracking safe script](https://github.com/VHall1/pd-safe) _(Credits to_ [_VHall1_](https://github.com/VHall1)_)_
 5. Download and start the [lockpicking script](https://github.com/baguscodestudio/lockpick) _(Credits to_ [_baguscodestudio_](https://github.com/baguscodestudio/lockpick)_)_
-6. Optional - Download and start the [datacrack minigame script ](https://github.com/utkuali/datacrack)(Credits to [utkuali](https://github.com/utkuali))
-7. Optional - Download and start the  [fingerprint minigame script ](https://github.com/utkuali/Finger-Print-Hacking-Game)(Credits to [utkuali](https://github.com/utkuali))
-8. Optional - Download and start the [memory minigame script](https://github.com/ultrahacx/ultra-keypackhack) (Credits to [ultrahacx](https://github.com/ultrahacx))
+6. Optional - Download and start the [datacrack minigame script ](https://github.com/utkuali/datacrack)_(Credits to_ [_utkuali_](https://github.com/utkuali)_)_
+7. Optional - Download and start the  [fingerprint minigame script ](https://github.com/utkuali/Finger-Print-Hacking-Game)_(Credits to_ [_utkuali_](https://github.com/utkuali)_)_
+8. Optional - Download and start the [memory minigame script](https://github.com/ultrahacx/ultra-keypackhack) _(Credits to_ [_ultrahacx_](https://github.com/ultrahacx)_)_
 
 You are ready to go! Enjoy the script 😁
 
