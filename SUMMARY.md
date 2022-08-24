@@ -54,20 +54,20 @@
   * [Replace/Disable default progress bar](jobs-creator/client/replace-disable-default-progress-bar.md)
   * [Replace default billing](jobs-creator/client/replace-default-billing.md)
 
-## 🧾 Billing UI
+## 💰 Robberies Creator
 
-* [Home](billing-ui/home.md)
-* [Installation](billing-ui/installation.md)
-* [Client](billing-ui/client/README.md)
-  * [Activate billing mode](billing-ui/client/activate-billing-mode.md)
-  * [Open billing menu](billing-ui/client/open-billing-menu.md)
-  * [Replace default notifications](billing-ui/client/replace-default-notifications.md)
-  * [Pay a bill](billing-ui/client/pay-a-bill.md)
-  * [Send a bill](billing-ui/client/send-a-bill.md)
-  * [View invoices](billing-ui/client/view-invoices.md)
-* [Server](billing-ui/server/README.md)
-  * [On bill created](billing-ui/server/on-bill-created.md)
-  * [On bill paid](billing-ui/server/on-bill-paid.md)
+* [Home](robberies-creator/home.md)
+* [Installation](robberies-creator/installation.md)
+* [How to edit minigames](robberies-creator/how-to-edit-minigames.md)
+* [Client](robberies-creator/client/README.md)
+  * [Replace/Disable default progress bar](robberies-creator/client/replace-disable-default-progress-bar.md)
+  * [Replace default police alert](robberies-creator/client/replace-default-police-alert.md)
+  * [Notifications](robberies-creator/client/notifications/README.md)
+    * [Replace default notifications](robberies-creator/client/notifications/replace-default-notifications.md)
+    * [Replace default help notifications](robberies-creator/client/notifications/replace-default-help-notifications.md)
+* [Server](robberies-creator/server/README.md)
+  * [Police alerted](robberies-creator/server/police-alerted.md)
+  * [Step completed](robberies-creator/server/step-completed.md)
 
 ## 📍 Blips Creator
 
@@ -124,46 +124,6 @@
     * [Sold to NPC](drugs-creator/server/sellings/sold-to-npc.md)
     * [Sold to narcos](drugs-creator/server/sellings/sold-to-narcos.md)
 
-## ✅ Easy allowlist
-
-* [Home](easy-allowlist/home.md)
-* [Installation](easy-allowlist/installation.md)
-* [Commands usage](easy-allowlist/commands-usage.md)
-* [How to enable Discord features](easy-allowlist/how-to-enable-discord-features.md)
-* [External deferrals](easy-allowlist/external-deferrals.md)
-* [Server](easy-allowlist/server/README.md)
-  * [Allowlist](easy-allowlist/server/allowlist/README.md)
-    * [Remove identifier from allowlist](easy-allowlist/server/allowlist/remove-identifier-from-allowlist.md)
-    * [Add identifier to allowlist](easy-allowlist/server/allowlist/add-identifier-to-allowlist.md)
-  * [Queue](easy-allowlist/server/queue/README.md)
-    * [Set player queue priority](easy-allowlist/server/queue/set-player-queue-priority.md)
-    * [Set discord role queue priority](easy-allowlist/server/queue/set-discord-role-queue-priority.md)
-    * [Set identifier queue priority](easy-allowlist/server/queue/set-identifier-queue-priority.md)
-    * [Remove identifier queue priority](easy-allowlist/server/queue/remove-identifier-queue-priority.md)
-    * [Remove discord role queue priority](easy-allowlist/server/queue/remove-discord-role-queue-priority.md)
-
-## 👜 Luxury Clothes Theft
-
-* [Home](luxury-clothes-theft/home.md)
-* [Installation](luxury-clothes-theft/installation.md)
-* [Client](luxury-clothes-theft/client/README.md)
-  * [Replace default notifications](luxury-clothes-theft/client/replace-default-notifications.md)
-
-## 💰 Robberies Creator
-
-* [Home](robberies-creator/home.md)
-* [Installation](robberies-creator/installation.md)
-* [How to edit minigames](robberies-creator/how-to-edit-minigames.md)
-* [Client](robberies-creator/client/README.md)
-  * [Replace/Disable default progress bar](robberies-creator/client/replace-disable-default-progress-bar.md)
-  * [Replace default police alert](robberies-creator/client/replace-default-police-alert.md)
-  * [Notifications](robberies-creator/client/notifications/README.md)
-    * [Replace default notifications](robberies-creator/client/notifications/replace-default-notifications.md)
-    * [Replace default help notifications](robberies-creator/client/notifications/replace-default-help-notifications.md)
-* [Server](robberies-creator/server/README.md)
-  * [Police alerted](robberies-creator/server/police-alerted.md)
-  * [Step completed](robberies-creator/server/step-completed.md)
-
 ## 🔑 Vehicles Keys
 
 * [Home](vehicles-keys/home.md)
@@ -192,3 +152,43 @@
   * [Vehicle window broken](vehicles-keys/server/vehicle-window-broken.md)
   * [Get player ID keys](vehicles-keys/server/get-player-id-keys.md)
   * [Get identifier keys](vehicles-keys/server/get-identifier-keys.md)
+
+## 🧾 Billing UI
+
+* [Home](billing-ui/home.md)
+* [Installation](billing-ui/installation.md)
+* [Client](billing-ui/client/README.md)
+  * [Activate billing mode](billing-ui/client/activate-billing-mode.md)
+  * [Open billing menu](billing-ui/client/open-billing-menu.md)
+  * [Replace default notifications](billing-ui/client/replace-default-notifications.md)
+  * [Pay a bill](billing-ui/client/pay-a-bill.md)
+  * [Send a bill](billing-ui/client/send-a-bill.md)
+  * [View invoices](billing-ui/client/view-invoices.md)
+* [Server](billing-ui/server/README.md)
+  * [On bill created](billing-ui/server/on-bill-created.md)
+  * [On bill paid](billing-ui/server/on-bill-paid.md)
+
+## ✅ Easy allowlist
+
+* [Home](easy-allowlist/home.md)
+* [Installation](easy-allowlist/installation.md)
+* [Commands usage](easy-allowlist/commands-usage.md)
+* [How to enable Discord features](easy-allowlist/how-to-enable-discord-features.md)
+* [External deferrals](easy-allowlist/external-deferrals.md)
+* [Server](easy-allowlist/server/README.md)
+  * [Allowlist](easy-allowlist/server/allowlist/README.md)
+    * [Remove identifier from allowlist](easy-allowlist/server/allowlist/remove-identifier-from-allowlist.md)
+    * [Add identifier to allowlist](easy-allowlist/server/allowlist/add-identifier-to-allowlist.md)
+  * [Queue](easy-allowlist/server/queue/README.md)
+    * [Set player queue priority](easy-allowlist/server/queue/set-player-queue-priority.md)
+    * [Set discord role queue priority](easy-allowlist/server/queue/set-discord-role-queue-priority.md)
+    * [Set identifier queue priority](easy-allowlist/server/queue/set-identifier-queue-priority.md)
+    * [Remove identifier queue priority](easy-allowlist/server/queue/remove-identifier-queue-priority.md)
+    * [Remove discord role queue priority](easy-allowlist/server/queue/remove-discord-role-queue-priority.md)
+
+## 👜 Luxury Clothes Theft
+
+* [Home](luxury-clothes-theft/home.md)
+* [Installation](luxury-clothes-theft/installation.md)
+* [Client](luxury-clothes-theft/client/README.md)
+  * [Replace default notifications](luxury-clothes-theft/client/replace-default-notifications.md)
