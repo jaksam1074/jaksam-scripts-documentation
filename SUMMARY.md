@@ -2,10 +2,12 @@
 
 ## 💻 jaksam's scripts
 
-***
-
-* [LICENSE](README.md)
-  * [Manually set ESX shared object](license/manually-set-esx-shared-object.md)
+* [Home](README.md)
+* [How to update the scripts](jaksams-scripts/how-to-update-the-scripts.md)
+* [Fix server crash on script start](jaksams-scripts/fix-server-crash-on-script-start.md)
+* [Issues with items](jaksams-scripts/issues-with-items.md)
+* [Manually set ESX shared object](jaksams-scripts/manually-set-esx-shared-object.md)
+* [LICENSE](jaksams-scripts/license.md)
 
 ## ⚠ FiveM escrow system errors
 
@@ -66,3 +68,127 @@
 * [Server](billing-ui/server/README.md)
   * [On bill created](billing-ui/server/on-bill-created.md)
   * [On bill paid](billing-ui/server/on-bill-paid.md)
+
+## 📍 Blips Creator
+
+* [Home](blips-creator/home.md)
+* [Installation](blips-creator/installation.md)
+* [How to use custom sprites](blips-creator/how-to-use-custom-sprites.md)
+* [Client](blips-creator/client/README.md)
+  * [Open menu manually](blips-creator/client/open-menu-manually.md)
+
+## 🚪 Doors Creator
+
+* [Home](doors-creator/home.md)
+* [Installation](doors-creator/installation.md)
+* [Change doors icon](doors-creator/change-doors-icon.md)
+* [Client](doors-creator/client/README.md)
+  * [Replace default notifications](doors-creator/client/replace-default-notifications.md)
+  * [Get closest door](doors-creator/client/get-closest-door.md)
+* [Server](doors-creator/server/README.md)
+  * [Get door ID data](doors-creator/server/get-door-id-data.md)
+  * [Get building ID data](doors-creator/server/get-building-id-data.md)
+  * [Get all buildings list](doors-creator/server/get-all-buildings-list.md)
+  * [Get all doors list](doors-creator/server/get-all-doors-list.md)
+  * [Set door ID state (locked/unlocked)](doors-creator/server/set-door-id-state-locked-unlocked.md)
+  * [Lockpicked door](doors-creator/server/lockpicked-door.md)
+
+## 💊 Drugs Creator
+
+* [Home](drugs-creator/home.md)
+* [Installation](drugs-creator/installation.md)
+* [Client](drugs-creator/client/README.md)
+  * [Replace default notifications](drugs-creator/client/replace-default-notifications.md)
+  * [Replace/Disable default progress bar](drugs-creator/client/replace-disable-default-progress-bar.md)
+  * [Replace default mugshot notifications](drugs-creator/client/replace-default-mugshot-notifications.md)
+  * [Replace default help notifications](drugs-creator/client/replace-default-help-notifications.md)
+  * [Replace default police alert](drugs-creator/client/replace-default-police-alert.md)
+  * [Manually start drugs effects](drugs-creator/client/manually-start-drugs-effects.md)
+  * [NPC Selling](drugs-creator/client/npc-selling/README.md)
+    * [Disable default selling method for NPCs](drugs-creator/client/npc-selling/disable-default-selling-method-for-npcs.md)
+    * [Add ped to selling blacklist](drugs-creator/client/npc-selling/add-ped-to-selling-blacklist.md)
+    * [Remove ped from selling blacklist](drugs-creator/client/npc-selling/remove-ped-from-selling-blacklist.md)
+    * [Manually sell to a NPC](drugs-creator/client/npc-selling/manually-sell-to-a-npc.md)
+    * [NPC accepted drug](drugs-creator/client/npc-selling/npc-accepted-drug.md)
+* [Server](drugs-creator/server/README.md)
+  * [Fields](drugs-creator/server/fields/README.md)
+    * [Item harvested](drugs-creator/server/fields/item-harvested.md)
+  * [Harvestable items](drugs-creator/server/harvestable-items/README.md)
+    * [Item harvested](drugs-creator/server/harvestable-items/item-harvested.md)
+  * [Laboratories](drugs-creator/server/laboratories/README.md)
+    * [Successful craft](drugs-creator/server/laboratories/successful-craft.md)
+  * [Sellings](drugs-creator/server/sellings/README.md)
+    * [Sold to pusher](drugs-creator/server/sellings/sold-to-pusher.md)
+    * [Sold in boat](drugs-creator/server/sellings/sold-in-boat.md)
+    * [Sold in plane](drugs-creator/server/sellings/sold-in-plane.md)
+    * [Sold to NPC](drugs-creator/server/sellings/sold-to-npc.md)
+    * [Sold to narcos](drugs-creator/server/sellings/sold-to-narcos.md)
+
+## ✅ Easy allowlist
+
+* [Home](easy-allowlist/home.md)
+* [Installation](easy-allowlist/installation.md)
+* [Commands usage](easy-allowlist/commands-usage.md)
+* [How to enable Discord features](easy-allowlist/how-to-enable-discord-features.md)
+* [External deferrals](easy-allowlist/external-deferrals.md)
+* [Server](easy-allowlist/server/README.md)
+  * [Allowlist](easy-allowlist/server/allowlist/README.md)
+    * [Remove identifier from allowlist](easy-allowlist/server/allowlist/remove-identifier-from-allowlist.md)
+    * [Add identifier to allowlist](easy-allowlist/server/allowlist/add-identifier-to-allowlist.md)
+  * [Queue](easy-allowlist/server/queue/README.md)
+    * [Set player queue priority](easy-allowlist/server/queue/set-player-queue-priority.md)
+    * [Set discord role queue priority](easy-allowlist/server/queue/set-discord-role-queue-priority.md)
+    * [Set identifier queue priority](easy-allowlist/server/queue/set-identifier-queue-priority.md)
+    * [Remove identifier queue priority](easy-allowlist/server/queue/remove-identifier-queue-priority.md)
+    * [Remove discord role queue priority](easy-allowlist/server/queue/remove-discord-role-queue-priority.md)
+
+## 👜 Luxury Clothes Theft
+
+* [Home](luxury-clothes-theft/home.md)
+* [Installation](luxury-clothes-theft/installation.md)
+* [Client](luxury-clothes-theft/client/README.md)
+  * [Replace default notifications](luxury-clothes-theft/client/replace-default-notifications.md)
+
+## 💰 Robberies Creator
+
+* [Home](robberies-creator/home.md)
+* [Installation](robberies-creator/installation.md)
+* [How to edit minigames](robberies-creator/how-to-edit-minigames.md)
+* [Client](robberies-creator/client/README.md)
+  * [Replace/Disable default progress bar](robberies-creator/client/replace-disable-default-progress-bar.md)
+  * [Replace default police alert](robberies-creator/client/replace-default-police-alert.md)
+  * [Notifications](robberies-creator/client/notifications/README.md)
+    * [Replace default notifications](robberies-creator/client/notifications/replace-default-notifications.md)
+    * [Replace default help notifications](robberies-creator/client/notifications/replace-default-help-notifications.md)
+* [Server](robberies-creator/server/README.md)
+  * [Police alerted](robberies-creator/server/police-alerted.md)
+  * [Step completed](robberies-creator/server/step-completed.md)
+
+## 🔑 Vehicles Keys
+
+* [Home](vehicles-keys/home.md)
+* [Installation](vehicles-keys/installation.md)
+* [How to give keys with /car command](vehicles-keys/how-to-give-keys-with-car-command.md)
+* [Fix hotwiring bought car](vehicles-keys/fix-hotwiring-bought-car.md)
+* [Client](vehicles-keys/client/README.md)
+  * [Self give vehicle plate](vehicles-keys/client/self-give-vehicle-plate.md)
+  * [Open remote UI menu](vehicles-keys/client/open-remote-ui-menu.md)
+  * [Open keys list](vehicles-keys/client/open-keys-list.md)
+  * [Toggle hotwiring](vehicles-keys/client/toggle-hotwiring.md)
+  * [Switch vehicle lock](vehicles-keys/client/switch-vehicle-lock.md)
+  * [Vehicle locked/unlocked](vehicles-keys/client/vehicle-locked-unlocked.md)
+  * [Replace/Disable default progress bar](vehicles-keys/client/replace-disable-default-progress-bar.md)
+  * [Refresh self owned vehicles](vehicles-keys/client/refresh-self-owned-vehicles.md)
+  * [Notifications](vehicles-keys/client/notifications/README.md)
+    * [Replace default notifications](vehicles-keys/client/notifications/replace-default-notifications.md)
+    * [Replace default help notifications](vehicles-keys/client/notifications/replace-default-help-notifications.md)
+* [Server](vehicles-keys/server/README.md)
+  * [Refresh player owned vehicles](vehicles-keys/server/refresh-player-owned-vehicles.md)
+  * [Vehicle locked/unlocked](vehicles-keys/server/vehicle-locked-unlocked.md)
+  * [Give keys to identifier](vehicles-keys/server/give-keys-to-identifier.md)
+  * [Remove keys from identifier](vehicles-keys/server/remove-keys-from-identifier.md)
+  * [Give keys to player ID](vehicles-keys/server/give-keys-to-player-id.md)
+  * [Remove keys from player ID](vehicles-keys/server/remove-keys-from-player-id.md)
+  * [Vehicle window broken](vehicles-keys/server/vehicle-window-broken.md)
+  * [Get player ID keys](vehicles-keys/server/get-player-id-keys.md)
+  * [Get identifier keys](vehicles-keys/server/get-identifier-keys.md)
