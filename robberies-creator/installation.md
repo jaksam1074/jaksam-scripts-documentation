@@ -35,6 +35,7 @@ To add the new items, you have to edit `qb-core/shared/items.lua` file and add a
 	['gold_ingot'] 			 = {['name'] = 'gold_ingot', 				['label'] = 'Gold ingot',	['weight'] = 500, 		['type'] = 'item', 		['image'] = 'your_image.png', 		['unique'] = false,		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Goooold'},
 	['diamonds_box'] 			 = {['name'] = 'diamonds_box', 				['label'] = 'Diamond box',	['weight'] = 500, 		['type'] = 'item', 		['image'] = 'your_image.png', 		['unique'] = false,		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Diamooonds'},
 	['lockpick'] 			 = {['name'] = 'lockpick', 				['label'] = 'Lockpick',	['weight'] = 500, 		['type'] = 'item', 		['image'] = 'your_image.png', 		['unique'] = false,		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Used to lockpick doors'},
+	['painting'] 			 = {['name'] = 'painting', 				['label'] = 'Painting',	['weight'] = 500, 		['type'] = 'item', 		['image'] = 'your_image.png', 		['unique'] = false,		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Expensive painting'},
 ```
 
 #### Screenshot example
