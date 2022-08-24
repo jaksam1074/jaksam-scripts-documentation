@@ -2,7 +2,7 @@
 
 ## Generic script
 
-If after you purchase a vehicle you have to hotwire it, you only have to add this simple line of code in your script code, after you know that the vehicle is added in `owned_vehicles` / `player_vehicles` table (depending on the framework)
+If after you purchase a vehicle you have to hotwire it, you only have to add [this simple line of code ](client/refresh-self-owned-vehicles.md)in your script code, after you know that the vehicle is added in `owned_vehicles` / `player_vehicles` table (depending on the framework)
 
 You may want to add a `Citizen.Wait(2000)` before that line in case the vehicle wasn't yet in the table in the moment you triggered the event
 
