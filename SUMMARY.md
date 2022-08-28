@@ -151,6 +151,7 @@
     * [Sold in plane](drugs-creator/server/sellings/sold-in-plane.md)
     * [Sold to NPC](drugs-creator/server/sellings/sold-to-npc.md)
     * [Sold to narcos](drugs-creator/server/sellings/sold-to-narcos.md)
+  * [Police alerted](drugs-creator/server/police-alerted.md)
 
 ## 🔑 Vehicles Keys
 
