@@ -161,6 +161,7 @@
 * [How to give keys with /car command](vehicles-keys/how-to-give-keys-with-car-command.md)
 * [Fix hotwiring bought car](vehicles-keys/fix-hotwiring-bought-car.md)
 * [Client](vehicles-keys/client/README.md)
+  * [Self give current vehicle plate](vehicles-keys/client/self-give-current-vehicle-plate.md)
   * [Self give vehicle plate](vehicles-keys/client/self-give-vehicle-plate.md)
   * [Open remote UI menu](vehicles-keys/client/open-remote-ui-menu.md)
   * [Open keys list](vehicles-keys/client/open-keys-list.md)
