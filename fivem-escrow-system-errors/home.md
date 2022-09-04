@@ -4,7 +4,7 @@ Here you will find the solutions to common errors when using mine scripts due Fi
 
 To verify if your error is caused by the FiveM asset escrow, you can simply restart the script and check **both** in **F8 console** and in **server console** (txAdmin) for errors
 
-## How to know if my error is caused by FiveM escrow system?
+## <mark style="color:yellow;">How to know if my error is caused by FiveM escrow system?</mark>
 
 To understand if something in a script is not working because of the FiveM asset escrow system, do this:&#x20;
 
