@@ -185,6 +185,7 @@
   * [Vehicle window broken](vehicles-keys/server/vehicle-window-broken.md)
   * [Get player ID keys](vehicles-keys/server/get-player-id-keys.md)
   * [Get identifier keys](vehicles-keys/server/get-identifier-keys.md)
+  * [Police alerted](vehicles-keys/server/police-alerted.md)
 
 ## 🧾 Billing UI
 
