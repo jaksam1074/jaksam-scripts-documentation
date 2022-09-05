@@ -171,6 +171,7 @@
   * [Vehicle locked/unlocked](vehicles-keys/client/vehicle-locked-unlocked.md)
   * [Replace/Disable default progress bar](vehicles-keys/client/replace-disable-default-progress-bar.md)
   * [Refresh self owned vehicles](vehicles-keys/client/refresh-self-owned-vehicles.md)
+  * [Replace default police alert](vehicles-keys/client/replace-default-police-alert.md)
   * [Notifications](vehicles-keys/client/notifications/README.md)
     * [Replace default notifications](vehicles-keys/client/notifications/replace-default-notifications.md)
     * [Replace default help notifications](vehicles-keys/client/notifications/replace-default-help-notifications.md)
