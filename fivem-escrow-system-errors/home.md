@@ -14,13 +14,13 @@ To understand if something in a script is not working because of the FiveM asset
 
 ### Examples of the errors caused by the FiveM Escrow system
 
-<figure><img src="../.gitbook/assets/error_parsing.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/error_parsing.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="error-parsing-script-...-less-than-1-greater-than.md"><strong>here</strong></a><strong></strong></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/error_parsing_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/error_parsing_2.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="error-parsing-script-...-less-than-1-greater-than.md"><strong>here</strong></a><strong></strong></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/failed_to_verify_protected_resource.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/failed_to_verify_protected_resource.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="failed-to-verify-protected-resource.md"><strong>here</strong></a><strong></strong></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/lack_entitlement.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/lack_entitlement.jpg" alt=""><figcaption><p><strong>Solution -></strong> <a href="you-lack-the-required-entitlement.md"><strong>here</strong></a><strong></strong></p></figcaption></figure>
 
 ## Solutions
 
