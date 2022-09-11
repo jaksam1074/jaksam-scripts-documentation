@@ -12,10 +12,10 @@ end)
 
 ### Parameters
 
-| Name               | Data Type | Description                                                |
-| ------------------ | --------- | ---------------------------------------------------------- |
-| `message`          | string    | Message of the notification                                |
-| `uncoloredMessage` | string    | Message of the notification but without ~~r~~, ~~g~~, etc. |
+| Name               | Data Type | Description                                                    |
+| ------------------ | --------- | -------------------------------------------------------------- |
+| `message`          | string    | Message of the notification                                    |
+| `uncoloredMessage` | string    | Message of the notification but without \~r\~, \~g~~\~~~, etc. |
 
 ## Example
 

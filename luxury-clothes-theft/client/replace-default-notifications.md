@@ -5,16 +5,17 @@ Triggered after notifying player client side
 ## Event
 
 ```lua
-AddEventHandler("luxury_clothes_theft:notify", function(message)
+AddEventHandler("luxury_clothes_theft:notify", function(message, uncoloredMessage)
 
 end)
 ```
 
 ### Parameters
 
-| Name      | Data Type | Description                 |
-| --------- | --------- | --------------------------- |
-| `message` | string    | Message of the notification |
+| Name               | Data Type | Description                                                    |
+| ------------------ | --------- | -------------------------------------------------------------- |
+| `message`          | string    | Message of the notification                                    |
+| `uncoloredMessage` | string    | Message of the notification but without \~r\~, \~g~~\~~~, etc. |
 
 ## Example
 
@@ -24,7 +25,7 @@ RegisterNetEvent("luxury_clothes_theft:framework:ready", function()
     exports["luxury_clothes_theft"]:disableScriptEvent("luxury_clothes_theft:notify")
 end)
 
-RegisterNetEvent("luxury_clothes_theft:notify", function(message)
+RegisterNetEvent("luxury_clothes_theft:notify", function(message, uncoloredMessage)
     TriggerEvent("external_script:notify", message)
 end)
 ```

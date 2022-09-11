@@ -5,16 +5,17 @@ Triggered after notifying player client side
 ## Event
 
 ```lua
-AddEventHandler("billing_ui:notify", function(message)
+AddEventHandler("billing_ui:notify", function(message, uncoloredMessage)
 
 end)
 ```
 
 ### Parameters
 
-| Name      | Data Type | Description                 |
-| --------- | --------- | --------------------------- |
-| `message` | string    | Message of the notification |
+| Name               | Data Type | Description                                                    |
+| ------------------ | --------- | -------------------------------------------------------------- |
+| `message`          | string    | Message of the notification                                    |
+| `uncoloredMessage` | string    | Message of the notification but without \~r\~, \~g~~\~~~, etc. |
 
 ## Example
 
@@ -24,7 +25,7 @@ RegisterNetEvent("billing_ui:framework:ready", function()
     exports["billing_ui"]:disableScriptEvent("billing_ui:notify")
 end)
 
-RegisterNetEvent("billing_ui:notify", function(message)
+RegisterNetEvent("billing_ui:notify", function(message, uncoloredMessage)
     TriggerEvent("external_script:notify", message)
 end)
 ```
