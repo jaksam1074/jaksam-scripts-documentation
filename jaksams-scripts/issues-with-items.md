@@ -43,6 +43,18 @@ After:
 
 <figure><img src="../.gitbook/assets/can_always_carry_item_after.jpg" alt=""><figcaption></figcaption></figure>
 
+2\. If the script has `current_config.json` file (which is a different file from the previous one), edit again the option `canAlwaysCarryItem` to true
+
+Example screenshots:
+
+Before:
+
+<figure><img src="../.gitbook/assets/current_config_can_always_carry_before (1).jpg" alt=""><figcaption></figcaption></figure>
+
+After:
+
+<figure><img src="../.gitbook/assets/current_config_can_always_carry_after.jpg" alt=""><figcaption></figcaption></figure>
+
 ### What to do if I don't have canAlwaysCarryItem option?
 
 If you don't have the `canAlwaysCarryItem` option, you simply need to add it, be sure to add it at the **beginning** of the `server` part
