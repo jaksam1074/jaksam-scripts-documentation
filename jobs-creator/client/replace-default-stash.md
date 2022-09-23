@@ -26,15 +26,10 @@ end)
 
 -- Example to replace the script stash with an external one
 RegisterNetEvent("jobs_creator:stash:openStash", function(markerId)
-    -- Example with Chezza's inventory
-    TriggerEvent('inventory:open', {
-        id = "marker_" .. markerId,
-        type = "esx_job_creator_stash",
-        title = 'Stash - ' .. markerId,
-        weight = 1000,
-        save = true,
-        timeout = 1000
-    })
+    --[[
+        This is just an example, it will NOT work, you have to use the event from your inventory
+    ]]
+    TriggerEvent("inventory:openStash", markerId)
 end)
 ```
 
