@@ -81,6 +81,7 @@
     * [Item processed](jobs-creator/server/process/item-processed.md)
   * [Shop](jobs-creator/server/shop/README.md)
     * [Item bought](jobs-creator/server/shop/item-bought.md)
+  * [Set handcuffs state](jobs-creator/server/set-handcuffs-state.md)
 
 ## 💰 Robberies Creator
 
