@@ -8,7 +8,11 @@ To verify if your error is caused by the FiveM asset escrow, you can simply rest
 
 To understand if something in a script is not working because of the FiveM asset escrow system, do this:&#x20;
 
-1. Restart the script causing issues, using the command `ensure your_script_name` in txAdmin console or restarting the script the way you usually do
+1.  Restart the script causing issues, using the command `ensure your_script_name` in txAdmin console or restarting the script the way you usually do
+
+    <figure><img src="../.gitbook/assets/f8_restart.gif" alt=""><figcaption><p>in-game F8 restart example</p></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/server_restart.gif" alt=""><figcaption><p>server console restart example</p></figcaption></figure>
 2. Check the txAdmin console (server console) **and** the F8 in-game console, looking for errors
 3. If there is any error similar to the ones in the [images below](home.md#examples-of-the-errors-caused-by-the-fivem-escrow-system), your issue **is caused by the FiveM asset escrow system**
 
