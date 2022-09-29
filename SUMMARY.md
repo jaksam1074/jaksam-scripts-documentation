@@ -112,6 +112,7 @@
 * [Home](doors-creator/home.md)
 * [Installation](doors-creator/installation.md)
 * [Change doors icon](doors-creator/change-doors-icon.md)
+* [Admin bypass lock](doors-creator/admin-bypass-lock.md)
 * [Client](doors-creator/client/README.md)
   * [Replace default notifications](doors-creator/client/replace-default-notifications.md)
   * [Get closest door](doors-creator/client/get-closest-door.md)
@@ -124,7 +125,6 @@
   * [Get all doors list](doors-creator/server/get-all-doors-list.md)
   * [Set door ID state (locked/unlocked)](doors-creator/server/set-door-id-state-locked-unlocked.md)
   * [Lockpicked door](doors-creator/server/lockpicked-door.md)
-* [Admin bypass lock](doors-creator/admin-bypass-lock.md)
 
 ## 💊 Drugs Creator
 
