@@ -115,13 +115,16 @@
 * [Client](doors-creator/client/README.md)
   * [Replace default notifications](doors-creator/client/replace-default-notifications.md)
   * [Get closest door](doors-creator/client/get-closest-door.md)
+  * [Replace default police alert](doors-creator/client/replace-default-police-alert.md)
 * [Server](doors-creator/server/README.md)
+  * [Police alerted](doors-creator/server/police-alerted.md)
   * [Get door ID data](doors-creator/server/get-door-id-data.md)
   * [Get building ID data](doors-creator/server/get-building-id-data.md)
   * [Get all buildings list](doors-creator/server/get-all-buildings-list.md)
   * [Get all doors list](doors-creator/server/get-all-doors-list.md)
   * [Set door ID state (locked/unlocked)](doors-creator/server/set-door-id-state-locked-unlocked.md)
   * [Lockpicked door](doors-creator/server/lockpicked-door.md)
+* [Admin bypass lock](doors-creator/admin-bypass-lock.md)
 
 ## 💊 Drugs Creator
 
