@@ -50,21 +50,6 @@ exports["vehicles_keys"]:refreshPlayerOwnedVehicles(source)
 
 <figure><img src="../.gitbook/assets/esx_advancedvehicleshop_after.png" alt=""><figcaption></figcaption></figure>
 
-## esx\_contract
-
-Go to `esx_contract/server/main.lua` and search for the following code:
-
-<figure><img src="../.gitbook/assets/esx_contract_before.png" alt=""><figcaption></figcaption></figure>
-
-And add these lines
-
-```lua
-exports["vehicles_keys"]:refreshPlayerOwnedVehicles(_source)
-exports["vehicles_keys"]:refreshPlayerOwnedVehicles(_target)
-```
-
-<figure><img src="../.gitbook/assets/esx_contract_after.png" alt=""><figcaption></figcaption></figure>
-
 ## qb-vehicleshop
 
 ### First step
