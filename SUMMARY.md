@@ -159,6 +159,19 @@
     * [Sold to narcos](drugs-creator/server/sellings/sold-to-narcos.md)
   * [Police alerted](drugs-creator/server/police-alerted.md)
 
+***
+
+* [🚜 Farming Creator](farming-creator/README.md)
+  * [Home](farming-creator/home.md)
+  * [Installation](farming-creator/installation.md)
+  * [Client](farming-creator/client/README.md)
+    * [Replace default notifications](farming-creator/client/replace-default-notifications.md)
+    * [Replace/Disable default progress bar](farming-creator/client/replace-disable-default-progress-bar.md)
+    * [Replace default help notifications](farming-creator/client/replace-default-help-notifications.md)
+    * [Replace default police alert](farming-creator/client/replace-default-police-alert.md)
+  * [Server](farming-creator/server/README.md)
+    * [Police alerted](farming-creator/server/police-alerted.md)
+
 ## 🔑 Vehicles Keys
 
 * [Home](vehicles-keys/home.md)
