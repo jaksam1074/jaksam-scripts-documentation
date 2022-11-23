@@ -218,6 +218,7 @@
   * [Send a bill](billing-ui/client/send-a-bill.md)
   * [View invoices](billing-ui/client/view-invoices.md)
 * [Server](billing-ui/server/README.md)
+  * [Create bill](billing-ui/server/create-bill.md)
   * [On bill created](billing-ui/server/on-bill-created.md)
   * [On bill paid](billing-ui/server/on-bill-paid.md)
 
