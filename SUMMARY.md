@@ -197,6 +197,8 @@
   * [Refresh player owned vehicles](vehicles-keys/server/refresh-player-owned-vehicles.md)
   * [Get if player ID owns a plate](vehicles-keys/server/get-if-player-id-owns-a-plate.md)
   * [Vehicle locked/unlocked](vehicles-keys/server/vehicle-locked-unlocked.md)
+  * [Player hotwired a vehicle](vehicles-keys/server/player-hotwired-a-vehicle.md)
+  * [Player lockpicked a vehicle](vehicles-keys/server/player-lockpicked-a-vehicle.md)
   * [Give keys to identifier](vehicles-keys/server/give-keys-to-identifier.md)
   * [Remove keys from identifier](vehicles-keys/server/remove-keys-from-identifier.md)
   * [Give keys to player ID](vehicles-keys/server/give-keys-to-player-id.md)
