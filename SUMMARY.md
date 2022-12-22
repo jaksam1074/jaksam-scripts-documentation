@@ -81,6 +81,10 @@
     * [Item processed](jobs-creator/server/process/item-processed.md)
   * [Shop](jobs-creator/server/shop/README.md)
     * [Item bought](jobs-creator/server/shop/item-bought.md)
+  * [Search/Steal action](jobs-creator/server/search-steal-action/README.md)
+    * [Item stolen](jobs-creator/server/search-steal-action/item-stolen.md)
+    * [Account stolen](jobs-creator/server/search-steal-action/account-stolen.md)
+    * [Weapon stolen](jobs-creator/server/search-steal-action/weapon-stolen.md)
   * [Set handcuffs state](jobs-creator/server/set-handcuffs-state.md)
 
 ## 💰 Robberies Creator
@@ -170,6 +174,20 @@
   * [Replace default police alert](farming-creator/client/replace-default-police-alert.md)
 * [Server](farming-creator/server/README.md)
   * [Police alerted](farming-creator/server/police-alerted.md)
+
+## 🛰 Trackers Creator
+
+* [Home](trackers-creator/home.md)
+* [Installation](trackers-creator/installation.md)
+* [Optimization](trackers-creator/optimization.md)
+* [Client](trackers-creator/client/README.md)
+  * [Replace default notifications](trackers-creator/client/replace-default-notifications.md)
+  * [Panic button pressed](trackers-creator/client/panic-button-pressed.md)
+  * [Manually start panic button](trackers-creator/client/manually-start-panic-button.md)
+* [Server](trackers-creator/server/README.md)
+  * [Panic button pressed](trackers-creator/server/panic-button-pressed.md)
+  * [Player lost signal](trackers-creator/server/player-lost-signal.md)
+  * [Player set new private frequency](trackers-creator/server/player-set-new-private-frequency.md)
 
 ## 🔑 Vehicles Keys
 

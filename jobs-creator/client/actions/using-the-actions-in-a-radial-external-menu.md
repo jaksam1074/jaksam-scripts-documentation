@@ -33,8 +33,11 @@ TriggerEvent("jobs_creator:actions:drag")
 ## Handcuff player
 
 ```lua
--- Trigger to start handcuff action
-TriggerEvent("jobs_creator:actions:handcuff")
+-- Trigger to start soft handcuff action
+TriggerEvent("jobs_creator:actions:softHandcuff")
+
+-- Trigger to start hard handcuff action
+TriggerEvent("jobs_creator:actions:hardHandcuff")
 ```
 
 ## Heal big
