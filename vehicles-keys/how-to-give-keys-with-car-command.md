@@ -2,6 +2,8 @@
 
 To automatically have keys of a vehicle received with /car command, you can see the examples below
 
+In the following examples **the integration line** has already been added to previously existing code blocks
+
 ### Old ESX
 
 {% code title="es_extended/client/main.lua" %}
