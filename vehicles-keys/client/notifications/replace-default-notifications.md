@@ -15,7 +15,7 @@ end)
 | Name               | Data Type | Description                                                |
 | ------------------ | --------- | ---------------------------------------------------------- |
 | `message`          | string    | Message of the notification                                |
-| `uncoloredMessage` | string    | Message of the notification but without ~~r~~, ~~g~~, etc. |
+| `uncoloredMessage` | string    | Message of the notification but without \~r\~, \~g\~, etc. |
 
 ## Example
 
