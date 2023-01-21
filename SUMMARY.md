@@ -100,6 +100,7 @@
     * [Replace default help notifications](robberies-creator/client/notifications/replace-default-help-notifications.md)
 * [Server](robberies-creator/server/README.md)
   * [Heist started](robberies-creator/server/heist-started.md)
+  * [Heist finished](robberies-creator/server/heist-finished.md)
   * [Police alerted](robberies-creator/server/police-alerted.md)
   * [Step completed](robberies-creator/server/step-completed.md)
 
