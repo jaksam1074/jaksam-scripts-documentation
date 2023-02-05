@@ -1,6 +1,6 @@
 # Home
 
-This is the official Robberies Creator documentation
+This is the official Races Creator documentation
 
-* Official [FiveM post](https://forum.cfx.re/t/robberies-creator-esx-qbcore-in-game-heists-creation-menu-without-server-restart/4893285)
+* Official [FiveM post](https://forum.cfx.re/t/races-creator-esx-qbcore-easily-create-admin-and-players-races/5016141)
 * Tebex [page](https://jaksam1074-fivem-scripts.tebex.io/)
