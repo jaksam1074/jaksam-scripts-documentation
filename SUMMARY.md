@@ -104,6 +104,18 @@
   * [Police alerted](robberies-creator/server/police-alerted.md)
   * [Step completed](robberies-creator/server/step-completed.md)
 
+## 🏁 Races Creator
+
+* [Home](races-creator/home.md)
+* [Installation](races-creator/installation.md)
+* [Client](races-creator/client/README.md)
+  * [Replace default police alert](races-creator/client/replace-default-police-alert.md)
+  * [Notifications](races-creator/client/notifications/README.md)
+    * [Replace default notifications](races-creator/client/notifications/replace-default-notifications.md)
+    * [Replace default help notifications](races-creator/client/notifications/replace-default-help-notifications.md)
+* [Server](races-creator/server/README.md)
+  * [Police alerted](races-creator/server/police-alerted.md)
+
 ## 📍 Blips Creator
 
 * [Home](blips-creator/home.md)
