@@ -215,6 +215,7 @@
   * [Open keys list](vehicles-keys/client/open-keys-list.md)
   * [Toggle hotwiring](vehicles-keys/client/toggle-hotwiring.md)
   * [Get if local player owns a plate](vehicles-keys/client/get-if-local-player-owns-a-plate.md)
+  * [Get owned plates of local player](vehicles-keys/client/get-owned-plates-of-local-player.md)
   * [Toggle closest vehicle lock](vehicles-keys/client/toggle-closest-vehicle-lock.md)
   * [Switch vehicle lock](vehicles-keys/client/switch-vehicle-lock.md)
   * [Vehicle locked/unlocked](vehicles-keys/client/vehicle-locked-unlocked.md)
