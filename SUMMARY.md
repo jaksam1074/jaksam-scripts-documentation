@@ -104,6 +104,18 @@
   * [Police alerted](robberies-creator/server/police-alerted.md)
   * [Step completed](robberies-creator/server/step-completed.md)
 
+## 🛒 Shops Creator
+
+* [Home](shops-creator/home.md)
+* [Installation](shops-creator/installation.md)
+* [Client](shops-creator/client/README.md)
+  * [Replace default police alert](shops-creator/client/replace-default-police-alert.md)
+  * [Notifications](shops-creator/client/notifications/README.md)
+    * [Replace default notifications](shops-creator/client/notifications/replace-default-notifications.md)
+    * [Replace default help notifications](shops-creator/client/notifications/replace-default-help-notifications.md)
+* [Server](shops-creator/server/README.md)
+  * [Police alerted](shops-creator/server/police-alerted.md)
+
 ## 🏁 Races Creator
 
 * [Home](races-creator/home.md)
