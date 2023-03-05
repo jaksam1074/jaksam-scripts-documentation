@@ -115,6 +115,10 @@
     * [Replace default help notifications](shops-creator/client/notifications/replace-default-help-notifications.md)
 * [Server](shops-creator/server/README.md)
   * [Police alerted](shops-creator/server/police-alerted.md)
+  * [Shop bought](shops-creator/server/shop-bought.md)
+  * [Shop sold](shops-creator/server/shop-sold.md)
+  * [Get what objects can be sold in shop ID](shops-creator/server/get-what-objects-can-be-sold-in-shop-id.md)
+  * [Get objects in shop ID](shops-creator/server/get-objects-in-shop-id.md)
 
 ## 🏁 Races Creator
 
