@@ -149,6 +149,7 @@
 * [Client](doors-creator/client/README.md)
   * [Replace default notifications](doors-creator/client/replace-default-notifications.md)
   * [Get closest door](doors-creator/client/get-closest-door.md)
+  * [Toggle icon display](doors-creator/client/toggle-icon-display.md)
   * [Replace default police alert](doors-creator/client/replace-default-police-alert.md)
 * [Server](doors-creator/server/README.md)
   * [Police alerted](doors-creator/server/police-alerted.md)
