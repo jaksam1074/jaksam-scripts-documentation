@@ -4,7 +4,7 @@ If for any reason you prefer to disable the default selling method to NPCs (the 
 
 Using the command over the standard method, will improve the server performance
 
-<figure><img src="../.gitbook/assets/immagine (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/immagine (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### How to enable the command
 
@@ -14,5 +14,5 @@ Using the command over the standard method, will improve the server performance
 
 #### Final result
 
-<figure><img src="../.gitbook/assets/immagine (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/immagine (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

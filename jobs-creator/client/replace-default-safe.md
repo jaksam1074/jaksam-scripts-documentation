@@ -26,15 +26,10 @@ end)
 
 -- Example to replace the script safe with an external one
 RegisterNetEvent("jobs_creator:safe:openSafe", function(markerId)
-    -- Example with Chezza's inventory
-    TriggerEvent('inventory:open', {
-        id = "marker_" .. markerId,
-        type = "esx_job_creator_safe",
-        title = 'Safe - ' .. markerId,
-        weight = 1000,
-        save = true,
-        timeout = 1000
-    })
+    --[[
+        This is just an example, it will NOT work, you have to use the event from your inventory
+    ]]
+    TriggerEvent("inventory:openSafe", markerId)
 end)
 ```
 

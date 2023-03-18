@@ -24,7 +24,7 @@ Note: if you use something that is not listed in the examples, editing it is dow
 
 Go in `es_extended/server/classes/player.lua` and add the following codes
 
-<figure><img src="../.gitbook/assets/immagine (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/immagine (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/immagine (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -32,7 +32,7 @@ Go in `es_extended/server/classes/player.lua` and add the following codes
 
 Go in `es_extended/server/classes/overrides/oxinventory.lua` and add the following codes
 
-<figure><img src="../.gitbook/assets/immagine (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/immagine (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/immagine.png" alt=""><figcaption></figcaption></figure>
 
@@ -40,7 +40,7 @@ Go in `es_extended/server/classes/overrides/oxinventory.lua` and add the followi
 
 Go in `qb-inventory/server/main.lua` and add the following codes
 
-<figure><img src="../.gitbook/assets/immagine (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/immagine (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/immagine (6).png" alt=""><figcaption></figcaption></figure>
 
