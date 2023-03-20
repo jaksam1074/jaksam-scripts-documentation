@@ -270,6 +270,8 @@
   * [View invoices](billing-ui/client/view-invoices.md)
 * [Server](billing-ui/server/README.md)
   * [Create bill](billing-ui/server/create-bill.md)
+  * [Delete bill](billing-ui/server/delete-bill.md)
+  * [Refresh bill](billing-ui/server/refresh-bill.md)
   * [On bill created](billing-ui/server/on-bill-created.md)
   * [On bill paid](billing-ui/server/on-bill-paid.md)
 
