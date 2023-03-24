@@ -32,6 +32,11 @@ TriggerEvent("advanced_drugs_creator:drugEffects", takingMethod, effects, effect
 `"pink_visual"`\
 `"green_visual"`\
 `"confused_visual"`\
+`"yellow_visual"`\
+`"blurred_visual"`\
+`"red_visual"`\
+`"foggy_visual"`\
+`"blue_visual"`\
 `"armor50"`\
 `"armor100"`\
 `"health50"`\
@@ -39,6 +44,7 @@ TriggerEvent("advanced_drugs_creator:drugEffects", takingMethod, effects, effect
 `"sprint_faster"`\
 `"swim_faster"`\
 `"infinite_stamina"`\
+`"remove_old_effects"`\
 
 
 ## Example - Client side

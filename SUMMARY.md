@@ -167,7 +167,7 @@
 * [Use command to sell to NPCs](drugs-creator/use-command-to-sell-to-npcs.md)
 * [Client](drugs-creator/client/README.md)
   * [Replace default notifications](drugs-creator/client/replace-default-notifications.md)
-  * [Progress bar](drugs-creator/client/progress-bar.md)
+  * [Progress bar](drugs-creator/client/replace-disable-default-progress-bar.md)
   * [Replace default mugshot notifications](drugs-creator/client/replace-default-mugshot-notifications.md)
   * [Replace default help notifications](drugs-creator/client/replace-default-help-notifications.md)
   * [Replace default police alert](drugs-creator/client/replace-default-police-alert.md)
