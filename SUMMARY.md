@@ -256,6 +256,9 @@
   * [Get player ID keys](vehicles-keys/server/get-player-id-keys.md)
   * [Get identifier keys](vehicles-keys/server/get-identifier-keys.md)
   * [Police alerted](vehicles-keys/server/police-alerted.md)
+  * [Alarms](vehicles-keys/server/alarms/README.md)
+    * [Alarm activated (player vehicle)](vehicles-keys/server/alarms/alarm-activated-player-vehicle.md)
+    * [Alarm activated (NPC vehicle)](vehicles-keys/server/alarms/alarm-activated-npc-vehicle.md)
 
 ## 🧾 Billing UI
 
