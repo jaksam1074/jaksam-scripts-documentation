@@ -12,10 +12,10 @@ end)
 
 ### Parameters
 
-| Name      | Data Type | Description                                    |
-| --------- | --------- | ---------------------------------------------- |
-| `coords`  | vector3   | Coordinates where a player tried to sell drugs |
-| `message` | string    | The message the cop will see                   |
+| Name      | Data Type | Description                      |
+| --------- | --------- | -------------------------------- |
+| `coords`  | vector3   | Coordinates where crime happened |
+| `message` | string    | The message the cop will see     |
 
 ## Example
 
