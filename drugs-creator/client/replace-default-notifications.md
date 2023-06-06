@@ -5,7 +5,7 @@ Triggered after notifying player client side
 ## Event
 
 ```lua
-AddEventHandler("advanced_drugs_creator:notify", function(message, uncoloredMessage)
+AddEventHandler("drugs_creator:notify", function(message, uncoloredMessage)
 
 end)
 ```
@@ -20,12 +20,12 @@ end)
 ## Example
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+RegisterNetEvent("drugs_creator:framework:ready", function() 
     -- Disables the default script notification (otherwise there would be 2 notifications)
-    exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:notify")
+    exports["drugs_creator"]:disableScriptEvent("drugs_creator:notify")
 end)
 
-RegisterNetEvent("advanced_drugs_creator:notify", function(message, uncoloredMessage)
+RegisterNetEvent("drugs_creator:notify", function(message, uncoloredMessage)
     TriggerEvent("external_script:notify", message)
 end)
 ```

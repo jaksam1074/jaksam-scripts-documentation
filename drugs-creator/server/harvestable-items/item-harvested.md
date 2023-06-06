@@ -5,7 +5,7 @@ Triggered after an harvestable item has been harvested
 ## Event
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:harvest:itemHarvested", function(playerId, itemName, itemQuantity)
+RegisterNetEvent("drugs_creator:harvest:itemHarvested", function(playerId, itemName, itemQuantity)
 
 end)
 ```
@@ -22,7 +22,7 @@ end)
 
 ```lua
 -- An example for a xp system
-RegisterNetEvent("advanced_drugs_creator:harvest:itemHarvested", function(playerId, itemName, itemQuantity)
+RegisterNetEvent("drugs_creator:harvest:itemHarvested", function(playerId, itemName, itemQuantity)
     TriggerEvent("xp_system:addXp", playerId, itemQuantity)
 end)
 ```

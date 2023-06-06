@@ -5,7 +5,7 @@ To remove a ped from NPC selling blacklist, the opposite of the export `addPedTo
 ## Event
 
 ```lua
-exports["advanced_drugs_creator"]:removePedFromNPCSellingBlacklist(ped)
+exports["drugs_creator"]:removePedFromNPCSellingBlacklist(ped)
 ```
 
 ### Parameters
@@ -17,9 +17,9 @@ exports["advanced_drugs_creator"]:removePedFromNPCSellingBlacklist(ped)
 ## Example
 
 ```lua
-RegisterNetEvent('advanced_drugs_creator:framework:ready', function()
+RegisterNetEvent('drugs_creator:framework:ready', function()
     local closestPed = ESX.Game.GetClosestPed()
 
-    exports["advanced_drugs_creator"]:removePedFromNPCSellingBlacklist(closestPed)
+    exports["drugs_creator"]:removePedFromNPCSellingBlacklist(closestPed)
 end)
 ```

@@ -5,7 +5,7 @@ Used to show the usual `Press E to ...` at the top left of the player's screen
 ## Export
 
 ```lua
-exports["advanced_drugs_creator"]:replaceShowHelpNotification(customFunction)
+exports["drugs_creator"]:replaceShowHelpNotification(customFunction)
 ```
 
 ### Parameters
@@ -24,9 +24,9 @@ local function myCustomHelpNotification(message)
     ExternalScript.showHelpNotification(message)
 end
 
-RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+RegisterNetEvent("drugs_creator:framework:ready", function() 
     -- This will replace the base function with the one you want
-    exports["advanced_drugs_creator"]:replaceShowHelpNotification(myCustomHelpNotification)
+    exports["drugs_creator"]:replaceShowHelpNotification(myCustomHelpNotification)
 end)
 ```
 

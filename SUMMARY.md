@@ -108,6 +108,7 @@
 
 * [Home](shops-creator/home.md)
 * [Installation](shops-creator/installation.md)
+* [How to use images for items](shops-creator/how-to-use-images-for-items.md)
 * [Client](shops-creator/client/README.md)
   * [Replace default police alert](shops-creator/client/replace-default-police-alert.md)
   * [Notifications](shops-creator/client/notifications/README.md)

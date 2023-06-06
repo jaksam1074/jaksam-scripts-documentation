@@ -5,7 +5,7 @@ Triggered when police is alerted server side (only 1 time per alert, instead of 
 ## Event
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:alertedPolice", function(coords, message)
+RegisterNetEvent("drugs_creator:alertedPolice", function(coords, message)
 
 end)
 ```
@@ -20,7 +20,7 @@ end)
 ## Example
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:alertedPolice", function(coords, message)
+RegisterNetEvent("drugs_creator:alertedPolice", function(coords, message)
     -- just an example, will NOT work
     TriggerClientEvent("news_script:heistAlert", -1, coords, message)
 end)

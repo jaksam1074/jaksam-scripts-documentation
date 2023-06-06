@@ -5,7 +5,7 @@ Triggered after a NPC accepts the drug, and so you can create your custom animat
 ## Event
 
 ```lua
-AddEventHandler("advanced_drugs_creator:npc:acceptedDrug", function(targetPedNetworkId)
+AddEventHandler("drugs_creator:npc:acceptedDrug", function(targetPedNetworkId)
 
 end)
 ```
@@ -19,13 +19,13 @@ end)
 ## Example
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+RegisterNetEvent("drugs_creator:framework:ready", function() 
     -- Disables the default script animations for the npc sell (otherwise there would be 2 animations)
-    exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:npc:acceptedDrug")
+    exports["drugs_creator"]:disableScriptEvent("drugs_creator:npc:acceptedDrug")
 end)
 
 -- New animation for NPCs
-RegisterNetEvent("advanced_drugs_creator:npc:acceptedDrug", function(targetPedNetworkId)
+RegisterNetEvent("drugs_creator:npc:acceptedDrug", function(targetPedNetworkId)
     local plyPed = PlayerPedId()
     local plyCoords = GetEntityCoords(plyPed)
 

@@ -5,7 +5,7 @@ Trigger to start drug effects (you may prefer to trigger this from server side)
 ## Event
 
 ```lua
-TriggerEvent("advanced_drugs_creator:drugEffects", takingMethod, effects, effectsDuration)
+TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration)
 ```
 
 ### Parameters
@@ -60,7 +60,7 @@ RegisterCommand("effects", function()
 
     local effectsDuration = 120 -- seconds
 
-    TriggerEvent("advanced_drugs_creator:drugEffects", takingMethod, effects, effectsDuration)
+    TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration)
 end)
 ```
 
@@ -77,6 +77,6 @@ RegisterCommand("effects", function(playerId)
 
     local effectsDuration = 120 -- seconds
 
-    TriggerClientEvent("advanced_drugs_creator:drugEffects", playerId, takingMethod, effects, effectsDuration)
+    TriggerClientEvent("drugs_creator:drugEffects", playerId, takingMethod, effects, effectsDuration)
 end)
 ```

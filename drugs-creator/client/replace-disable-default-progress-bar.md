@@ -7,7 +7,7 @@ Triggered when using progress bar
 ### Event
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:internalProgressBar", function(time, text)
+RegisterNetEvent("drugs_creator:internalProgressBar", function(time, text)
 
 end)
 ```
@@ -22,14 +22,14 @@ end)
 ### Example
 
 ```lua
--- In advanced_drugs_creator/integrations/cl_integrations.lua
-RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+-- In drugs_creator/integrations/cl_integrations.lua
+RegisterNetEvent("drugs_creator:framework:ready", function() 
     -- Disables the default script progress bar (otherwise there would be 2 progress bars)
-    exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:internalProgressBar")
+    exports["drugs_creator"]:disableScriptEvent("drugs_creator:internalProgressBar")
 end)
 
 -- Example to replace the script progress bar with an external one
-RegisterNetEvent("advanced_drugs_creator:internalProgressBar", function(time, text)
+RegisterNetEvent("drugs_creator:internalProgressBar", function(time, text)
     -- The event to activate your external progress bar
     TriggerEvent("external_progressbar:start", time, text)
 end)
@@ -44,7 +44,7 @@ You can place it in the file `integrations/cl_integrations.lua` of the script, *
 If you like the default progress bar of the script, and you want to use it in external scripts, this is the event
 
 ```lua
-TriggerEvent("advanced_drugs_creator:startProgressBar", timeInMS, text, hexColor)
+TriggerEvent("drugs_creator:startProgressBar", timeInMS, text, hexColor)
 ```
 
 ### Parameters
@@ -61,6 +61,6 @@ TriggerEvent("advanced_drugs_creator:startProgressBar", timeInMS, text, hexColor
 -- This will create a command to show a red progressbar
 -- /progressbar 5000 Hello
 RegisterCommand("progressbar", function(playerId, args) 
-    TriggerEvent("advanced_drugs_creator:startProgressBar", tonumber(args[1]), args[2], "#ff0000")
+    TriggerEvent("drugs_creator:startProgressBar", tonumber(args[1]), args[2], "#ff0000")
 end)
 ```

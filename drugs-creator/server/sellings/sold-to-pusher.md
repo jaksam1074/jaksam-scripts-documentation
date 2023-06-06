@@ -5,7 +5,7 @@ Triggered after a player sells to narcos
 ## Event
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:pusher:itemSold", function(playerId, drugName, drugQuantity, totalDrugPrice)
+RegisterNetEvent("drugs_creator:pusher:itemSold", function(playerId, drugName, drugQuantity, totalDrugPrice)
 
 end)
 ```
@@ -22,7 +22,7 @@ end)
 ## Example
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:pusher:itemSold", function(playerId, drugName, drugQuantity, totalDrugPrice)
+RegisterNetEvent("drugs_creator:pusher:itemSold", function(playerId, drugName, drugQuantity, totalDrugPrice)
     local xPlayer = ESX.GetPlayerFromId(playerId)
 
     local random = math.random(1, 2)

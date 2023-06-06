@@ -5,7 +5,7 @@ Triggered after a player sells to in plane (for each item sold)
 ## Event
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:plane:soldItem", function(playerId, drugName, drugQuantity, totalDrugPrice)
+RegisterNetEvent("drugs_creator:plane:soldItem", function(playerId, drugName, drugQuantity, totalDrugPrice)
 
 end)
 ```
@@ -22,7 +22,7 @@ end)
 ## Example
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:plane:soldItem", function(playerId, drugName, drugQuantity, totalDrugPrice)
+RegisterNetEvent("drugs_creator:plane:soldItem", function(playerId, drugName, drugQuantity, totalDrugPrice)
     local xPlayer = ESX.GetPlayerFromId(playerId)
 
     local random = math.random(1, 2)

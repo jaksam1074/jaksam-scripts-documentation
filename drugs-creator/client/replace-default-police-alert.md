@@ -5,7 +5,7 @@ Triggered when police is alerted
 ## Event
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:alertedPolice", function(coords, message)
+RegisterNetEvent("drugs_creator:alertedPolice", function(coords, message)
 
 end)
 ```
@@ -21,11 +21,11 @@ end)
 
 ```lua
 -- Disables the default police alert
-RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
-    exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:alertedPolice")
+RegisterNetEvent("drugs_creator:framework:ready", function() 
+    exports["drugs_creator"]:disableScriptEvent("drugs_creator:alertedPolice")
 end)
 
-RegisterNetEvent("advanced_drugs_creator:alertedPolice", function(coords, message)
+RegisterNetEvent("drugs_creator:alertedPolice", function(coords, message)
     -- Do something
 end)
 ```

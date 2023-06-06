@@ -5,7 +5,7 @@ Notification shown when a ped refuses the drug in NPC selling (notification with
 ## Event
 
 ```lua
-AddEventHandler("advanced_drugs_creator:internalMugshotNotify", function(ped, title, message)
+AddEventHandler("drugs_creator:internalMugshotNotify", function(ped, title, message)
 
 end)
 ```
@@ -21,12 +21,12 @@ end)
 ## Example
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+RegisterNetEvent("drugs_creator:framework:ready", function() 
     -- Disables the default script notification (otherwise there would be 2 notifications)
-    exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:internalMugshotNotify")
+    exports["drugs_creator"]:disableScriptEvent("drugs_creator:internalMugshotNotify")
 end)
 
-RegisterNetEvent("advanced_drugs_creator:internalMugshotNotify", function(ped, title, message)
+RegisterNetEvent("drugs_creator:internalMugshotNotify", function(ped, title, message)
     TriggerEvent("external_script:notify", message)
 end)
 ```

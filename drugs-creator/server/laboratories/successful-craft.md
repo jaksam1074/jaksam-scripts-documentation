@@ -5,7 +5,7 @@ Triggered after a successful craft in a laboratory
 ## Event
 
 ```lua
-RegisterNetEvent("advanced_drugs_creator:laboratory:successfulCraft", function(playerId, ingredientsUsed, itemsToGive, laboratoryId)
+RegisterNetEvent("drugs_creator:laboratory:successfulCraft", function(playerId, ingredientsUsed, itemsToGive, laboratoryId)
 
 end)
 ```
@@ -23,7 +23,7 @@ end)
 
 ```lua
 -- An example for a xp system
-RegisterNetEvent("advanced_drugs_creator:laboratory:successfulCraft", function(playerId, ingredientsUsed, itemsToGive, laboratoryId)
+RegisterNetEvent("drugs_creator:laboratory:successfulCraft", function(playerId, ingredientsUsed, itemsToGive, laboratoryId)
     for k, resultItem in pairs(itemsToGive) do
         local itemName = resultItem.itemName
         local quantity = resultItem.itemQuantity
