@@ -205,6 +205,7 @@
   * [Replace default police alert](farming-creator/client/replace-default-police-alert.md)
 * [Server](farming-creator/server/README.md)
   * [Police alerted](farming-creator/server/police-alerted.md)
+  * [Item farmed](farming-creator/server/item-farmed.md)
 
 ## 🛰 Trackers Creator
 
