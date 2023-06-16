@@ -5,16 +5,17 @@ Triggered when opening an armory
 ## Event
 
 ```lua
-AddEventHandler("jobs_creator:armory:openArmory", function(markerId)
+AddEventHandler("jobs_creator:armory:openArmory", function(markerId, armoryData)
 
 end)
 ```
 
 ### Parameters
 
-| Name       | Data Type | Description |
-| ---------- | --------- | ----------- |
-| `markerId` | int       | Marker ID   |
+| Name         | Data Type | Description                                           |
+| ------------ | --------- | ----------------------------------------------------- |
+| `markerId`   | int       | Marker ID                                             |
+| `armoryData` | table     | Contains some options you may use in external scripts |
 
 ## Example
 
@@ -25,7 +26,7 @@ RegisterNetEvent("jobs_creator:framework:ready", function()
 end)
 
 -- Example to replace the script armory with an external one
-RegisterNetEvent("jobs_creator:armory:openArmory", function(markerId)
+RegisterNetEvent("jobs_creator:armory:openArmory", function(markerId, armoryData)
     --[[
         This is just an example, it will NOT work, you have to use the event from your inventory
     ]]

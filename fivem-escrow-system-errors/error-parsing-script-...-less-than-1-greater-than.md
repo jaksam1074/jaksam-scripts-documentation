@@ -7,6 +7,7 @@ Error message **example**:\
 
 * Your server version is too old, the **minimum** version is 4752
 * You are transferring the folder to the VPS file by file, please upload the .zip file and extract it **after** it is already on your VPS (so drag and drop the zip file and **not** the folder)
+* You may have to clear the **server** caches
 
 ## How to verify my server version?
 
