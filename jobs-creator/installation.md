@@ -4,6 +4,12 @@
 
 The installation of the script is extremely easy
 
+{% hint style="danger" %}
+Do NOT use **FileZilla** to upload the files, otherwise the script will NOT work
+
+Use [WinSCP](https://winscp.net/eng/download.php) instead
+{% endhint %}
+
 {% tabs %}
 {% tab title="ESX" %}
 ## Installation

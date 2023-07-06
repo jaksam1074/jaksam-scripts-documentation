@@ -2,6 +2,12 @@
 
 The installation of the script is extremely easy
 
+{% hint style="danger" %}
+Do NOT use **FileZilla** to upload the files, otherwise the script will NOT work
+
+Use [WinSCP](https://winscp.net/eng/download.php) instead
+{% endhint %}
+
 ## Steps
 
 1. Download the script and extract it in your resources
