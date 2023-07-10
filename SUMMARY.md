@@ -227,6 +227,7 @@
 * [Installation](vehicles-keys/installation.md)
 * [How to give keys with /car command](vehicles-keys/how-to-give-keys-with-car-command.md)
 * [Fix hotwiring bought car](vehicles-keys/fix-hotwiring-bought-car.md)
+* [Lock/unlock vehicle](vehicles-keys/lock-unlock-vehicle.md)
 * [Client](vehicles-keys/client/README.md)
   * [Self give current vehicle plate](vehicles-keys/client/self-give-current-vehicle-plate.md)
   * [Self give vehicle plate](vehicles-keys/client/self-give-vehicle-plate.md)
