@@ -49,7 +49,11 @@ Example screenshots:
 
 Before:
 
+<div align="center">
+
 <figure><img src="../.gitbook/assets/current_config_can_always_carry_before (1).jpg" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 After:
 

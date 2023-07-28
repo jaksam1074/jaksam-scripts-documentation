@@ -24,7 +24,6 @@
 * [Replacing default scripts names](jobs-creator/replacing-default-scripts-names.md)
 * [Replacing default events names](jobs-creator/replacing-default-events-names.md)
 * [Updating script from old versions](jobs-creator/updating-script-from-old-versions.md)
-* [How to disable salary when player is off-duty](jobs-creator/how-to-disable-salary-when-player-is-off-duty.md)
 * [Client](jobs-creator/client/README.md)
   * [Notifications](jobs-creator/client/notifications/README.md)
     * [Replace default notifications](jobs-creator/client/notifications/replace-default-notifications.md)
