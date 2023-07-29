@@ -23,6 +23,7 @@
 * [Installation](jobs-creator/installation.md)
 * [Replacing default scripts names](jobs-creator/replacing-default-scripts-names.md)
 * [Replacing default events names](jobs-creator/replacing-default-events-names.md)
+* [FAQ](jobs-creator/faq.md)
 * [Updating script from old versions](jobs-creator/updating-script-from-old-versions.md)
 * [Client](jobs-creator/client/README.md)
   * [Notifications](jobs-creator/client/notifications/README.md)
