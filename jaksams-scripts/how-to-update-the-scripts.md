@@ -8,5 +8,5 @@ Otherwise, if the script doesn't have any `default_config.json` or `current_conf
 Be sure to read the updates channels to know if there is any change on the database
 
 {% hint style="danger" %}
-Do **NOT** keep `default_config.json file`, always use the one included in the latest download
+Do **NOT** keep `default_config.json` file, always use the one included in the latest download
 {% endhint %}

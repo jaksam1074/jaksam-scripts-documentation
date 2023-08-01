@@ -38,3 +38,11 @@ _If a door doesn't work at all, there is nothing possible to do_
 If a door is not locked when it should after script/server restart, it means you enabled the option to save the door lock state in the script menu settings
 
 </details>
+
+<details>
+
+<summary>I can't confirm new door</summary>
+
+If you can't confirm a new door with ENTER key, you can edit the keys in `integrations/cl_integrations.lua` file
+
+</details>

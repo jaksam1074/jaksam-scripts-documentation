@@ -72,3 +72,24 @@ If outfits features don't work, it's because you don't have the dependencies to 
 Jobs Creator has integration for [**illenium-appearance**](https://github.com/iLLeniumStudios/illenium-appearance) that should work on both frameworks
 
 </details>
+
+<details>
+
+<summary>Weapon upgrader doesn't work</summary>
+
+In case the weapon upgrader marker doesn't work, these are 2 possible reasons:
+
+1. You are using an addon weapon, but you didn't configure it properly in `es_extended` script
+2. Your inventory edits the standard behavior of **ESX/QBCore**, so in this case you must use your own inventory instead of Jobs Creator to use weapons components and tints
+
+</details>
+
+<details>
+
+<summary>Edit vehicles labels in garages</summary>
+
+Jobs Creator retrieves the vehicles labels through FiveM natives, so to have custom labels, you'll have to configure them in your addon vehicle script.
+
+In FiveM forums there are multiple guides on how to configure addon vehicles display names
+
+</details>
