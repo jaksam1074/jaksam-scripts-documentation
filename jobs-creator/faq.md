@@ -1,5 +1,7 @@
 # FAQ
 
+This page has FAQs related **ONLY to this script**, be sure to also check [common-faq.md](../jaksams-scripts/common-faq.md "mention") for other issues
+
 <details>
 
 <summary>How to change animations</summary>
@@ -27,26 +29,6 @@ To lock vehicle you have 2 possibilities:
 
 1. You use the events and exports from the script documentation to integrate your own car lock script
 2. You can use **jaksam's Vehicles Keys** which has Jobs Creator integration included
-
-_Note: external scripts integration is completely down to you_
-
-</details>
-
-<details>
-
-<summary>How to replace default notifications</summary>
-
-To replace the notifications of any script, you can refer to the documentation of the script, it has events that allows you to disable the default one and call an external one
-
-_Note: external scripts integration is completely down to you_
-
-</details>
-
-<details>
-
-<summary>How to replace default progress bar</summary>
-
-To replace the progress bar of any script, you can refer to the documentation of the script, it has events that allows you to disable the default one and call an external one
 
 _Note: external scripts integration is completely down to you_
 
@@ -88,13 +70,5 @@ If outfits features don't work, it's because you don't have the dependencies to 
 * On QBCore, you must have `qb-clothing` script installed
 
 Jobs Creator has integration for [**illenium-appearance**](https://github.com/iLLeniumStudios/illenium-appearance) that should work on both frameworks
-
-</details>
-
-<details>
-
-<summary>How to fix "missing menu_default" error</summary>
-
-To fix the error, simply read the installation tutorial of Jobs Creator
 
 </details>

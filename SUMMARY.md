@@ -7,6 +7,7 @@
 * [Fix server crash on script start](jaksams-scripts/fix-server-crash-on-script-start.md)
 * [Issues with items](jaksams-scripts/issues-with-items.md)
 * [Manually set ESX shared object](jaksams-scripts/manually-set-esx-shared-object.md)
+* [Common FAQ](jaksams-scripts/common-faq.md)
 * [LICENSE](jaksams-scripts/license.md)
 
 ## ⚠ FiveM escrow system errors
@@ -91,6 +92,7 @@
 
 * [Home](robberies-creator/home.md)
 * [Installation](robberies-creator/installation.md)
+* [FAQ](robberies-creator/faq.md)
 * [How to edit minigames](robberies-creator/how-to-edit-minigames.md)
 * [Client](robberies-creator/client/README.md)
   * [Progress bar](robberies-creator/client/progress-bar.md)
@@ -137,6 +139,7 @@
 
 * [Home](blips-creator/home.md)
 * [Installation](blips-creator/installation.md)
+* [FAQ](blips-creator/faq.md)
 * [How to use custom sprites](blips-creator/how-to-use-custom-sprites.md)
 * [Client](blips-creator/client/README.md)
   * [Open menu manually](blips-creator/client/open-menu-manually.md)
@@ -145,6 +148,7 @@
 
 * [Home](doors-creator/home.md)
 * [Installation](doors-creator/installation.md)
+* [FAQ](doors-creator/faq.md)
 * [Change doors icon](doors-creator/change-doors-icon.md)
 * [Admin bypass lock](doors-creator/admin-bypass-lock.md)
 * [Client](doors-creator/client/README.md)
@@ -165,6 +169,7 @@
 
 * [Home](drugs-creator/home.md)
 * [Installation](drugs-creator/installation.md)
+* [FAQ](drugs-creator/faq.md)
 * [Use command to sell to NPCs](drugs-creator/use-command-to-sell-to-npcs.md)
 * [Client](drugs-creator/client/README.md)
   * [Replace default notifications](drugs-creator/client/replace-default-notifications.md)
@@ -211,6 +216,7 @@
 
 * [Home](trackers-creator/home.md)
 * [Installation](trackers-creator/installation.md)
+* [FAQ](trackers-creator/faq.md)
 * [Optimization](trackers-creator/optimization.md)
 * [Client](trackers-creator/client/README.md)
   * [Replace default notifications](trackers-creator/client/replace-default-notifications.md)
@@ -225,6 +231,7 @@
 
 * [Home](vehicles-keys/home.md)
 * [Installation](vehicles-keys/installation.md)
+* [FAQ](vehicles-keys/faq.md)
 * [How to give keys with /car command](vehicles-keys/how-to-give-keys-with-car-command.md)
 * [Fix hotwiring bought car](vehicles-keys/fix-hotwiring-bought-car.md)
 * [Lock/unlock vehicle](vehicles-keys/lock-unlock-vehicle.md)
@@ -285,6 +292,7 @@
 
 * [Home](easy-allowlist/home.md)
 * [Installation](easy-allowlist/installation.md)
+* [FAQ](easy-allowlist/faq.md)
 * [Commands usage](easy-allowlist/commands-usage.md)
 * [How to enable Discord features](easy-allowlist/how-to-enable-discord-features.md)
 * [External deferrals](easy-allowlist/external-deferrals.md)
