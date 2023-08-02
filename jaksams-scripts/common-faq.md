@@ -94,7 +94,7 @@ _Note: external scripts integration is completely down to you_
 
 <details>
 
-<summary>Scripts transferes</summary>
+<summary>Scripts transfers</summary>
 
 Scripts can be transferred one time only through the FiveM keymaster, by using the side button instead of “Download”. There are no manual revoke or manual transfers in any situation at all
 
