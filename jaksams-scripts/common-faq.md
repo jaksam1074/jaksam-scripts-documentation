@@ -91,3 +91,19 @@ To replace the progress bar of any script, you can refer to the documentation of
 _Note: external scripts integration is completely down to you_
 
 </details>
+
+<details>
+
+<summary>Scripts transferes</summary>
+
+Scripts can be transferred one time only through the FiveM keymaster, by using the side button instead of “Download”. There are no manual revoke or manual transfers in any situation at all
+
+</details>
+
+<details>
+
+<summary>Refunds</summary>
+
+Purchases in jaksam’s store are final, this applies for any situation, wrong framework, wrong accounts, etc. So in case of refunds, unfortunately we cannot help with them at all
+
+</details>
