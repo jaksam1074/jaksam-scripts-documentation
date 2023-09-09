@@ -157,6 +157,7 @@
   * [Toggle icon display](doors-creator/client/toggle-icon-display.md)
   * [Replace default police alert](doors-creator/client/replace-default-police-alert.md)
 * [Server](doors-creator/server/README.md)
+  * [Refresh database](doors-creator/server/refresh-database.md)
   * [Police alerted](doors-creator/server/police-alerted.md)
   * [Get door ID data](doors-creator/server/get-door-id-data.md)
   * [Get building ID data](doors-creator/server/get-building-id-data.md)
