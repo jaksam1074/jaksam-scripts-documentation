@@ -36,6 +36,7 @@
     * [Get player allowed actions](jobs-creator/client/actions/get-player-allowed-actions.md)
     * [Open actions menu](jobs-creator/client/actions/open-actions-menu.md)
     * [Integrate external impound script](jobs-creator/client/actions/integrate-external-impound-script.md)
+    * [Vehicle repaired](jobs-creator/client/actions/vehicle-repaired.md)
     * [Get if local player is handcuffed](jobs-creator/client/actions/get-if-local-player-is-handcuffed.md)
   * [Duty](jobs-creator/client/duty/README.md)
     * [Duty status toggled](jobs-creator/client/duty/duty-status-toggled.md)

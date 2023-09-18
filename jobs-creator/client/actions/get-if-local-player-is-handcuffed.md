@@ -17,11 +17,17 @@ exports["jobs_creator"]:isPlayerHandcuffed()
 ## Example
 
 ```lua
-if(not exports["jobs_creator"]:isPlayerHandcuffed())then
-    print("You are not handcuffed")
-else
-    print("You are handcuffed")
-end
+-- This code will continuously check if the local (self) player is handcuffed
+-- If so, specified controls will be disabled
+Citizen.CreateThread(function() 
+    while true do
+        Citizen.Wait(0)
+        
+        if(exports["jobs_creator"]:isPlayerHandcuffed())then
+            DisableControlAction(0, 22, true) -- Disable jump
+        end       
+    end
+end)
 ```
 
 ## Where to insert the code?
