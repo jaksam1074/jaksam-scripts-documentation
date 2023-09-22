@@ -65,7 +65,7 @@ TriggerEvent("jobs_creator:actions:impoundVehicle")
 
 ```lua
 -- Trigger to view licenses menu action
-TriggerEvent("jobs_creator:actions:licensesMenu")
+TriggerEvent("jobs_creator:actions:checkLicenses")
 ```
 
 ## Lockpick car
