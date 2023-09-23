@@ -1,6 +1,16 @@
+---
+description: >-
+  You can use the actions in any external menu, here there are the triggers you
+  can use from external scripts
+---
+
 # Using the actions in a radial/external menu
 
-You can use the actions in any external menu, here there are the triggers you can use from external scripts
+{% hint style="warning" %}
+Make sure that the job has the actions enabled in Jobs Creator settings of that job to avoid issues
+
+So you can enable the actions themselves, but disable "Can open actions menu"
+{% endhint %}
 
 ### Check identity
 
