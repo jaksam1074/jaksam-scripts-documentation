@@ -2,7 +2,7 @@
 
 ## Global method
 
-The script allows you to use the images you want for the items, bound to their names, so if an item is named `bread`, the image must be named `water.png`
+The script allows you to use the images you want for the items, bound to their names, so if an item is named `bread`, the image must be named `bread.png`
 
 You can insert the images you want in the folder `shops_creator/html/images/`
 
