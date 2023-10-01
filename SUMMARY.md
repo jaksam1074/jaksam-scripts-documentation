@@ -8,6 +8,7 @@
 * [Issues with items](jaksams-scripts/issues-with-items.md)
 * [Manually set ESX shared object](jaksams-scripts/manually-set-esx-shared-object.md)
 * [Common FAQ](jaksams-scripts/common-faq.md)
+* [Nexus Terms](jaksams-scripts/nexus-terms.md)
 * [LICENSE](jaksams-scripts/license.md)
 
 ## ⚠ FiveM escrow system errors
