@@ -5,17 +5,17 @@ Triggered after notifying player client side
 ## Event
 
 ```lua
-RegisterNetEvent("jobs_creator:notify", function(message, uncoloredMessage)
+RegisterNetEvent("jobs_creator:notify", function(message, coloredMessage)
 
 end)
 ```
 
 ### Parameters
 
-| Name               | Data Type | Description                                                    |
-| ------------------ | --------- | -------------------------------------------------------------- |
-| `message`          | string    | Message of the notification                                    |
-| `uncoloredMessage` | string    | Message of the notification but without \~r\~, \~g~~\~~~, etc. |
+| Name             | Data Type | Description                                                          |
+| ---------------- | --------- | -------------------------------------------------------------------- |
+| `message`        | string    | Message of the notification                                          |
+| `coloredMessage` | string    | Message of the notification but with \~r\~, \~g~~\~~~, etc. included |
 
 ## Example
 
@@ -25,7 +25,7 @@ RegisterNetEvent("jobs_creator:framework:ready", function()
     exports["jobs_creator"]:disableScriptEvent("jobs_creator:notify")
 end)
 
-RegisterNetEvent("jobs_creator:notify", function(message, uncoloredMessage)
+RegisterNetEvent("jobs_creator:notify", function(message, coloredMessage)
     TriggerEvent("external_script:notify", message)
 end)
 ```
