@@ -9,7 +9,7 @@ Error message **example**:\
 * You are transferring the folder to the VPS file by file, please upload the .zip file and extract it **after** it is already on your VPS (so drag and drop the zip file and **not** the folder)
 * You may have to clear the **server** caches
 * The download was corrupted, try doing a new clean install
-* You have a virus in your server (yes, it's already happened in the past that an infected script is causing escrow errors)
+* You have a virus on your server that is modifying other script files (very likely if everything else hasn't fixed it)
 
 ## How to verify my server version?
 
