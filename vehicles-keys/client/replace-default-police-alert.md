@@ -1,6 +1,6 @@
 # Replace default police alert
 
-Triggered when police is alerted
+Triggered when police is alerted, this is triggered on each police player client, if you are looking for a single event, check the server side category
 
 ## Event
 
