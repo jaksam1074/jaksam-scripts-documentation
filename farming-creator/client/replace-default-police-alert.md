@@ -1,6 +1,8 @@
 # Replace default police alert
 
+{% hint style="warning" %}
 Triggered when police is alerted, this is triggered on each police player client, if you are looking for a single event, check the server side category
+{% endhint %}
 
 ## Event
 
