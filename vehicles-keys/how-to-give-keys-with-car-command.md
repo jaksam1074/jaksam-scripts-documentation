@@ -29,7 +29,7 @@ end)
 ```
 {% endcode %}
 
-### New ESX
+### Newer ESX
 
 {% code title="es_extended/server/commands.lua" %}
 ```lua
@@ -65,6 +65,67 @@ end, false, {help = TranslateCap('command_car'), validate = false, arguments = {
 }}) 
 ```
 {% endcode %}
+
+### ESX 1.10
+
+```lua
+-- es_extended/server/commands.lua
+ESX.RegisterCommand('car', 'admin', function(xPlayer, args, showError)
+	if not xPlayer then
+		return showError('[^1ERROR^7] The xPlayer value is nil')
+	end
+
+	local playerPed = GetPlayerPed(xPlayer.source)
+	local playerCoords = GetEntityCoords(playerPed)
+	local playerHeading = GetEntityHeading(playerPed)
+	local playerVehicle = GetVehiclePedIsIn(playerPed)
+
+	if not args.car or type(args.car) ~= 'string' then
+		args.car = 'adder'
+	end
+
+	if playerVehicle then
+		DeleteEntity(playerVehicle)
+	end
+
+	if Config.AdminLogging then
+		ESX.DiscordLogFields("UserActions", "Spawn Car /car Triggered!", "pink", {
+			{ name = "Player",  value = xPlayer and xPlayer.name or "Server Console",   inline = true },
+			{ name = "ID",      value = xPlayer and xPlayer.source or "Unknown ID", inline = true },
+			{ name = "Vehicle", value = args.car,       inline = true }
+		})
+	end
+
+	ESX.OneSync.SpawnVehicle(args.car, playerCoords, playerHeading, upgrades, function(networkId)
+		if networkId then
+			local vehicle = NetworkGetEntityFromNetworkId(networkId)
+			for _ = 1, 20 do
+				Wait(0)
+				SetPedIntoVehicle(playerPed, vehicle, -1)
+
+				if GetVehiclePedIsIn(playerPed, false) == vehicle then
+					break
+				end
+			end
+			
+			-- jaksam's vehicles keys integration
+			SetTimeout(2000, function() 
+			  exports["vehicles_keys"]:giveVehicleKeysToPlayerId(xPlayer.source, GetVehicleNumberPlateText(vehicle), "temporary")
+			end)
+			
+			if GetVehiclePedIsIn(playerPed, false) ~= vehicle then
+				showError('[^1ERROR^7] The player could not be seated in the vehicle')
+			end
+		end
+	end)
+end, false, {
+	help = TranslateCap('command_car'),
+	validate = false,
+	arguments = {
+		{ name = 'car', validate = false, help = TranslateCap('command_car_car'), type = 'string' }
+	}
+})
+```
 
 ### QBCore
 
