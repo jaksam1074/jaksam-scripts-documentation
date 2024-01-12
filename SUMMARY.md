@@ -173,7 +173,6 @@
 * [Home](drugs-creator/home.md)
 * [Installation](drugs-creator/installation.md)
 * [FAQ](drugs-creator/faq.md)
-* [Use command to sell to NPCs](drugs-creator/use-command-to-sell-to-npcs.md)
 * [Client](drugs-creator/client/README.md)
   * [Replace default notifications](drugs-creator/client/replace-default-notifications.md)
   * [Progress bar](drugs-creator/client/replace-disable-default-progress-bar.md)
