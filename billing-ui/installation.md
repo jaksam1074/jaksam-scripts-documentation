@@ -14,6 +14,10 @@ Use [WinSCP](https://winscp.net/eng/download.php) instead
 2. Add the script in your auto start (example: server.cfg)
 3. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `billing_ui/sql/` folder
 4. Configure the options in the config files (be sure to read the comments, they'll explain you everything)
+
+{% hint style="warning" %}
+Be sure to remove esx\_billing to avoid issues
+{% endhint %}
 {% endtab %}
 
 {% tab title="QBCore" %}
