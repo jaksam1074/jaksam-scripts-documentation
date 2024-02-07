@@ -254,6 +254,7 @@
   * [Notifications](vehicles-keys/client/notifications/README.md)
     * [Replace default notifications](vehicles-keys/client/notifications/replace-default-notifications.md)
     * [Replace default help notifications](vehicles-keys/client/notifications/replace-default-help-notifications.md)
+  * [Bypass start vehicle check](vehicles-keys/client/bypass-start-vehicle-check.md)
 * [Server](vehicles-keys/server/README.md)
   * [Refresh player owned vehicles](vehicles-keys/server/refresh-player-owned-vehicles.md)
   * [Get if player ID owns a plate](vehicles-keys/server/get-if-player-id-owns-a-plate.md)
