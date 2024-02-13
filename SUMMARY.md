@@ -125,6 +125,19 @@
   * [Get what objects can be sold in shop ID](shops-creator/server/get-what-objects-can-be-sold-in-shop-id.md)
   * [Get objects in shop ID](shops-creator/server/get-objects-in-shop-id.md)
 
+## 🚗 Dealerships Creator
+
+* [Home](dealerships-creator/home.md)
+* [Installation](dealerships-creator/installation.md)
+* [Adding custom vehicles/classes](dealerships-creator/adding-custom-vehicles-classes.md)
+* [Client](dealerships-creator/client/README.md)
+  * [On test drive vehicle spawn](dealerships-creator/client/on-test-drive-vehicle-spawn.md)
+  * [Notifications](dealerships-creator/client/notifications/README.md)
+    * [Replace default notifications](dealerships-creator/client/notifications/replace-default-notifications.md)
+    * [Replace default help notifications](dealerships-creator/client/notifications/replace-default-help-notifications.md)
+* [Server](dealerships-creator/server/README.md)
+  * [On vehicle given](dealerships-creator/server/on-vehicle-given.md)
+
 ## 🏁 Races Creator
 
 * [Home](races-creator/home.md)
