@@ -135,6 +135,9 @@
   * [Notifications](dealerships-creator/client/notifications/README.md)
     * [Replace default notifications](dealerships-creator/client/notifications/replace-default-notifications.md)
     * [Replace default help notifications](dealerships-creator/client/notifications/replace-default-help-notifications.md)
+  * [Showroom](dealerships-creator/client/showroom/README.md)
+    * [On showroom enter](dealerships-creator/client/showroom/on-showroom-enter.md)
+    * [On showroom exit](dealerships-creator/client/showroom/on-showroom-exit.md)
 * [Server](dealerships-creator/server/README.md)
   * [On vehicle given](dealerships-creator/server/on-vehicle-given.md)
 
