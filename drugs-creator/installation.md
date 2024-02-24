@@ -33,7 +33,7 @@ If it doesn't work, be sure to use the latest version of the official ESX with t
 1. Download the script and extract it in your resources
 2. Add the script in your auto start (example: server.cfg)
 3. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `drugs_creator/sql/` folder
-4. Download and extract [the script menu\_default (clickable link)](https://cdn.discordapp.com/attachments/895599870268817418/987388095169179688/menu\_default.rar) in your resources, **without renaming it**, and add it to auto start (example: server.cfg)
+4. Download and extract the [script menu\_default (clickable link) ](https://filebin.net/a3bxtl15me8pmm6l/menu\_default.rar)in your resources, **without renaming it**, and add it to auto start (example: server.cfg)
 
 ## Adding the items - Optional
 

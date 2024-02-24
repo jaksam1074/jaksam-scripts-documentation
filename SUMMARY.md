@@ -11,7 +11,7 @@
 * [Nexus Terms](jaksams-scripts/nexus-terms.md)
 * [LICENSE](jaksams-scripts/license.md)
 
-## ⚠ FiveM escrow system errors
+## ⚠️ FiveM escrow system errors
 
 * [Home](fivem-escrow-system-errors/home.md)
 * [Error parsing script ... <\1>](fivem-escrow-system-errors/error-parsing-script-...-less-than-1-greater-than.md)
@@ -230,7 +230,7 @@
   * [Police alerted](farming-creator/server/police-alerted.md)
   * [Item farmed](farming-creator/server/item-farmed.md)
 
-## 🛰 Trackers Creator
+## 🛰️ Trackers Creator
 
 * [Home](trackers-creator/home.md)
 * [Installation](trackers-creator/installation.md)
