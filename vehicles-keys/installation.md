@@ -33,7 +33,7 @@ If it doesn't work, be sure to use the latest version of the official ESX with t
 2. Add the script in your auto start (example: server.cfg)
 3. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `vehicles_keys/sql/` folder
 4. Download and start the [lockpicking script](https://github.com/baguscodestudio/lockpick) _(Credits to_ [_baguscodestudio_](https://github.com/baguscodestudio/lockpick)_)_
-5. Download and extract the [script menu\_default (clickable link) ](https://filebin.net/a3bxtl15me8pmm6l/menu\_default.rar)in your resources, **without renaming it**, and add it to auto start (example: server.cfg)
+5. Download and extract the script [menu\_default (clickable link)](https://drive.google.com/file/d/1Ezz-d50NIKQZeZJ-RgyclvNG7qC4Nfu8/view?usp=sharing) in your resources, **without renaming it**, and add it to auto start (example: server.cfg)
 
 ## Adding the items - Optional
 

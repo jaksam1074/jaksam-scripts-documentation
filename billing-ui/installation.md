@@ -25,7 +25,7 @@ Be sure to remove esx\_billing to avoid issues
 2. Add the script in your auto start (example: server.cfg)
 3. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `billing_ui/sql/` folder
 4. Configure the options in the config files (be sure to read the comments, they'll explain you everything)
-5. (QBCore only) Download and extract the [script menu\_default (clickable link) ](https://filebin.net/a3bxtl15me8pmm6l/menu\_default.rar)in your resources, **without renaming it**, and add it to auto start (example: server.cfg)
+5. (QBCore only) Download and extract the script [menu\_default (clickable link)](https://drive.google.com/file/d/1Ezz-d50NIKQZeZJ-RgyclvNG7qC4Nfu8/view?usp=sharing) in your resources, **without renaming it**, and add it to auto start (example: server.cfg)
 {% endtab %}
 {% endtabs %}
 
