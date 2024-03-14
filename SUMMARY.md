@@ -66,6 +66,8 @@
     * [Add society account money](jobs-creator/server/boss/add-society-account-money.md)
     * [Remove society account money](jobs-creator/server/boss/remove-society-account-money.md)
     * [Get job account money](jobs-creator/server/boss/get-job-account-money.md)
+    * [On player fired](jobs-creator/server/boss/on-player-fired.md)
+    * [On player hired](jobs-creator/server/boss/on-player-hired.md)
   * [Buyable vehicles](jobs-creator/server/buyable-vehicles/README.md)
     * [Get if player is owner of vehicle plate](jobs-creator/server/buyable-vehicles/get-if-player-is-owner-of-vehicle-plate.md)
     * [Get all vehicles of player](jobs-creator/server/buyable-vehicles/get-all-vehicles-of-player.md)
