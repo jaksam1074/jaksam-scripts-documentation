@@ -264,6 +264,7 @@
 * [Client](vehicles-keys/client/README.md)
   * [Self give current vehicle plate](vehicles-keys/client/self-give-current-vehicle-plate.md)
   * [Self give vehicle plate](vehicles-keys/client/self-give-vehicle-plate.md)
+  * [Self remove vehicle plate](vehicles-keys/client/self-remove-vehicle-plate.md)
   * [Open remote UI menu](vehicles-keys/client/open-remote-ui-menu.md)
   * [Open keys list](vehicles-keys/client/open-keys-list.md)
   * [Toggle hotwiring](vehicles-keys/client/toggle-hotwiring.md)
