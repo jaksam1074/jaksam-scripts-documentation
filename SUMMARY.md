@@ -114,6 +114,7 @@
 
 * [Home](missions-creator/home.md)
 * [Installation](missions-creator/installation.md)
+* [How to start](missions-creator/how-to-start.md)
 
 ## 🛒 Shops Creator
 
