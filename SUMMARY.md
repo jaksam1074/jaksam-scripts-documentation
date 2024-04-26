@@ -110,6 +110,11 @@
   * [Police alerted](robberies-creator/server/police-alerted.md)
   * [Step completed](robberies-creator/server/step-completed.md)
 
+## 💡 Missions Creator
+
+* [Home](missions-creator/home.md)
+* [Installation](missions-creator/installation.md)
+
 ## 🛒 Shops Creator
 
 * [Home](shops-creator/home.md)
