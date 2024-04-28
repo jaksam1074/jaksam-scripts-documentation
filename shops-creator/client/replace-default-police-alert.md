@@ -24,7 +24,7 @@ end)
 ```lua
 -- Disables the default police alert
 RegisterNetEvent("shops_creator:framework:ready", function() 
-    exports["shops_creator"]:disableScriptEvent("robberies_creator:alertedPolice")
+    exports["shops_creator"]:disableScriptEvent("shops_creator:alertedPolice")
 end)
 
 RegisterNetEvent("shops_creator:alertedPolice", function(coords, message)

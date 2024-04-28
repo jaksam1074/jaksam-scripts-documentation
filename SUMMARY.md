@@ -115,6 +115,14 @@
 * [Home](missions-creator/home.md)
 * [Installation](missions-creator/installation.md)
 * [How to start](missions-creator/how-to-start.md)
+* [Client](missions-creator/client/README.md)
+  * [Replace default police alert](missions-creator/client/replace-default-police-alert.md)
+  * [Notifications](missions-creator/client/notifications/README.md)
+    * [Replace default notifications](missions-creator/client/notifications/replace-default-notifications.md)
+    * [Replace default help notifications](missions-creator/client/notifications/replace-default-help-notifications.md)
+    * [Replace default mugshot notifications](missions-creator/client/notifications/replace-default-mugshot-notifications.md)
+* [Server](missions-creator/server/README.md)
+  * [Police alerted](missions-creator/server/police-alerted.md)
 
 ## 🛒 Shops Creator
 
