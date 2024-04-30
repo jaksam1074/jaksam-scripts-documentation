@@ -1,5 +1,9 @@
 # Home
 
+{% hint style="danger" %}
+If the scripts work and as soon as you restart the server a few times they stop working, then you have a virus in your server. We can't help you in that case
+{% endhint %}
+
 Here you will find the solutions to common errors when using mine scripts due FiveM Escrow system
 
 To verify if your error is caused by the FiveM asset escrow, you can simply restart the script and check **both** in **F8 console** and in **server console** (txAdmin) for errors
@@ -18,13 +22,13 @@ To understand if something in a script is not working because of the FiveM asset
 
 ### Examples of the errors caused by the FiveM Escrow system
 
-<figure><img src="../.gitbook/assets/error_parsing.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="error-parsing-script-...-less-than-1-greater-than.md"><strong>here</strong></a><strong></strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/error_parsing.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="error-parsing-script-...-less-than-1-greater-than.md"><strong>here</strong></a></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/error_parsing_2.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="error-parsing-script-...-less-than-1-greater-than.md"><strong>here</strong></a><strong></strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/error_parsing_2.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="error-parsing-script-...-less-than-1-greater-than.md"><strong>here</strong></a></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/failed_to_verify_protected_resource.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="failed-to-verify-protected-resource.md"><strong>here</strong></a><strong></strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/failed_to_verify_protected_resource.png" alt=""><figcaption><p><strong>Solution -></strong> <a href="failed-to-verify-protected-resource.md"><strong>here</strong></a></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/lack_entitlement.jpg" alt=""><figcaption><p><strong>Solution -></strong> <a href="you-lack-the-required-entitlement.md"><strong>here</strong></a><strong></strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/lack_entitlement.jpg" alt=""><figcaption><p><strong>Solution -></strong> <a href="you-lack-the-required-entitlement.md"><strong>here</strong></a></p></figcaption></figure>
 
 ## Solutions
 
