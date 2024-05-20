@@ -6,7 +6,7 @@ This page has FAQs related **ONLY to this script**, be sure to also check [commo
 
 <summary>How to change animations</summary>
 
-[This is a list of usable animations](https://en.los-santos-multiplayer.com/dev.airdancer?cxt=anim)
+[This is a list of usable animations](https://alexguirre.github.io/animations-list/)
 
 * Bigger text is the animation dictionary
 * Smaller text is animation name
