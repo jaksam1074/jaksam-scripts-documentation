@@ -2,7 +2,7 @@
 
 ## How to replace it?
 
-You can use Jobs Creator [modules.md](modules.md "mention") if you want to use your own progress bar
+You can use Jobs Creator [modules.md](../modules.md "mention") if you want to use your own progress bar
 
 ## Use in external scripts
 
