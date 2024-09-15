@@ -154,6 +154,8 @@
   * [Showroom](dealerships-creator/client/showroom/README.md)
     * [On showroom enter](dealerships-creator/client/showroom/on-showroom-enter.md)
     * [On showroom exit](dealerships-creator/client/showroom/on-showroom-exit.md)
+    * [Get Is Player In Showroom](dealerships-creator/client/showroom/get-is-player-in-showroom.md)
+    * [Get Is Player Doing Test Drive](dealerships-creator/client/showroom/get-is-player-doing-test-drive.md)
 * [Server](dealerships-creator/server/README.md)
   * [On vehicle given](dealerships-creator/server/on-vehicle-given.md)
 
