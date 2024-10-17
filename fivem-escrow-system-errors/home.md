@@ -34,6 +34,7 @@ To understand if something in a script is not working because of the FiveM asset
 
 If you can't start / use a script, here's a list of possible reasons/solutions:
 
+* If the scripts work and as soon as you restart the server a few times they stop working, then you have a virus in your server. We can't help you in that case. Please read [what-to-do-if-nothing-is-fixing-the-errors.md](what-to-do-if-nothing-is-fixing-the-errors.md "mention")
 * **Minimum** server artifacts version 4752
 * OneSync has to be enabled
 * **Don't** use FileZilla, use [WinSCP](https://winscp.net/eng/download.php) instead of it
