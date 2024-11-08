@@ -344,6 +344,8 @@
     * [Set identifier queue priority](easy-allowlist/server/queue/set-identifier-queue-priority.md)
     * [Remove identifier queue priority](easy-allowlist/server/queue/remove-identifier-queue-priority.md)
     * [Remove discord role queue priority](easy-allowlist/server/queue/remove-discord-role-queue-priority.md)
+    * [Get count of players currently in queue](easy-allowlist/server/queue/get-queue-count.md)
+    * [Get queue info](easy-allowlist/server/queue/get-queue-info.md)
 
 ## 👜 Luxury Clothes Theft
 
