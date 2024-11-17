@@ -225,8 +225,6 @@ end)
 UPDATE jobs_data SET grades_type="minimumGrade" WHERE grades_type IS NULL;
 ```
 
-\
-
 
 Add the following code in `jobs_creator/integrations/sv_integrations.lua` and use **both commands** in the server console or in game (there will be an output when you use the command)
 
@@ -304,9 +302,6 @@ end)
 ```
 UPDATE jobs_data SET grades_type="minimumGrade" WHERE grades_type IS NULL;
 ```
-
-\
-
 
 Add the following code in `jobs_creator/integrations/sv_integrations.lua` and use **the command** in the **server console**
 
