@@ -296,3 +296,165 @@ RegisterCommand('updateMarkets', function(playerId)
     end
 end)
 ```
+
+### 8.0 Update - to do if your version is older than 8.0
+
+**After running the server and the script is started**, run this query in the database
+
+```
+UPDATE jobs_data SET grades_type="minimumGrade" WHERE grades_type IS NULL;
+```
+
+\
+
+
+Add the following code in `jobs_creator/integrations/sv_integrations.lua` and use **the command** in the **server console**
+
+```lua
+-- CONVERT FROM 7.11 to 8.0
+RegisterCommand("upgrade_to_8", function(playerId)
+    if(playerId ~= 0) then return end -- Only for server console
+
+    local conversionCount = 0
+
+    print("^3Converting to 8.0^7")
+
+    local results = MySQL.Sync.fetchAll("SELECT * FROM jobs_data WHERE type='shop' OR type='market' OR type='harvest' OR type='process' OR type='crafting_table'")
+
+    print("^3Automatically verifying " .. #results .. " markers^7")
+
+    for i=1, #results do
+        local currentMarker = results[i]
+        local markerData = json.decode(currentMarker.data)
+        local hasToUpdate = markerData and true or false
+
+        if(currentMarker.type == "shop" and hasToUpdate) then
+            local newItemsOnSale = {}
+            markerData.itemsOnSale = markerData.itemsOnSale or {}
+
+            if(#markerData.itemsOnSale == 0) then
+                for itemName, content in pairs(markerData.itemsOnSale) do
+                    local object = { label = itemName, type = itemName:sub(1, #"WEAPON") == "WEAPON" and "weapon" or "item", metadata = nil, name = itemName }
+                    content.object = object
+
+                    table.insert(newItemsOnSale, content)
+                end
+
+                markerData.itemsOnSale = newItemsOnSale
+            else
+                hasToUpdate = false -- Already using the array, so it's already using 8.0
+            end
+        elseif(currentMarker.type == "market" and hasToUpdate) then
+            local newItems = {}
+            markerData.items = markerData.items or {}
+
+            if(#markerData.items == 0) then
+                for itemName, content in pairs(markerData.items) do
+                    local object = { label = itemName, type = itemName:sub(1, #"WEAPON") == "WEAPON" and "weapon" or "item", metadata = nil, name = itemName }
+                    content.object = object
+
+                    table.insert(newItems, content)
+                end
+
+                markerData.items = newItems
+            else
+                hasToUpdate = false -- Already using the array, so it's already using 8.0
+            end
+
+        elseif(currentMarker.type == "harvest" and hasToUpdate) then
+            local newHarvestableItems = {}
+            markerData.harvestableItems = markerData.harvestableItems or {}
+
+            for i=1, #markerData.harvestableItems do
+                local harvestableItem = markerData.harvestableItems[i]
+
+                if(harvestableItem.name and hasToUpdate) then
+                    local object = { label = harvestableItem.name, type = harvestableItem.name:sub(1, #"WEAPON") == "WEAPON" and "weapon" or "item", metadata = nil, name = harvestableItem.name }
+
+                    harvestableItem.object = object
+                    harvestableItem.name = nil
+                    harvestableItem.itemTool = nil
+
+                    table.insert(newHarvestableItems, harvestableItem)
+                else
+                    hasToUpdate = false
+                end
+            end
+
+            if(hasToUpdate) then
+                if(markerData.itemTool) then                    
+                    local toolObject = { label = markerData.itemTool, type = markerData.itemTool:sub(1, #"WEAPON") == "WEAPON" and "weapon" or "item", metadata = nil, name = markerData.itemTool }
+                    markerData.itemTool = toolObject
+                end
+                markerData.harvestableItems = newHarvestableItems
+            end
+        elseif(currentMarker.type == "process" and hasToUpdate) then
+            if(markerData.itemToAddName) then
+                local itemToAdd = { label = markerData.itemToAddName, type = markerData.itemToAddName:sub(1, #"WEAPON") == "WEAPON" and "weapon" or "item", metadata = nil, name = markerData.itemToAddName }
+                local itemToRemove = { label = markerData.itemToRemoveName, type = markerData.itemToRemoveName:sub(1, #"WEAPON") == "WEAPON" and "weapon" or "item", metadata = nil, name = markerData.itemToRemoveName }
+
+                markerData.itemToAddName = nil
+                markerData.itemToRemoveName = nil
+
+                markerData.itemToAdd = itemToAdd
+                markerData.itemToRemove = itemToRemove
+            else
+                hasToUpdate = false 
+            end
+        elseif(currentMarker.type == "crafting_table" and hasToUpdate) then
+            local newCraftablesItems = {}
+            markerData.craftablesItems = markerData.craftablesItems or {}
+
+            if(#markerData.craftablesItems == 0) then
+                local foundAnything = false
+                for itemName, content in pairs(markerData.craftablesItems) do
+                    local resultObject = { label = itemName, type = itemName:sub(1, #"WEAPON") == "WEAPON" and "weapon" or "item", metadata = nil, name = itemName }
+                    content.resultObject = resultObject
+
+                    local newRecipes = {}
+                    for ingredientName, ingredientContent in pairs(content.recipes) do
+                        local ingredientObject = { label = ingredientName, type = ingredientName:sub(1, #"WEAPON") == "WEAPON" and "weapon" or "item", metadata = nil, name = ingredientName }
+                        ingredientContent.object = ingredientObject
+
+                        table.insert(newRecipes, ingredientContent)
+                    end
+
+                    content.recipes = newRecipes
+
+                    table.insert(newCraftablesItems, content)
+
+                    foundAnything = true
+                end
+
+                if(foundAnything) then
+                    markerData.craftablesItems = newCraftablesItems
+                else
+                    hasToUpdate = false
+                end
+            else
+                hasToUpdate = false -- Already using the array, so it's already using 8.0
+            end 
+        end
+
+        if(hasToUpdate) then
+            print("UPDATING MARKER ", currentMarker.id)
+            currentMarker.data = json.encode(markerData)
+
+            local affectedRows = MySQL.Sync.execute("UPDATE jobs_data SET data=@data WHERE id=@id", {
+                ["@data"] = currentMarker.data,
+                ["@id"] = currentMarker.id
+            })
+    
+            if(affectedRows > 0) then
+                conversionCount = conversionCount + 1
+            end 
+        end
+    end
+
+    if(conversionCount > 0) then
+        print("^2Converted ^3" .. conversionCount .. "^2 markers successfully, restart the script!^7")
+    else
+        print("^3No markers to convert^7")
+    end
+end)
+```
