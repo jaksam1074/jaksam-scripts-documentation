@@ -297,13 +297,7 @@ end)
 
 ### 8.0 Update - to do if your version is older than 8.0
 
-**After running the server and the script is started**, run this query in the database
-
-```
-UPDATE jobs_data SET grades_type="minimumGrade" WHERE grades_type IS NULL;
-```
-
-Add the following code in `jobs_creator/integrations/sv_integrations.lua` and use **the command** in the **server console**
+Add the following code in `jobs_creator/integrations/sv_integrations.lua`, save and restart the script, and finally use **the command** in the **server console**
 
 ```lua
 -- CONVERT FROM 7.11 to 8.0
