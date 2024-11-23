@@ -114,6 +114,7 @@
 * [Home](missions-creator/home.md)
 * [Installation](missions-creator/installation.md)
 * [How to start](missions-creator/how-to-start.md)
+* [How to add minigames](missions-creator/how-to-add-minigames.md)
 * [Client](missions-creator/client/README.md)
   * [Replace default police alert](missions-creator/client/replace-default-police-alert.md)
   * [On entity spawn](missions-creator/client/on-entity-spawn.md)
