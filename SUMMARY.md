@@ -124,6 +124,9 @@
     * [Replace default mugshot notifications](missions-creator/client/notifications/replace-default-mugshot-notifications.md)
 * [Server](missions-creator/server/README.md)
   * [Police alerted](missions-creator/server/police-alerted.md)
+  * [On mission start](missions-creator/server/on-mission-start.md)
+  * [On mission failed](missions-creator/server/on-mission-failed.md)
+  * [On mission success](missions-creator/server/on-mission-success.md)
 
 ## 🛒 Shops Creator
 
