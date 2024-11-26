@@ -126,7 +126,7 @@
   * [Police alerted](missions-creator/server/police-alerted.md)
   * [On mission start](missions-creator/server/on-mission-start.md)
   * [On mission failed](missions-creator/server/on-mission-failed.md)
-  * [On mission success](missions-creator/server/on-mission-success.md)
+  * [On mission success](missions-creator/server/on-mission-completed.md)
 
 ## 🛒 Shops Creator
 
