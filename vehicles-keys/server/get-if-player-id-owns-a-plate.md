@@ -1,6 +1,6 @@
 # Get if player ID owns a plate
 
-This export can be used to know if **the local player** owns a vehicle plate
+This export can be used to know if **the local player** owns a vehicle plate (also checks for shared, temporary, etc.)
 
 ## Export
 
