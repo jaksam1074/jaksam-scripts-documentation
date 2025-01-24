@@ -18,40 +18,35 @@ TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration
 
 ### Taking methods
 
-`"pill"`\
-`"drink"`\
-`"smoke"`\
-`"needle"`\
+* `"pill"`
+* `"drink"`
+* `"smoke"`
+* `"needle"`
 
 
 ### Effects
 
-*   `"visual_shaking"`\
-    `"drunk_walk"`\
-    `"fall"`\
-    `"pink_visual"`\
-    `"green_visual"`\
-    `"confused_visual"`\
-    `"yellow_visual"`\
-    `"blurred_visual"`\
-    `"red_visual"`\
-    `"foggy_visual"`\
-    `"blue_visual"`\
-    `"armor50"`\
-    `"armor100"`\
-    `"health50"`\
-    `"health100"`\
-    `"sprint_faster"`\
-    `"swim_faster"`\
-    `"infinite_stamina"`\
-    `"remove_old_effects"`
-
-    `"vehicle_stalker"`
-
-    `"ghost"`
-
-\
-
+*   `"visual_shaking"`
+*   `"drunk_walk"`
+*   `"fall"`
+*   `"pink_visual"`
+*   `"green_visual"`
+*   `"confused_visual"`
+*   `"yellow_visual"`
+*   `"blurred_visual"`
+*   `"red_visual"`
+*   `"foggy_visual"`
+*   `"blue_visual"`
+*   `"armor50"`
+*   `"armor100"`
+*   `"health50"`
+*   `"health100"`
+*   `"sprint_faster"`
+*   `"swim_faster"`
+*   `"infinite_stamina"`
+*   `"remove_old_effects"`
+*   `"vehicle_stalker"`
+*   `"ghost"`
 
 ## Example - Client side
 
