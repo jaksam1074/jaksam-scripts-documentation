@@ -5,7 +5,7 @@ Trigger to start drug effects (you may prefer to trigger this from server side)
 ## Event
 
 ```lua
-TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration)
+TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration, cumulativeEffects)
 ```
 
 ### Parameters
@@ -15,6 +15,7 @@ TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration
 | `takingMethod`    | string    | How the player will take the drug                          |
 | `effects`         | table     | An array of strings containing all effects you want to add |
 | `effectsDuration` | integer   | Seconds the effects will last                              |
+| `cumulativeEffects` | table   | OPTIONAL - Array containing the cumulative effects you want to add (check the examples for the format) |
 
 ### Taking methods
 
@@ -48,6 +49,18 @@ TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration
 *   `"vehicle_stalker"`
 *   `"ghost"`
 
+### Cumulative effects `actions`
+*  `increaseArmor`
+*  `decreaseArmor`
+*  `increaseHealth`
+*  `decreaseHealth`
+*  `increaseHunger`
+*  `decreaseHunger`
+*  `increaseThirst`
+*  `decreaseThirst`
+*  `increaseStress`
+*  `decreaseStress`
+
 ## Example - Client side
 
 ```lua
@@ -59,9 +72,14 @@ RegisterCommand("effects", function()
         "green_visual",
     }
 
+    local cumulativeEffects = {
+        {action = "increaseArmor", value = 50},
+        {action = "decreaseThirst", value = 15},
+    }
+
     local effectsDuration = 120 -- seconds
 
-    TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration)
+    TriggerEvent("drugs_creator:drugEffects", takingMethod, effects, effectsDuration, cumulativeEffects)
 end)
 ```
 
@@ -76,8 +94,13 @@ RegisterCommand("effects", function(playerId)
         "green_visual",
     }
 
+    local cumulativeEffects = {
+        {action = "increaseArmor", value = 50},
+        {action = "decreaseThirst", value = 15},
+    }
+
     local effectsDuration = 120 -- seconds
 
-    TriggerClientEvent("drugs_creator:drugEffects", playerId, takingMethod, effects, effectsDuration)
+    TriggerClientEvent("drugs_creator:drugEffects", playerId, takingMethod, effects, effectsDuration, cumulativeEffects)
 end)
 ```
