@@ -127,3 +127,10 @@ TriggerEvent("jobs_creator:actions:search")
 
 TriggerEvent("jobs_creator:actions:washVehicle")
 ```
+
+## Open placeable objects menu
+
+```lua
+-- Trigger to open placeable objects menu
+TriggerEvent("jobs_creator:actions:placeObject")
+```
