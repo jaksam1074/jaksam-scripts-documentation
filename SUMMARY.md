@@ -162,6 +162,7 @@
     * [Get Is Player Doing Test Drive](dealerships-creator/client/showroom/get-is-player-doing-test-drive.md)
 * [Server](dealerships-creator/server/README.md)
   * [On vehicle given](dealerships-creator/server/on-vehicle-given.md)
+  * [On vehicle resell](dealerships-creator/server/on-vehicle-resell.md)
 
 ## 🏁 Races Creator
 
