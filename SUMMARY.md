@@ -28,6 +28,7 @@
 * [Replacing default scripts names](jobs-creator/replacing-default-scripts-names.md)
 * [Replacing default events names](jobs-creator/replacing-default-events-names.md)
 * [Updating script from old versions](jobs-creator/updating-script-from-old-versions.md)
+* [QBCore Jobs Injection](jobs-creator/qbcore-jobs-injection.md)
 * [Client](jobs-creator/client/README.md)
   * [Notifications](jobs-creator/client/notifications/README.md)
     * [Replace default notifications](jobs-creator/client/notifications/replace-default-notifications.md)
