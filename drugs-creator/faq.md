@@ -22,6 +22,6 @@ _Note: this is not something which depends on the script and we can't solve it f
 
 If you are having issues with server side performance with Drugs Creator, most likely is because of NPC selling, which requires to refresh all players inventories to be able to prompt `Press E to sell drugs` dialog
 
-You can use a [command](https://jaksam1074.gitbook.io/jaksams-scripts-documentation/drugs-creator/use-command-to-sell-to-npcs) instead of it to improve performance
+If you want to improve performance, enable the command in the in-game script settings, so it will use the closest NPC or spawn one (depending on your configuration)
 
 </details>
