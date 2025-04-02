@@ -8,6 +8,6 @@ To choose an existing module, you open /drugscreator menu, go in settings, choos
 
 Creating a module is extremely easy:
 
-1. Navigate to `drugs_creator/integrations` folder
+1. Navigate to `drugs_creator/_modules` folder
 2. Choose the module type you want to create (logs, progressbar, dispatch, etc.)
 3. Duplicate an existing module and use it as a template

@@ -8,6 +8,6 @@ To choose an existing module, you open /jobscreator menu, go in settings, choose
 
 Creating a module is extremely easy:
 
-1. Navigate to `jobs_creator/integrations` folder
+1. Navigate to `jobs_creator/_modules` folder
 2. Choose the module type you want to create (logs, progressbar, stash, etc.)
 3. Duplicate an existing module and use it as a template
