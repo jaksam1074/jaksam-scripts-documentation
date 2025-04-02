@@ -1,43 +1,8 @@
 # Progress bar
 
-## Replace/Disable
+## How to replace it?
 
-Triggered when using progress bar
-
-### Event
-
-```lua
-RegisterNetEvent("drugs_creator:internalProgressBar", function(time, text)
-
-end)
-```
-
-### Parameters
-
-| Name   | Data Type | Description                      |
-| ------ | --------- | -------------------------------- |
-| `time` | int       | Progress bar duration in seconds |
-| `text` | string    | Description text                 |
-
-### Example
-
-```lua
--- In drugs_creator/integrations/cl_integrations.lua
-RegisterNetEvent("drugs_creator:framework:ready", function() 
-    -- Disables the default script progress bar (otherwise there would be 2 progress bars)
-    exports["drugs_creator"]:disableScriptEvent("drugs_creator:internalProgressBar")
-end)
-
--- Example to replace the script progress bar with an external one
-RegisterNetEvent("drugs_creator:internalProgressBar", function(time, text)
-    -- The event to activate your external progress bar
-    TriggerEvent("external_progressbar:start", time, text)
-end)
-```
-
-### Where to insert the code?
-
-You can place it in the file `integrations/cl_integrations.lua` of the script, **at the bottom of the file on new lines**
+You can use Drugs Creator [modules.md](../modules.md "mention") if you want to use your own progress bar
 
 ## Use in external scripts
 
