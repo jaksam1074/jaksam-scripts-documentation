@@ -97,6 +97,7 @@
 * [Home](robberies-creator/home.md)
 * [Installation](robberies-creator/installation.md)
 * [FAQ](robberies-creator/faq.md)
+* [Modules](robberies-creator/modules.md)
 * [How to edit minigames](robberies-creator/how-to-edit-minigames.md)
 * [Client](robberies-creator/client/README.md)
   * [Progress bar](robberies-creator/client/progress-bar.md)
