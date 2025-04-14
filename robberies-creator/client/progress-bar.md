@@ -1,8 +1,8 @@
-# Progress Bar
+# Progress bar
 
 ## How to replace it?
 
-You can use Robberies Creator [modules.md](../modules.md "mention") if you want to use your own progress bar
+You can use Robberies Creator [modules ](../modules.md)if you want to use your own progress bar
 
 ## Use in external scripts
 
