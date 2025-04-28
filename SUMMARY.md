@@ -192,6 +192,7 @@
 * [Home](doors-creator/home.md)
 * [Installation](doors-creator/installation.md)
 * [FAQ](doors-creator/faq.md)
+* [Modules](doors-creator/modules.md)
 * [Change doors icon](doors-creator/change-doors-icon.md)
 * [Admin bypass lock](doors-creator/admin-bypass-lock.md)
 * [Client](doors-creator/client/README.md)
