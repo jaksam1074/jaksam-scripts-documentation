@@ -18,7 +18,7 @@ In simple terms, we store as little sensitive information as possible. Primarily
 * **Shared Script Data**: The specific script data you actively choose to share (e.g., in Jobs Creator, this would be the job data)
 * **Server IP**: Stored securely as an SHA256 hash, making it unreadable
 * **Player Information**: Includes your player nickname and player identifier
-* **Server License:** Only the last few characters and stored securely as an SHA256 hash, making it unreadable (So even before encryption, the small part sent won't be usable by anyone)
+* **Server License:** Only a small part and stored securely as an SHA256 hash, making it unreadable (So even before encryption, the small part sent won't be usable by anyone)
 
 ## Rules
 
