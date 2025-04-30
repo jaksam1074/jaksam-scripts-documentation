@@ -248,6 +248,7 @@
     * [Sold to NPC](drugs-creator/server/sellings/sold-to-npc.md)
     * [Sold to narcos](drugs-creator/server/sellings/sold-to-narcos.md)
   * [Police alerted](drugs-creator/server/police-alerted.md)
+  * [Pocket crafting finished](drugs-creator/server/pocket-crafting-finished.md)
 
 ## 🚜 Farming Creator
 
