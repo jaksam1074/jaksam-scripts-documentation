@@ -1,6 +1,6 @@
 # Modules
 
-Modules are an easy way for Jobs Creator to replace certain default features (progress bar, stash, logs)
+Modules are an easy way for Jobs Creator to replace certain default features (notify, progress bar, stash, logs)
 
 To choose an existing module, you open /jobscreator menu, go in settings, choose it. As easy as that
 
