@@ -129,6 +129,7 @@
   * [On mission start](missions-creator/server/on-mission-start.md)
   * [On mission failed](missions-creator/server/on-mission-failed.md)
   * [On mission success](missions-creator/server/on-mission-completed.md)
+  * [Start mission](missions-creator/server/start-mission.md)
 
 ## 🛒 Shops Creator
 
