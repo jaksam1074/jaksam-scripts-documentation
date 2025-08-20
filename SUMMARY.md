@@ -120,6 +120,7 @@
 * [Client](missions-creator/client/README.md)
   * [Replace default police alert](missions-creator/client/replace-default-police-alert.md)
   * [On entity spawn](missions-creator/client/on-entity-spawn.md)
+  * [Get mission data](missions-creator/client/get-mission-template.md)
   * [Notifications](missions-creator/client/notifications/README.md)
     * [Replace default notifications](missions-creator/client/notifications/replace-default-notifications.md)
     * [Replace default help notifications](missions-creator/client/notifications/replace-default-help-notifications.md)
@@ -130,6 +131,7 @@
   * [On mission failed](missions-creator/server/on-mission-failed.md)
   * [On mission success](missions-creator/server/on-mission-completed.md)
   * [Start mission](missions-creator/server/start-mission.md)
+  * [Get mission data](missions-creator/server/get-mission-template.md)
 
 ## 🛒 Shops Creator
 

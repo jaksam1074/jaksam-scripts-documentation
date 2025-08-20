@@ -1,6 +1,7 @@
 # Get a mission template
-Export to get a mission template server side, in case you want to retrieve the data, for example options, label, description, etc.
-An example of good usage, can be a custom menu that shows only a limited number of missions, and you want to show the label and description. Then you can use the export to startMission to start the mission manually
+Export to get a mission template client side, in case you want to retrieve the data, for example options, label, description, etc.
+A good example of usage is a custom menu that displays only a limited number of missions, showing their label and description using this export.  
+If you want to start a mission manually after selecting it, you can use the [`startMission` export](../server/start-mission.md) to do so.
 
 ## Export: getMissionTemplate
 ```lua
