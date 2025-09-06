@@ -150,6 +150,11 @@
   * [Shop sold](shops-creator/server/shop-sold.md)
   * [Get what objects can be sold in shop ID](shops-creator/server/get-what-objects-can-be-sold-in-shop-id.md)
   * [Get objects in shop ID](shops-creator/server/get-objects-in-shop-id.md)
+  * [Transactions](shops-creator/server/transactions/README.md)
+    * [Admin shop bought object](shops-creator/server/transactions/admin-shop-bought-object.md)
+    * [Admin shop sold object](shops-creator/server/transactions/admin-shop-sold-object.md)
+    * [Player shop bought object](shops-creator/server/transactions/player-shop-bought-object.md)
+    * [Player shop sold object](shops-creator/server/transactions/player-shop-sold-object.md)
 
 ## 🚗 Dealerships Creator
 
