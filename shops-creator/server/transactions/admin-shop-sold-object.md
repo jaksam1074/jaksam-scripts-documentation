@@ -5,7 +5,7 @@ Triggered after a player sells an object to an admin shop
 ## Event
 
 ```lua
-RegisterNetEvent("shops_creator:adminShops:soldObject", function(playerId, shopId, itemId, quantity)
+RegisterNetEvent("shops_creator:adminShops:soldObject", function(playerId, shopId, itemId, quantity, totalPrice)
 
 end)
 ```
@@ -18,6 +18,7 @@ end)
 | `shopId`   | integer   | The shop ID (the same that's in the database) |
 | `itemId`   | string    | The item ID that was sold                     |
 | `quantity` | integer   | The quantity of items sold                    |
+| `totalPrice` | integer   | The total price of the items sold              |
 
 ## Where to insert the code?
 
