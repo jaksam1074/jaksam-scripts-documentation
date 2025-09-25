@@ -5,7 +5,7 @@ Triggered after notifying player client side
 ## Event
 
 ```lua
-AddEventHandler("drugs_creator:notify", function(message, uncoloredMessage)
+AddEventHandler("drugs_creator:notify", function(message, coloredMessage)
 
 end)
 ```
@@ -14,8 +14,8 @@ end)
 
 | Name               | Data Type | Description                                                    |
 | ------------------ | --------- | -------------------------------------------------------------- |
-| `message`          | string    | Message of the notification                                    |
-| `uncoloredMessage` | string    | Message of the notification but without \~r\~, \~g~~\~~~, etc. |
+| `message`          | string    | Message of the notification (colorless)                                   |
+| `coloredMessage` | string    | Message of the notification but with \~r\~, \~g~~\~~~, etc. |
 
 ## Example
 
@@ -25,7 +25,7 @@ RegisterNetEvent("drugs_creator:framework:ready", function()
     exports["drugs_creator"]:disableScriptEvent("drugs_creator:notify")
 end)
 
-RegisterNetEvent("drugs_creator:notify", function(message, uncoloredMessage)
+RegisterNetEvent("drugs_creator:notify", function(message, coloredMessage)
     TriggerEvent("external_script:notify", message)
 end)
 ```
