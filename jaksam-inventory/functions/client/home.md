@@ -87,3 +87,27 @@ Notes:
 - If `config.dynamicHotbar` is true, empty slots at the end are hidden
 - The hotbar automatically hides after 2 seconds
 - Multiple calls reset the hide timer
+
+## dequipWeapon
+Deequips the currently equipped weapon
+
+```lua
+exports['jaksam_inventory']:dequipWeapon(skipSync)
+```
+
+### Parameters
+- `skipSync`: boolean (optional)
+  - If true, the weapon will be deequipped without syncing the ammo to the server
+
+### Returns
+None - Deequips the currently equipped weapon
+
+### Example
+
+```lua
+-- Deequip weapon
+exports['jaksam_inventory']:dequipWeapon()
+
+-- Deequip weapon without syncing the ammo to the server
+exports['jaksam_inventory']:dequipWeapon(true)
+```
