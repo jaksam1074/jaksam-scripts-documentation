@@ -36,13 +36,11 @@ local weaponCount = exports['jaksam_inventory']:getTotalItemAmount('weapon_pisto
 Opens an inventory alongside the player's inventory
 
 ```lua
-exports['jaksam_inventory']:openInventory(type, inventoryId)
+exports['jaksam_inventory']:openInventory(inventoryId)
 ```
 
 ### Parameters
 
-- `type`: string
-  - The type of inventory to open (e.g., "stash", "trunk")
 - `inventoryId`: string
   - The ID of the inventory to open
 
@@ -53,10 +51,10 @@ None - Opens the inventory UI if successful
 
 ```lua
 -- Open a stash inventory
-exports['jaksam_inventory']:openInventory('stash', 'police_stash_1')
+exports['jaksam_inventory']:openInventory('police_stash_1')
 
 -- Open a trunk inventory
-exports['jaksam_inventory']:openInventory('trunk', 'car_trunk_123')
+exports['jaksam_inventory']:openInventory('car_trunk_123')
 ```
 
 ## showHotbar
