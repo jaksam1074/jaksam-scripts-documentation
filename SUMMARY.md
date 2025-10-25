@@ -382,3 +382,6 @@
 * [Home](jaksam-inventory/home.md)
 * [Installation](jaksam-inventory/installation.md)
 * [Functions](jaksam-inventory/functions/)
+  * [Client](jaksam-inventory/functions/client/home.md)
+  * [Server](jaksam-inventory/functions/server/home.md)
+* [Hooks](jaksam-inventory/hooks.md)
