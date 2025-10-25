@@ -377,3 +377,8 @@
 * [Installation](luxury-clothes-theft/installation.md)
 * [Client](luxury-clothes-theft/client/README.md)
   * [Replace default notifications](luxury-clothes-theft/client/replace-default-notifications.md)
+
+## 🎒 Jaksam Inventory
+* [Home](jaksam-inventory/home.md)
+* [Installation](jaksam-inventory/installation.md)
+* [Functions](jaksam-inventory/functions/)
