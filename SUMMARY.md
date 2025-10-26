@@ -111,6 +111,15 @@
   * [Police alerted](robberies-creator/server/police-alerted.md)
   * [Step completed](robberies-creator/server/step-completed.md)
 
+## 🎒 Jaksam Inventory
+* [Home](jaksam-inventory/home.md)
+* [Installation](jaksam-inventory/installation.md)
+* [Guides](jaksam-inventory/guides.md)
+* [Functions](jaksam-inventory/functions/)
+  * [Client](jaksam-inventory/functions/client/home.md)
+  * [Server](jaksam-inventory/functions/server/home.md)
+* [Hooks](jaksam-inventory/hooks.md)
+
 ## 💡 Missions Creator
 
 * [Home](missions-creator/home.md)
@@ -377,12 +386,3 @@
 * [Installation](luxury-clothes-theft/installation.md)
 * [Client](luxury-clothes-theft/client/README.md)
   * [Replace default notifications](luxury-clothes-theft/client/replace-default-notifications.md)
-
-## 🎒 Jaksam Inventory
-* [Home](jaksam-inventory/home.md)
-* [Installation](jaksam-inventory/installation.md)
-* [Guides](jaksam-inventory/guides.md)
-* [Functions](jaksam-inventory/functions/)
-  * [Client](jaksam-inventory/functions/client/home.md)
-  * [Server](jaksam-inventory/functions/server/home.md)
-* [Hooks](jaksam-inventory/hooks.md)
