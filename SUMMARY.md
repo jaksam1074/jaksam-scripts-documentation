@@ -381,6 +381,7 @@
 ## 🎒 Jaksam Inventory
 * [Home](jaksam-inventory/home.md)
 * [Installation](jaksam-inventory/installation.md)
+* [Guides](jaksam-inventory/guides.md)
 * [Functions](jaksam-inventory/functions/)
   * [Client](jaksam-inventory/functions/client/home.md)
   * [Server](jaksam-inventory/functions/server/home.md)
