@@ -82,6 +82,33 @@ ensure qb-inventory (the provided one from jaksam inventory)
 If it doesn't work, be sure to use the latest version of the official QBCore with the dependencies
 {% endhint %}
 {% endtab %}
+
+
+{% tab title="QBX" %}
+1. Download the script and extract it in your resources
+2. Download the jaksam_core and extract it in your resources
+3. Copy the folder `jaksam_inventory/__installation/qbx/ox_inventory` in your resources
+4. Add the script in your auto start, **right after** `qbx_core` (example: server.cfg)
+5. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jaksam_inventory/sql/` folder
+
+Start order example
+```
+# OX
+ensure oxmysql
+ensure ox_lib
+
+## QBX
+ensure qbx_core
+ensure jaksam_inventory
+ensure ox_inventory (the provided one from jaksam inventory)
+# Other QBX scripts
+```
+
+{% hint style="warning" %}
+If it doesn't work, be sure to use the latest version of the official QBX with the dependencies
+{% endhint %}
+{% endtab %}
+
 {% endtabs %}
 
 You are ready to go! Enjoy the script 😁
