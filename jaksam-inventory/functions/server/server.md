@@ -251,6 +251,41 @@ local total = exports['jaksam_inventory']:getTotalItemAmount(1, 'weapon_pistol',
 local total, totalNoContainers = exports['jaksam_inventory']:getTotalItemAmount(1, 'bread', nil, true)
 ```
 
+## hasItem
+Checks if an inventory has a specific item
+
+```lua
+exports['jaksam_inventory']:hasItem(inventoryId, itemName, quantity)
+```
+
+### Parameters
+
+- `inventoryId`: string | number
+  - The inventory ID to check
+- `itemName`: string
+  - The name of the item to check
+- `quantity`: number (optional)
+  - How many items to check for
+  - Default is 1
+
+### Returns
+
+- `boolean`
+  - true if the inventory has the item
+  - false if the inventory does not have the item
+
+### Example
+
+```lua
+-- Check if player has 5 bread
+local hasItem = exports['jaksam_inventory']:hasItem(1, 'bread', 5)
+
+if hasItem then
+    -- Safe to remove items
+    exports['jaksam_inventory']:removeItem(1, 'bread', 5)
+end
+```
+
 ## registerUsableItem
 Registers a callback function that will be called when an item is used
 Framework specific registering item will work anyway, as ESX.RegisterUsableItem and QBCore one
