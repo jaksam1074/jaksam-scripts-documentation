@@ -116,8 +116,8 @@
 * [Installation](jaksam-inventory/installation.md)
 * [Guides](jaksam-inventory/guides.md)
 * [Functions](jaksam-inventory/functions/)
-  * [Client](jaksam-inventory/functions/client/home.md)
-  * [Server](jaksam-inventory/functions/server/home.md)
+  * [Client](jaksam-inventory/functions/client/client.md)
+  * [Server](jaksam-inventory/functions/server/server.md)
 * [Hooks](jaksam-inventory/hooks.md)
 
 ## 💡 Missions Creator
