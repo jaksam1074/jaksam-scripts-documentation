@@ -29,7 +29,9 @@ ensure ox_lib
 ## ESX
 ensure es_extended
 ensure jaksam_inventory
-start [core] # Other ESX scripts (start instead of ensure, otherwise es_extended would restart if it's in this folder)
+
+# Other ESX scripts (start instead of ensure, otherwise es_extended would restart if it's in this folder)
+start [core]
 ```
 
 {% hint style="warning" %}
@@ -53,7 +55,9 @@ ensure ox_lib
 ## ESX
 ensure es_extended
 ensure jaksam_inventory
-start [core] # Other ESX scripts (start instead of ensure, otherwise es_extended would restart if it's in this folder)
+
+# Other ESX scripts (start instead of ensure, otherwise es_extended would restart if it's in this folder)
+start [core]
 ```
 
 {% endtab %}
