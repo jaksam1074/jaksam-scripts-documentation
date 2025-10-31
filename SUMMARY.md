@@ -117,6 +117,7 @@
 * [Guides](jaksam-inventory/guides.md)
 * [Functions](jaksam-inventory/functions/)
   * [Client](jaksam-inventory/functions/client/client.md)
+  * [Shared](jaksam-inventory/functions/shared/shared.md)
   * [Server](jaksam-inventory/functions/server/server.md)
 * [Hooks](jaksam-inventory/hooks.md)
 
