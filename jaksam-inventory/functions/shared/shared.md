@@ -29,3 +29,30 @@ print(item.maxStack) -- 100
 print(item.rarity) -- common
 print(item.type) -- item|container|ammo|currency
 ```
+
+## getItemLabel
+Gets only the label (display name) of an item. This is a simpler and faster alternative to `getStaticItem` when you only need the item's label
+
+```lua
+exports['jaksam_inventory']:getItemLabel(itemName)
+```
+
+### Parameters
+- `itemName`: string
+  - The name of the item to get the label for
+
+### Returns
+- `label`: string|nil
+  - The label (display name) of the item, or nil if the item is not found
+
+### Example
+
+```lua
+-- Get the label of the item "bread"
+local label = exports['jaksam_inventory']:getItemLabel('bread')
+print(label) -- Bread
+
+-- Item not found returns nil
+local notFound = exports['jaksam_inventory']:getItemLabel('invalid_item')
+print(notFound) -- nil
+```
