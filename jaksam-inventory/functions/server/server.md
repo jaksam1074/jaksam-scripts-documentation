@@ -301,7 +301,7 @@ exports['jaksam_inventory']:registerUsableItem(itemName, callback)
 - `callback`: function
   - Function to call when item is used
   - Parameters of callback on ESX: `playerId, itemName, inventoryItem` (`name`, `metadata`, `amount`)
-  - Parameters of callback on QBCore: `playerId, elaboratedItemQB` (`name`, `metadata`, `amount`, etc.)
+  - Parameters of callback on QBCore: `playerId, inventoryItem` (`name`, `metadata`, `amount`, etc.)
 
 ### Returns
 
@@ -311,12 +311,24 @@ exports['jaksam_inventory']:registerUsableItem(itemName, callback)
 ### Example
 
 ```lua
--- Register usable item
-exports['jaksam_inventory']:registerUsableItem('bread', function(playerId)
+-- Register usable item on ESX
+exports['jaksam_inventory']:registerUsableItem('bread', function(playerId, itemName, inventoryItem)
     -- Heal player when bread is used
     local plyPed = GetPlayerPed(playerId)
     local health = GetEntityHealth(plyPed)
     SetEntityHealth(plyPed, math.min(health + 20, 200))
+end)
+
+-- Register usable item on ESX showing used item metadata
+exports['jaksam_inventory']:registerUsableItem('armour', function(playerId, itemName, inventoryItem)
+    print("Armor has still " .. inventoryItem.metadata.value .. "% of durability")
+end)
+```
+
+```lua
+-- Register usable item on QBCore
+exports['jaksam_inventory']:registerUsableItem('armour', function(playerId, item)
+    print("Armor has still " .. item.metadata.value .. "% of durability")
 end)
 ```
 
