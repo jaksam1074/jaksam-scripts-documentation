@@ -300,7 +300,8 @@ exports['jaksam_inventory']:registerUsableItem(itemName, callback)
   - The name of the item to register
 - `callback`: function
   - Function to call when item is used
-  - Callback receives: playerId
+  - Parameters of callback on ESX: `playerId, itemName, inventoryItem` (`name`, `metadata`, `amount`)
+  - Parameters of callback on QBCore: `playerId, elaboratedItemQB` (`name`, `metadata`, `amount`, etc.)
 
 ### Returns
 
