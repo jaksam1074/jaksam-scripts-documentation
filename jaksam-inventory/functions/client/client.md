@@ -57,6 +57,53 @@ exports['jaksam_inventory']:openInventory('police_stash_1')
 exports['jaksam_inventory']:openInventory('car_trunk_123')
 ```
 
+## getInventory
+Gets the player's self inventory
+
+```lua
+exports['jaksam_inventory']:getInventory()
+```
+
+### Parameters
+None
+
+### Returns
+- `inventory`: table
+  - The player's self inventory
+
+### Example
+
+```lua
+-- Get the player's self inventory
+local inventory = exports['jaksam_inventory']:getInventory()
+
+print(json.encode(inventory, {indent = true}))
+--[[
+{
+    "id": "SIV35463",
+    "limits": {
+        "maxSlots": 20,
+        "maxWeight": 30
+    },
+    "items": {
+        "SLOT-3": {
+            "name": "money",
+            "amount": 4402
+        },
+        "SLOT-1": {
+            "name": "weapon_advancedrifle",
+            "metadata": {
+                "serial": "TSK-24895-LFN"
+            },
+            "amount": 1
+        },
+    },
+    "label": "Inventory",
+    "totalWeight": 21.0,
+}
+]]
+```
+
 ## showHotbar
 Shows the hotbar UI with the first 5 slots of the player's inventory
 
