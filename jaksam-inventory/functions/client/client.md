@@ -104,6 +104,40 @@ print(json.encode(inventory, {indent = true}))
 ]]
 ```
 
+## getItemByName
+Returns the first item found in the player's self inventory by name (order not guaranteed)
+
+```lua
+exports['jaksam_inventory']:getItemByName(itemName)
+```
+
+### Parameters
+None
+
+### Returns
+- `item`: table
+  - The item found in the player's self inventory
+- `slotId`: number
+  - The slot ID of the item in the player's self inventory
+
+### Example
+
+```lua
+-- Get the first item by name
+local item, slotId = exports['jaksam_inventory']:getItemByName('weapon_advancedrifle')
+
+print(json.encode(item, {indent = true}), "SLOT ID: " .. slotId)
+--[[
+{
+    "name": "weapon_advancedrifle",
+    "metadata": {
+        "serial": "TSK-24895-LFN"
+    },
+    "amount": 1
+}
+SLOT ID: 1
+```
+
 ## showHotbar
 Shows the hotbar UI with the first 5 slots of the player's inventory
 
