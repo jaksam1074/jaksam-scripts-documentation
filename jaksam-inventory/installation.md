@@ -149,3 +149,37 @@ You are ready to go! Enjoy the script 😁
 {% endtab %}
 
 {% endtabs %}
+
+## Backwards compatibility
+This inventory will give you an extremely easy way to be compatible with old inventories
+
+### Default framework functions
+The inventory is already compatible with the default framework functions, so you can use them without any problem
+
+### OX Inventory
+If you your old scripts used OX inventory, you can copy paste in your resources the fake 'ox_inventory' provided in jaksam_inventory/__installation/ folder
+
+An example of your server.cfg would be:
+
+```
+ensure oxmysql
+ensure es_extended / ensure qb-core / ensure qbx_core (depending on your framework)
+ensure jaksam_inventory
+ensure ox_inventory # (the provided one from jaksam inventory)
+
+# Your other scripts from now on
+```
+
+### QB Inventory
+If you your old scripts used QB inventory, you can copy paste in your resources the fake 'qb-inventory' provided in jaksam_inventory/__installation/ folder
+
+An example of your server.cfg would be:
+
+```
+ensure oxmysql
+ensure ensure qb-core / ensure qbx_core (depending on your framework)
+ensure jaksam_inventory
+ensure qb-inventory # (the provided one from jaksam inventory)
+
+# Your other scripts from now on
+```
