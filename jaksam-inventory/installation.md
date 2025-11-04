@@ -150,36 +150,36 @@ You are ready to go! Enjoy the script 😁
 
 {% endtabs %}
 
-## Backwards compatibility
-This inventory will give you an extremely easy way to be compatible with old inventories
+## Backwards Compatibility
+This inventory lets you use your old scripts, even if they need another inventory
 
-### Default framework functions
-The inventory is already compatible with the default framework functions, so you can use them without any problem
+### Default Framework Functions
+You can use the normal inventory functions from your framework
 
-### OX Inventory
-If you your old scripts used OX inventory, you can copy paste in your resources the fake 'ox_inventory' provided in jaksam_inventory/__installation/ folder
+### 'OX Inventory' Compatibility
+If your old scripts use 'OX Inventory', copy the fake `ox_inventory` folder from `jaksam_inventory/__installation/` to your resources
 
-An example of your server.cfg would be:
-
-```
-ensure oxmysql
-ensure es_extended / ensure qb-core / ensure qbx_core (depending on your framework)
-ensure jaksam_inventory
-ensure ox_inventory # (the provided one from jaksam inventory)
-
-# Your other scripts from now on
-```
-
-### QB Inventory
-If you your old scripts used QB inventory, you can copy paste in your resources the fake 'qb-inventory' provided in jaksam_inventory/__installation/ folder
-
-An example of your server.cfg would be:
+Add this in your `server.cfg`, in this order
 
 ```
 ensure oxmysql
-ensure ensure qb-core / ensure qbx_core (depending on your framework)
+ensure es_extended   # or ensure qb-core, or ensure qbx_core (use the one you need)
 ensure jaksam_inventory
-ensure qb-inventory # (the provided one from jaksam inventory)
-
-# Your other scripts from now on
+ensure ox_inventory  # (the fake ox_inventory from jaksam_inventory)
+# other scripts below
 ```
+
+### 'QB Inventory' Compatibility
+If your old scripts use 'QB Inventory', copy the fake `qb-inventory` folder from `jaksam_inventory/__installation/` to your resources
+
+Add this in your `server.cfg`
+
+```
+ensure oxmysql
+ensure qb-core      # or ensure qbx_core (use the one you need)
+ensure jaksam_inventory
+ensure qb-inventory # (the fake qb-inventory from jaksam_inventory)
+# other scripts below
+```
+
+That's all, your old scripts should work with this inventory
