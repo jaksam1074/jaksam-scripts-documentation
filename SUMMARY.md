@@ -114,7 +114,11 @@
 ## 🎒 Jaksam Inventory
 * [Home](jaksam-inventory/home.md)
 * [Installation](jaksam-inventory/installation.md)
-* [Guides](jaksam-inventory/guides.md)
+* [Guides](jaksam-inventory/guides/)
+  * [Admin Inventory (Omnipack)](jaksam-inventory/guides/admin-inventory.md)
+  * [Metadata](jaksam-inventory/guides/metadata.md)
+  * [Context Actions](jaksam-inventory/guides/context-actions.md)
+  * [Weapon Attachments](jaksam-inventory/guides/weapon-attachments.md)
 * [Functions](jaksam-inventory/functions/)
   * [Client](jaksam-inventory/functions/client/client.md)
   * [Shared](jaksam-inventory/functions/shared/shared.md)
