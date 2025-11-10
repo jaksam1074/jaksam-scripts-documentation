@@ -157,29 +157,17 @@ This inventory lets you use your old scripts, even if they need another inventor
 You can use the normal inventory functions from your framework
 
 ### 'OX Inventory' Compatibility
-If your old scripts use 'OX Inventory', copy the fake `ox_inventory` folder from `jaksam_inventory/__installation/` to your resources
+If your old scripts use 'OX Inventory', you can enable easy compatibility
 
-Add this in your `server.cfg`, in this order
-
-```
-ensure oxmysql
-ensure es_extended   # or ensure qb-core, or ensure qbx_core (use the one you need)
-ensure jaksam_inventory
-ensure ox_inventory  # (the fake ox_inventory from jaksam_inventory)
-# other scripts below
-```
+1. Go in `jaksam_inventory\integrations\sv_integrations.lua`
+2. Enable `ox_inventory` in `Integrations.backwardsCompatibility`
+3. Server may require a restart after it loads the first time with these settings
 
 ### 'QB Inventory' Compatibility
-If your old scripts use 'QB Inventory', copy the fake `qb-inventory` folder from `jaksam_inventory/__installation/` to your resources
+If your old scripts use 'QB Inventory', you can enable easy compatibility
 
-Add this in your `server.cfg`
-
-```
-ensure oxmysql
-ensure qb-core      # or ensure qbx_core (use the one you need)
-ensure jaksam_inventory
-ensure qb-inventory # (the fake qb-inventory from jaksam_inventory)
-# other scripts below
-```
+1. Go in `jaksam_inventory\integrations\sv_integrations.lua`
+2. Enable `qb-inventory` in `Integrations.backwardsCompatibility`
+3. Server may require a restart after it loads the first time with these settings
 
 That's all, your old scripts should work with this inventory
