@@ -148,6 +148,20 @@ You are ready to go! Enjoy the script 😁
 4. Done!
 {% endtab %}
 
+{% tab title="Chezza inventory" %}
+1. Only during this process, make sure the Chezza inventory is running (then you can and should remove it)
+2. Use /inventory command, go in settings
+3. Click button "Import from Chezza inventory"
+4. Done!
+{% endtab %}
+
+{% tab title="TGiann inventory" %}
+1. Only during this process, make sure the TGiann inventory is running (then you can and should remove it)
+2. Use /inventory command, go in settings
+3. Click button "Import from TGiann inventory"
+4. Done!
+{% endtab %}
+
 {% endtabs %}
 
 ## Backwards Compatibility
