@@ -65,8 +65,8 @@ start [core]
 {% tab title="QBCore" %}
 1. Download the script and extract it in your resources
 2. Download the jaksam_core and extract it in your resources
-3. Copy the folder `jaksam_inventory/__installation/qb-core/qb-inventory` in your resources
-4. Add the script in your auto start, **right after** `qb-core` (example: server.cfg)
+3. Enable `Integrations.backwardsCompatibility` for qb-inventory in `jaksam_inventory\integrations\sv_integrations.lua`
+4. Add `jaksam_inventory` in your auto start, **right after** `qb-core` (example: server.cfg)
 5. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jaksam_inventory/sql/` folder
 
 Start order example
@@ -78,7 +78,6 @@ ensure ox_lib
 ## QBCore
 ensure qb-core
 ensure jaksam_inventory
-ensure qb-inventory (the provided one from jaksam inventory)
 # Other QBCore scripts
 ```
 
@@ -91,8 +90,8 @@ If it doesn't work, be sure to use the latest version of the official QBCore wit
 {% tab title="QBX" %}
 1. Download the script and extract it in your resources
 2. Download the jaksam_core and extract it in your resources
-3. Copy the folder `jaksam_inventory/__installation/qbx/ox_inventory` in your resources
-4. Add the script in your auto start, **right after** `qbx_core` (example: server.cfg)
+3. Enable `Integrations.backwardsCompatibility` for ox_inventory in `jaksam_inventory\integrations\sv_integrations.lua`
+4. Add `jaksam_inventory` in your auto start, **right after** `qbx_core` (example: server.cfg)
 5. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jaksam_inventory/sql/` folder
 
 Start order example
@@ -104,7 +103,6 @@ ensure ox_lib
 ## QBX
 ensure qbx_core
 ensure jaksam_inventory
-ensure ox_inventory (the provided one from jaksam inventory)
 # Other QBX scripts
 ```
 
