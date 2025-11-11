@@ -1,6 +1,31 @@
 # Shared functions
 Here there are built-in exports of jaksam's inventory, works both on server and client
 
+## getStaticItemsList
+Returns the list of all items in the inventory
+
+```lua
+exports['jaksam_inventory']:getStaticItemsList()
+```
+
+### Returns
+- `items`: table
+  - The list of items, key is the item name, value is item information (label, maxStack, weight, stackable, description, rarity, type, etc.)
+
+### Example
+
+```lua
+-- Get the list of items
+local items = exports['jaksam_inventory']:getStaticItemsList()
+local weaponsCount = 0
+for itemName, item in pairs(items) do
+    if item.type == 'weapon' then
+        weaponsCount = weaponsCount + 1
+    end
+end
+print("There are in total " .. weaponsCount .. " registered weapons in the inventory")
+```
+
 ## getStaticItem
 Gets generic item information from the inventory, like weight, stackable, description, label, etc.
 
