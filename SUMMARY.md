@@ -123,6 +123,8 @@
   * [Client](jaksam-inventory/functions/client.md)
   * [Shared](jaksam-inventory/functions/shared.md)
   * [Server](jaksam-inventory/functions/server.md)
+* [Events](jaksam-inventory/events/)
+  * [Server](jaksam-inventory/events/server.md)
 * [Hooks](jaksam-inventory/hooks.md)
 
 ## 💡 Missions Creator
