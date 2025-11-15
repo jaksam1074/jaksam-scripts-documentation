@@ -120,9 +120,9 @@
   * [Context Actions](jaksam-inventory/guides/context-actions.md)
   * [Weapon Attachments](jaksam-inventory/guides/weapon-attachments.md)
 * [Functions](jaksam-inventory/functions/)
-  * [Client](jaksam-inventory/functions/client/client.md)
-  * [Shared](jaksam-inventory/functions/shared/shared.md)
-  * [Server](jaksam-inventory/functions/server/server.md)
+  * [Client](jaksam-inventory/functions/client.md)
+  * [Shared](jaksam-inventory/functions/shared.md)
+  * [Server](jaksam-inventory/functions/server.md)
 * [Hooks](jaksam-inventory/hooks.md)
 
 ## 💡 Missions Creator
