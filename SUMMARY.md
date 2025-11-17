@@ -115,6 +115,7 @@
 * [Home](jaksam-inventory/home.md)
 * [Installation](jaksam-inventory/installation.md)
 * [Guides](jaksam-inventory/guides/)
+  * [Customize default theme](jaksam-inventory/guides/customize-theme.md)
   * [Admin Inventory (Omnipack)](jaksam-inventory/guides/admin-inventory.md)
   * [Metadata](jaksam-inventory/guides/metadata.md)
   * [Context Actions](jaksam-inventory/guides/context-actions.md)
