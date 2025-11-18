@@ -1,13 +1,7 @@
 # Compatibility
-Included in the script, there will be compatibility for many exports of some other inventories, as es_extended, qb-inventory and ox_inventory. Despite it's not the preferred way, to make compatibility easy for you, you can often replace old exports by just using the script name, keeping the same parameters
+This script works with other popular inventory systems, like es_extended, qb-inventory, and ox_inventory
 
-Example:
-```lua
--- Before
-local success = exports['ox_inventory']:AddItem(inventoryId, itemName, amount, metadata, slotId)
--- After
-local success = exports['jaksam_inventory']:AddItem(inventoryId, itemName, amount, metadata, slotId)
-```
+For ESX and QBCore functions, the setup is done automatically. But, if you want to keep using exports from ox_inventory or qb-inventory for compatibility, you need to turn on this option in the file: `jaksam_inventory/integrations/sv_integrations.lua`
 
 # Server functions
 Here there are built-in exports of jaksam's inventory
