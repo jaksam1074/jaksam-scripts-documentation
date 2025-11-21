@@ -225,6 +225,37 @@ Notes:
 - The hotbar automatically hides after 2 seconds
 - Multiple calls reset the hide timer
 
+## setHotbarDisabled
+Enables or disables the hotbar functionality. Useful for example during minigames. Don't forget to re-enable the hotbar when finished
+
+```lua
+exports['jaksam_inventory']:setHotbarDisabled(disabled)
+```
+
+### Parameters
+
+- `disabled`: boolean
+  - If true, the hotbar will be disabled and `showHotbar()` calls will be ignored
+  - If false, the hotbar will be enabled and will work normally
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Disable the hotbar
+exports['jaksam_inventory']:setHotbarDisabled(true)
+
+-- Enable the hotbar
+exports['jaksam_inventory']:setHotbarDisabled(false)
+
+-- Disable hotbar during a cutscene
+exports['jaksam_inventory']:setHotbarDisabled(true)
+-- ... cutscene code ...
+exports['jaksam_inventory']:setHotbarDisabled(false)
+```
+
 ## dequipWeapon
 Deequips the currently equipped weapon
 
