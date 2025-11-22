@@ -256,6 +256,69 @@ exports['jaksam_inventory']:setHotbarDisabled(true)
 exports['jaksam_inventory']:setHotbarDisabled(false)
 ```
 
+## setHotkeysEnabled
+Enables or disables the hotkeys functionality (slots 1-5). Useful for example during minigames or cutscenes. Don't forget to re-enable the hotkeys when finished
+
+```lua
+exports['jaksam_inventory']:setHotkeysEnabled(enabled)
+```
+
+### Parameters
+
+- `enabled`: boolean
+  - If true, the hotkeys will be enabled and will work normally
+  - If false, the hotkeys will be disabled and pressing 1-5 will be ignored
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Disable the hotkeys
+exports['jaksam_inventory']:setHotkeysEnabled(false)
+
+-- Enable the hotkeys
+exports['jaksam_inventory']:setHotkeysEnabled(true)
+
+-- Disable hotkeys during a minigame
+exports['jaksam_inventory']:setHotkeysEnabled(false)
+-- ... minigame code ...
+exports['jaksam_inventory']:setHotkeysEnabled(true)
+```
+
+## areHotkeysEnabled
+Returns whether the hotkeys are currently enabled or disabled
+
+```lua
+exports['jaksam_inventory']:areHotkeysEnabled()
+```
+
+### Parameters
+None
+
+### Returns
+
+- `enabled`: boolean
+  - True if hotkeys are enabled, false if disabled
+
+### Example
+
+```lua
+-- Check if hotkeys are enabled
+local enabled = exports['jaksam_inventory']:areHotkeysEnabled()
+
+if enabled then
+    print('Hotkeys are enabled')
+else
+    print('Hotkeys are disabled')
+end
+
+-- Toggle hotkeys
+local currentState = exports['jaksam_inventory']:areHotkeysEnabled()
+exports['jaksam_inventory']:setHotkeysEnabled(not currentState)
+```
+
 ## dequipWeapon
 Deequips the currently equipped weapon
 
