@@ -121,6 +121,7 @@
   * [Context Actions](jaksam-inventory/guides/context-actions.md)
   * [Weapon Attachments](jaksam-inventory/guides/weapon-attachments.md)
   * [Block police weapon rob](jaksam-inventory/guides/block-police-weapon-rob.md)
+  * [Crafting](jaksam-inventory/guides/crafting.md)
 * [Functions](jaksam-inventory/functions/)
   * [Client](jaksam-inventory/functions/client.md)
   * [Shared](jaksam-inventory/functions/shared.md)
