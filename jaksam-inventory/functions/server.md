@@ -222,6 +222,64 @@ end
 local stashItem = exports['jaksam_inventory']:getItemFromSlot('police_stash_1', 3)
 ```
 
+## getItemByName
+Gets the first item found in an inventory by its name, with optional metadata filtering
+
+```lua
+exports['jaksam_inventory']:getItemByName(inventoryId, itemName, metadata)
+```
+
+### Parameters
+
+- `inventoryId`: string | number
+  - The inventory ID to search in
+  - Can be a player server ID (number) or inventory ID (string)
+- `itemName`: string
+  - The name of the item to search for
+- `metadata`: table (optional)
+  - Metadata to match against when searching
+  - If provided, only items with matching metadata will be returned
+
+### Returns
+
+- `item`: table | nil
+  - The first item found matching the criteria, or nil if not found
+  - Item structure:
+  ```lua
+  {
+      name = string,     -- Item name
+      amount = number,   -- Item amount in that specific slot
+      metadata = table   -- Item metadata or nil
+  }
+  ```
+- `slotId`: number | nil
+  - The raw slot ID where the item was found (1-based index)
+  - nil if item not found
+
+### Example
+
+```lua
+-- Get first bread item in player's inventory
+local playerId = 1
+local item, slotId = exports['jaksam_inventory']:getItemByName(playerId, 'bread')
+
+if item then
+    print('Found bread in slot:', slotId)
+    print('Amount in this slot:', item.amount)
+    print('Item metadata:', json.encode(item.metadata))
+end
+
+-- Get weapon with specific serial number
+local weapon, weaponSlot = exports['jaksam_inventory']:getItemByName(playerId, 'WEAPON_PISTOL', {
+    serial = "ABC123"
+})
+
+if weapon then
+    print('Found weapon in slot:', weaponSlot)
+    print('Weapon ammo:', weapon.metadata.ammo)
+end
+```
+
 ## getItemLabel
 Gets the display label of an item
 
