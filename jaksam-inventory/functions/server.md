@@ -125,6 +125,43 @@ if canSwap then
 end
 ```
 
+## forceOpenInventory
+Forces an inventory to be opened for a specific player without permission checks
+
+```lua
+exports['jaksam_inventory']:forceOpenInventory(playerId, inventoryId)
+```
+
+### Parameters
+
+- `playerId`: number
+  - The server ID of the player who will see the inventory
+- `inventoryId`: string | number
+  - The inventory ID to open
+  - Can be a player server ID (number) or inventory ID (string)
+
+### Returns
+
+This function doesn't return any value
+
+### Example
+
+```lua
+-- Open a stash for a player
+local playerId = 1
+exports['jaksam_inventory']:forceOpenInventory(playerId, 'police_stash_1')
+
+-- Open another player's inventory (search/rob)
+local targetPlayerId = 2
+exports['jaksam_inventory']:forceOpenInventory(playerId, targetPlayerId)
+
+-- Open inventory from a custom menu/UI
+RegisterNetEvent('myresource:openCustomStorage', function(storageId)
+    local playerId = source
+    exports['jaksam_inventory']:forceOpenInventory(playerId, storageId)
+end)
+```
+
 ## getInventory
 Gets complete data about an inventory including its items, weight limits, and metadata
 
