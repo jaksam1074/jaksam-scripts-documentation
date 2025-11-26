@@ -20,7 +20,7 @@ displayFields = {
 
 ```
 
-<img src="../../.gitbook/assets/single_item_display_fields_example.png" alt="Single item display fields example" width="700">
+<img src="../../.gitbook/assets/single_item_display_fields_example.png" alt="Single item display fields example">
 
 ## Adding it to all item type
 To show to players the metadata of an entire item type, it's 100% the same method, but place it in the `Script.defaultsByType` table, in `jaksam_inventory/_data/defaults.lua` file
