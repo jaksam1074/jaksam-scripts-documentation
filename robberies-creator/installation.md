@@ -68,6 +68,74 @@ To add the new items, you have to edit `qb-core/shared/items.lua` file and add a
 
 <figure><img src="https://documentation.jaksam-scripts.com/~gitbook/image?url=https%3A%2F%2F3735039044-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FFH9TH8An8XLjMiOMvVGb%252Fuploads%252FcH2L891VYB7fs7ifKuHQ%252Fqb_core_robberies_creator_items.png%3Falt%3Dmedia%26token%3Dbf328cbd-a8e2-406c-87f4-daba6c1206f5&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b9c4df58dc60a3caaeebb11757d163c2feb79775bef294314bb213b43e1e5e87" alt=""><figcaption></figcaption></figure>
 {% endtab %}
+{% tab title="OX Inventory" %}
+Here's a list for items to use with OX inventory, you can even use it with jaksam's inventory, in 'import from code' setting
+```lua
+['hacking_computer'] = {
+    label = 'Hacking computer',
+    weight = 500,
+    stack = true,
+    close = true,
+    description = 'Computer to hack panels'
+},
+
+['thermal_charge'] = {
+    label = 'Thermal charge',
+    weight = 500,
+    stack = true,
+    close = true,
+    description = 'Use to melt some doors'
+},
+
+['gas_mask'] = {
+    label = 'Gas mask',
+    weight = 500,
+    stack = true,
+    close = true,
+    description = 'Protects from lethal gas'
+},
+
+['drill'] = {
+    label = 'Drill',
+    weight = 500,
+    stack = true,
+    close = true,
+    description = 'Can be used to open trucks doors'
+},
+
+['gold_ingot'] = {
+    label = 'Gold ingot',
+    weight = 500,
+    stack = true,
+    close = true,
+    description = 'Goooold'
+},
+
+['diamonds_box'] = {
+    label = 'Diamond box',
+    weight = 500,
+    stack = true,
+    close = true,
+    description = 'Diamooonds'
+},
+
+['lockpick'] = {
+    label = 'Lockpick',
+    weight = 500,
+    stack = true,
+    close = true,
+    description = 'Used to lockpick doors'
+},
+
+['painting'] = {
+    label = 'Painting',
+    weight = 500,
+    stack = true,
+    close = true,
+    description = 'Expensive painting'
+},
+```
+{% endtab %}
 {% endtabs %}
 
 You are ready to go! Enjoy the script 😁

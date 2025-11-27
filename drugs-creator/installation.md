@@ -70,7 +70,7 @@ To add the new items, you have to edit `qb-core/shared/items.lua` file and add a
 <figure><img src="../.gitbook/assets/qb_core_drugs_creator_items.jpg" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% tab title="OX Inventory" %}
-Here's a list for items to use with OX inventory
+Here's a list for items to use with OX inventory, you can even use it with jaksam's inventory, in 'import from code' setting
 ```lua
 ['ammonium_nitrate'] = {
     label = 'Ammonium nitrate',
