@@ -69,6 +69,171 @@ To add the new items, you have to edit `qb-core/shared/items.lua` file and add a
 
 <figure><img src="../.gitbook/assets/qb_core_drugs_creator_items.jpg" alt=""><figcaption></figcaption></figure>
 {% endtab %}
+{% tab title="OX Inventory" %}
+Here's a list for items to use with OX inventory
+```lua
+['ammonium_nitrate'] = {
+    label = 'Ammonium nitrate',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['carbon'] = {
+    label = 'Carbon',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['codeine'] = {
+    label = 'Codeine',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['drink_sprite'] = {
+    label = 'Sprite',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['drug_ecstasy'] = {
+    label = 'Ecstasy',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['drug_lean'] = {
+    label = 'Lean',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['drug_lsd'] = {
+    label = 'LSD',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['drug_meth'] = {
+    label = 'Meth',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['hydrogen'] = {
+    label = 'Hydrogen',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['ice'] = {
+    label = 'Ice',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['jolly_ranchers'] = {
+    label = 'Jolly Ranchers',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['liquid_sulfur'] = {
+    label = 'Liquid Sulfur',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['muriatic_acid'] = {
+    label = 'Muriatic Acid',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['nitrogen'] = {
+    label = 'Nitrogen',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['oxygen'] = {
+    label = 'Oxygen',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['pseudoefedrine'] = {
+    label = 'Pseudoefedrine',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['red_sulfur'] = {
+    label = 'Red Sulfur',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['sodium_hydroxide'] = {
+    label = 'Sodium hydroxide',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['water'] = {
+    label = 'Water',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['cannabis'] = {
+    label = 'Cannabis',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['green_gelato_cannabis'] = {
+    label = 'Green Gelato Cannabis',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['opium'] = {
+    label = 'Opium',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['cocaine'] = {
+    label = 'Cocaine',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+```
+{% endtab %}
 {% endtabs %}
 
 You are ready to go! Enjoy the script 😁
