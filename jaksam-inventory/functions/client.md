@@ -342,3 +342,35 @@ exports['jaksam_inventory']:dequipWeapon()
 -- Deequip weapon without syncing the ammo to the server
 exports['jaksam_inventory']:dequipWeapon(true)
 ```
+
+## setWeaponWheel
+Enables or disables the weapon wheel and related weapon settings. Useful for minigames where you want the GTA 5 weapon wheel. Note that this function will prevent using weapons from the inventory, it's mainly for FFA minigames
+
+```lua
+exports['jaksam_inventory']:setWeaponWheel(state)
+```
+
+### Parameters
+
+- `state`: boolean | nil
+  - If true, the weapon wheel will be enabled
+  - If false, the weapon wheel will be disabled and weapons cannot be auto-swapped
+  - If nil, uses the current internal state
+
+### Returns
+None - Automatically deequips the current weapon when called
+
+### Example
+
+```lua
+-- Disable weapon wheel
+exports['jaksam_inventory']:setWeaponWheel(false)
+
+-- Enable weapon wheel
+exports['jaksam_inventory']:setWeaponWheel(true)
+
+-- Disable weapon wheel during FFA minigame
+exports['jaksam_inventory']:setWeaponWheel(false)
+-- ... minigame code ...
+exports['jaksam_inventory']:setWeaponWheel(true)
+```
