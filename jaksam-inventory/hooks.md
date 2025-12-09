@@ -6,6 +6,9 @@ Hooks are a way to modify the behavior of the inventory system. They are registe
 - Prevent players from moving police weapons into their personal inventory
 - Allow only one backpack per player inventory
 - Crafting items by dragging a specific item over another item (for example dragging bread on meat can make a sandwich)
+- Block item usage when player is handcuffed or in specific zones
+- Track item usage statistics and achievements
+- Prevent using certain items while in vehicles
 
 ## API Functions
 
@@ -153,6 +156,42 @@ payload = {
 }
 ```
 
+### onPreUseItem
+Triggered BEFORE an item is used (before consume, animations, and delays). This hook can cancel item usage
+
+**Execution Order:** After `STATIC_ITEM.canUse` and `oxServerExport 'usingItem'`, before consume
+
+**Payload:**
+```lua
+payload = {
+    playerId = 1,
+    inventoryId = "license:abcd1234",
+    slotId = 3,
+    itemName = "bread",
+    metadata = {durability = 80}
+}
+```
+
+**Note:** This hook can prevent item usage by returning `false`. Useful for global item usage restrictions (e.g., handcuffed players, vehicle restrictions, zone restrictions)
+
+### onPostUseItem
+Triggered AFTER an item has been used (after consume, animations, delays, and all callbacks)
+
+**Execution Order:** At the very end of the item usage process, after `oxServerExport 'usedItem'`
+
+**Payload:**
+```lua
+payload = {
+    playerId = 1,
+    inventoryId = "license:abcd1234",
+    slotId = 3,
+    itemName = "bread",
+    metadata = {durability = 80}
+}
+```
+
+**Note:** This hook is notification-only and cannot cancel item usage. Useful for logging, statistics, achievements, and triggering external systems
+
 ## Hook Behavior
 
 - **Priority**: Higher numbers execute first (default: 0)
@@ -213,6 +252,47 @@ exports['jaksam_inventory']:registerHook("onItemAdded", function(payload)
     print("Item added to police stash:", payload.itemName)
 end, {
     inventoryFilter = {"stash_police"}
+})
+```
+
+### Block Item Usage When Handcuffed
+```lua
+exports['jaksam_inventory']:registerHook("onPreUseItem", function(payload)
+    if IsPlayerHandcuffed(payload.playerId) then
+        return false, "You cannot use items while handcuffed"
+    end
+end)
+```
+
+### Block Food Usage in Vehicles
+```lua
+exports['jaksam_inventory']:registerHook("onPreUseItem", function(payload)
+    local ped = GetPlayerPed(payload.playerId)
+    if IsPedInAnyVehicle(ped, false) then
+        return false, "You cannot eat while driving", "warning"
+    end
+end, {
+    itemTypeFilter = {food = true}
+})
+```
+
+### Log All Item Usage
+```lua
+exports['jaksam_inventory']:registerHook("onPostUseItem", function(payload)
+    print(("Player %d used %s"):format(payload.playerId, payload.itemName))
+    -- Send to external logging system, database, etc.
+end)
+```
+
+### Track Food Consumption Statistics
+```lua
+local foodStats = {}
+
+exports['jaksam_inventory']:registerHook("onPostUseItem", function(payload)
+    foodStats[payload.itemName] = (foodStats[payload.itemName] or 0) + 1
+    print("Total", payload.itemName, "consumed:", foodStats[payload.itemName])
+end, {
+    itemTypeFilter = {food = true}
 })
 ```
 
