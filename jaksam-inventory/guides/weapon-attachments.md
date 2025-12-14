@@ -59,7 +59,7 @@ Now you need to add the component hash(es) that this item should apply to weapon
 The menu will show you what weapons are compatible with each component hash you add
 {% endhint %}
 
-<img src="../../.gitbook/assets/edit-item-component-hashes-list.jpg" alt="Edit item hashes list example" width="700">
+<figure><img src="../../.gitbook/assets/edit-item-component-hashes-list.jpg" alt="Edit item hashes list example"><figcaption>Edit item hashes list example</figcaption></figure>
 
 ### Step 3: Test in-game
 1. Give yourself the attachment item: `/giveitem [your_id] [item_name] 1` or through omnipack (`F1` while inventory is open)
