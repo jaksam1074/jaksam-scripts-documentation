@@ -149,6 +149,7 @@
 ## 🎒 Jaksam Inventory
 * [Home](jaksam-inventory/home.md)
 * [Installation](jaksam-inventory/installation.md)
+* [How to update](jaksam-inventory/how-to-update.md)
 * [Guides](jaksam-inventory/guides/)
   * [Customize default theme](jaksam-inventory/guides/customize-theme.md)
   * [Admin Inventory (Omnipack)](jaksam-inventory/guides/admin-inventory.md)
