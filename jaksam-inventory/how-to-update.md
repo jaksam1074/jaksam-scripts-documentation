@@ -9,6 +9,7 @@ This guide shows you how to update without losing your custom items, settings, a
 ## What to Backup
 
 **Always backup these folders:**
+- `_backups/` - Items list backup
 - `_data/` - Your items and settings
 - `_hooks/` - Crafting recipes and custom logic
 - `_images/` - Items images
