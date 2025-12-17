@@ -53,7 +53,7 @@ This guide shows you how to update without losing your custom items, settings, a
 | Folder/File | When to backup |
 |-------------|----------------|
 | `_data/` | ✅ Always |
-| `_defaults/` | ✅ Always |
+| `_backups/` | ✅ Always |
 | `_hooks/` | ✅ Always |
 | `_modules_/` | ✅ Always |
 | `integrations/` | ✅ Always |
