@@ -2,11 +2,11 @@
 
 All admin commands require ACE permission (Use /inventory to see if you have it)
 
-## `/inventory`
+### `/inventory`
 
 Opens the admin menu to manage items, shops, stashes, view statistics, etc.
 
-## `/giveitem <inventoryId|playerId|'me'> <itemName> <amount> [slotId]`
+### `/giveitem <inventoryId|playerId|'me'> <itemName> <amount> [slotId]`
 
 Give items to a player or inventory
 
@@ -16,7 +16,7 @@ Give items to a player or inventory
 /giveitem stash_police weapon_pistol 1 3 -- Give 1 weapon_pistol to stash_police in slot 3
 ```
 
-## `/removeitem <inventoryId> <itemName> <amount> [slotId]`
+### `/removeitem <inventoryId> <itemName> <amount> [slotId]`
 
 Remove items from a player or inventory
 
@@ -25,7 +25,7 @@ Remove items from a player or inventory
 /removeitem stash_police weapon_pistol 1 -- Remove 1 weapon_pistol from stash_police
 ```
 
-## `/clearinventory [inventoryId] [excludedItemName]`
+### `/clearinventory [inventoryId] [excludedItemName]`
 
 Clear all items from an inventory. If `inventoryId` is empty, clears your own inventory. You can also exclude an item from clearing
 
@@ -35,7 +35,7 @@ Clear all items from an inventory. If `inventoryId` is empty, clears your own in
 /clearinventory 2 phone  -- Clear player 2's inventory but keep phone
 ```
 
-## `/openinventory <targetPlayerId>`
+### `/openinventory <targetPlayerId>`
 
 Open another player's inventory
 
@@ -43,6 +43,6 @@ Open another player's inventory
 /openinventory 1          -- Open player 1's inventory
 ```
 
-## `/saveinventories`
+### `/saveinventories`
 
 Force save all modified inventories to database
