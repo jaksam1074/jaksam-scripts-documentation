@@ -151,6 +151,7 @@
 * [Installation](jaksam-inventory/installation.md)
 * [How to update](jaksam-inventory/how-to-update.md)
 * [Guides](jaksam-inventory/guides/)
+  * [Commands](jaksam-inventory/guides/commands.md)
   * [Customize default theme](jaksam-inventory/guides/customize-theme.md)
   * [Admin Inventory (Omnipack)](jaksam-inventory/guides/admin-inventory.md)
   * [Metadata](jaksam-inventory/guides/metadata.md)
