@@ -156,6 +156,7 @@
   * [Admin Inventory (Omnipack)](jaksam-inventory/guides/admin-inventory.md)
   * [Metadata](jaksam-inventory/guides/metadata.md)
   * [Context Actions](jaksam-inventory/guides/context-actions.md)
+  * [Action Buttons](jaksam-inventory/guides/action-buttons.md)
   * [Weapon Attachments](jaksam-inventory/guides/weapon-attachments.md)
   * [Block police weapon rob](jaksam-inventory/guides/block-police-weapon-rob.md)
   * [Crafting](jaksam-inventory/guides/crafting.md)

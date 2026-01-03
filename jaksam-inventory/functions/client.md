@@ -374,3 +374,141 @@ exports['jaksam_inventory']:setWeaponWheel(false)
 -- ... minigame code ...
 exports['jaksam_inventory']:setWeaponWheel(true)
 ```
+
+## registerActionButton
+Registers a custom action button in the inventory UI toolbar. Action buttons appear on the right side of the inventory and can trigger any custom logic when clicked
+
+For a complete guide with images and examples, see the [Action Buttons Guide](../guides/action-buttons.md).
+
+```lua
+exports['jaksam_inventory']:registerActionButton(id, icon, tooltip, onClick, visible)
+```
+
+### Parameters
+
+- `id`: string
+  - Unique identifier for the button. Used to reference the button when showing/hiding/unregistering
+- `icon`: string
+  - Bootstrap Icons class name (e.g. "bi-shield-x", "bi-car-front-fill"). Find icons at https://icons.getbootstrap.com/
+- `tooltip`: string | nil
+  - Tooltip text shown when hovering the button. Can be nil for no tooltip
+- `onClick`: function
+  - Callback function executed when the button is clicked
+- `visible`: boolean | nil
+  - Whether the button should be visible initially. Default: true
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Register a simple action button
+exports['jaksam_inventory']:registerActionButton(
+    'my_custom_button',
+    'bi-star-fill',
+    'My Custom Action',
+    function()
+        print('Button clicked!')
+        -- Your custom logic here
+    end
+)
+
+-- Register a hidden button (to show later based on conditions)
+exports['jaksam_inventory']:registerActionButton(
+    'police_actions',
+    'bi-shield-check',
+    'Police Actions',
+    function()
+        TriggerEvent('myPoliceScript:openMenu')
+    end,
+    false -- hidden by default
+)
+```
+
+## unregisterActionButton
+Removes a previously registered action button from the inventory UI
+
+```lua
+exports['jaksam_inventory']:unregisterActionButton(id)
+```
+
+### Parameters
+
+- `id`: string
+  - The unique identifier of the button to remove (same id used in registerActionButton)
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Unregister a button when no longer needed
+exports['jaksam_inventory']:unregisterActionButton('my_custom_button')
+
+-- Unregister when player leaves a job
+AddEventHandler('esx:setJob', function(job)
+    if job.name ~= 'police' then
+        exports['jaksam_inventory']:unregisterActionButton('police_actions')
+    end
+end)
+```
+
+## showActionButton
+Makes a previously hidden action button visible in the inventory UI
+
+```lua
+exports['jaksam_inventory']:showActionButton(id)
+```
+
+### Parameters
+
+- `id`: string
+  - The unique identifier of the button to show
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Show a button that was registered as hidden
+exports['jaksam_inventory']:showActionButton('police_actions')
+
+-- Show button when player gets a specific job
+AddEventHandler('esx:setJob', function(job)
+    if job.name == 'police' then
+        exports['jaksam_inventory']:showActionButton('police_actions')
+    end
+end)
+```
+
+## hideActionButton
+Hides an action button from the inventory UI without removing it
+
+```lua
+exports['jaksam_inventory']:hideActionButton(id)
+```
+
+### Parameters
+
+- `id`: string
+  - The unique identifier of the button to hide
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Hide a button temporarily
+exports['jaksam_inventory']:hideActionButton('police_actions')
+
+-- Hide button when player is off-duty
+AddEventHandler('esx:setJob', function(job)
+    if job.name ~= 'police' then
+        exports['jaksam_inventory']:hideActionButton('police_actions')
+    end
+end)
+```
