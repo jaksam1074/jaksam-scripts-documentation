@@ -206,7 +206,7 @@ payload = {
 ### Block Police Weapons in Player Inventory
 ```lua
 exports['jaksam_inventory']:registerHook("onItemTransferred", function(payload)
-    local item = Script.getStaticItem(payload.itemName)
+    local item = exports["jaksam_inventory"]:getStaticItem(payload.itemName)
     if item?.policeOnly then
         return false, "Only police can have this weapon"
     end
@@ -219,7 +219,7 @@ end, {
 ### One Backpack Per Player
 ```lua
 exports['jaksam_inventory']:registerHook("onItemAdded", function(payload)
-    local backpackCount = Script.getTotalItemAmount(payload.inventoryId, "backpack")
+    local backpackCount = exports["jaksam_inventory"]:getTotalItemAmount(payload.inventoryId, "backpack")
     if backpackCount >= 1 then
         return false, "You can only have one backpack"
     end
@@ -232,14 +232,14 @@ end, {
 ### Simple Crafting (Drag Items Together)
 ```lua
 exports['jaksam_inventory']:registerHook("onItemTransferred", function(payload)
-    local sourceItem = Script.getItemFromSlot(payload.inventoryIdFrom, payload.slotIdFrom)
-    local targetItem = Script.getItemFromSlot(payload.inventoryIdTo, payload.slotIdTo)
+    local sourceItem = exports["jaksam_inventory"]:getItemFromSlot(payload.inventoryIdFrom, payload.slotIdFrom)
+    local targetItem = exports["jaksam_inventory"]:getItemFromSlot(payload.inventoryIdTo, payload.slotIdTo)
     if not targetItem then return end -- Dragged over an empty slot
 
     if sourceItem.name == "bread" and targetItem.name == "meat" then
-        Script.removeItem(payload.inventoryIdFrom, "bread", 1, payload.slotIdFrom)
-        Script.removeItem(payload.inventoryIdFrom, "meat", 1, payload.slotIdTo)
-        Script.addItem(payload.inventoryIdFrom, "sandwich", 1)
+        exports["jaksam_inventory"]:removeItem(payload.inventoryIdFrom, "bread", 1, payload.slotIdFrom)
+        exports["jaksam_inventory"]:removeItem(payload.inventoryIdFrom, "meat", 1, payload.slotIdTo)
+        exports["jaksam_inventory"]:addItem(payload.inventoryIdFrom, "sandwich", 1)
         return false, "You crafted a sandwich", "success"
     end
 end, {intraInventoryOnly = true})
