@@ -512,3 +512,38 @@ AddEventHandler('esx:setJob', function(job)
     end
 end)
 ```
+
+## getVehicleInventoryLimits
+Returns the trunk or glovebox limits for a vehicle based on model. Uses the configuration from `_data/vehicles.lua` with priority: `trunkByModel`/`gloveboxByModel` > `trunkByClass`/`gloveboxByClass`. Returns `0, 0` if the vehicle/class is configured to not have trunk/glovebox (`noTrunkVehicles`, `noTrunkClasses`, etc.)
+
+```lua
+exports['jaksam_inventory']:getVehicleInventoryLimits(vehicleModel, inventoryType)
+```
+
+### Parameters
+- `vehicleModel`: number|string
+  - The vehicle model hash (from `GetEntityModel`) or the model name as string
+- `inventoryType`: string
+  - Either `"trunk"` or `"glovebox"`
+
+### Returns
+- `maxSlots`: number|nil
+  - The maximum slots for the vehicle inventory, or nil if no config found
+- `maxWeight`: number|nil
+  - The maximum weight for the vehicle inventory, or nil if no config found
+
+### Example
+
+```lua
+local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+local maxSlots, maxWeight = exports['jaksam_inventory']:getVehicleInventoryLimits(GetEntityModel(vehicle), "trunk")
+
+if maxWeight then
+    print("Trunk max weight: " .. maxWeight)
+else
+    print("No specific config for this vehicle model/class")
+end
+
+-- Get glovebox limits for 'adder' vehicle
+local gloveboxSlots, gloveboxWeight = exports['jaksam_inventory']:getVehicleInventoryLimits('adder' "glovebox")
+```
