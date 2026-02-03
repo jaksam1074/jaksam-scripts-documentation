@@ -9,6 +9,8 @@ Hooks are a way to modify the behavior of the inventory system. They are registe
 - Block item usage when player is handcuffed or in specific zones
 - Track item usage statistics and achievements
 - Prevent using certain items while in vehicles
+- Add starter items to new player inventories when they are created
+- Pre-populate dumpsters or stashes with random items on creation
 
 ## API Functions
 
@@ -66,7 +68,7 @@ local options = {
 }
 ```
 
-### Inventory Filters (onItemAdded, onItemRemoved)
+### Inventory Filters (onItemAdded, onItemRemoved, onInventoryCreated)
 ```lua
 local options = {
     -- Filter by inventory type (recommended)
@@ -192,6 +194,27 @@ payload = {
 
 **Note:** This hook is notification-only and cannot cancel item usage. Useful for logging, statistics, achievements, and triggering external systems
 
+### onInventoryCreated
+Triggered when a new inventory is created
+
+**Payload:**
+```lua
+payload = {
+    inventoryId = "stash_police",
+    inventoryType = "stash",
+    label = "Police Stash",
+    options = {maxWeight = 100, maxSlots = 50}, -- May be nil if not explicitly set, if so, it will follow the config for global inventories options
+    items = {},
+    metadata = {}
+}
+```
+
+**Note:** This hook is notification-only and cannot cancel inventory creation. Useful for adding starter items, pre-populating inventories with random loot, or logging inventory creation. Use exports to add items to the inventory within the callback
+
+**Available Filters:**
+- `inventoryTypeFilter`: Filter by inventory type (player, stash, trunk, dumpster, etc.)
+- `inventoryFilter`: Filter by specific inventory ID patterns
+
 ## Hook Behavior
 
 - **Priority**: Higher numbers execute first (default: 0)
@@ -293,6 +316,57 @@ exports['jaksam_inventory']:registerHook("onPostUseItem", function(payload)
     print("Total", payload.itemName, "consumed:", foodStats[payload.itemName])
 end, {
     itemTypeFilter = {food = true}
+})
+```
+
+### Add Starter Items to New Player Inventories
+```lua
+exports['jaksam_inventory']:registerHook("onInventoryCreated", function(payload)
+    exports["jaksam_inventory"]:addItem(payload.inventoryId, "bread", 5)
+    exports["jaksam_inventory"]:addItem(payload.inventoryId, "water", 3)
+    exports["jaksam_inventory"]:addItem(payload.inventoryId, "phone", 1)
+end, {
+    inventoryTypeFilter = {player = true}
+})
+```
+
+### Populate Dumpsters with Random Loot
+Note that an existent hook is already provided in _hooks folder of jaksam inventory
+```lua
+-- Loot table: each entry has itemName, minAmount, maxAmount
+local lootTable = {
+    {name = "trash", min = 1, max = 5},
+    {name = "newspaper", min = 1, max = 2},
+    {name = "bottle", min = 1, max = 3},
+    {name = "sandwich", min = 1, max = 1},
+    {name = "bandage", min = 1, max = 2},
+}
+
+-- Min and max number of different items per dumpster
+local minItems, maxItems = 1, 3
+
+-- Fisher-Yates shuffle for random selection without repetition
+local function shuffleTable(tbl)
+    local shuffled = {}
+    for i = 1, #tbl do shuffled[i] = tbl[i] end
+    for i = #shuffled, 2, -1 do
+        local j = math.random(1, i)
+        shuffled[i], shuffled[j] = shuffled[j], shuffled[i]
+    end
+    return shuffled
+end
+
+exports['jaksam_inventory']:registerHook("onInventoryCreated", function(payload)
+    local itemCount = math.random(minItems, math.min(maxItems, #lootTable))
+    local shuffledLoot = shuffleTable(lootTable)
+
+    for i = 1, itemCount do
+        local loot = shuffledLoot[i]
+        local amount = math.random(loot.min, loot.max)
+        exports["jaksam_inventory"]:addItem(payload.inventoryId, loot.name, amount)
+    end
+end, {
+    inventoryTypeFilter = {dumpster = true}
 })
 ```
 
