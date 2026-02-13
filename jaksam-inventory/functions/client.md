@@ -408,8 +408,8 @@ exports['jaksam_inventory']:setWeaponWheel(state)
 ### Parameters
 
 - `state`: boolean | nil
-  - If true, the weapon wheel will be enabled
-  - If false, the weapon wheel will be disabled and weapons cannot be auto-swapped
+  - If true, the default GTA5 weapon wheel will be enabled and weapons WON'T be handled by jaksam inventory
+  - If false, the default GTA5 weapon wheel will be disabled and weapons WILL be handled by jaksam inventory
   - If nil, uses the current internal state
 
 ### Returns
@@ -418,16 +418,16 @@ None - Automatically deequips the current weapon when called
 ### Example
 
 ```lua
--- Disable weapon wheel
+-- Disable GTA5 weapon wheel (default jaksam_inventory mode)
 exports['jaksam_inventory']:setWeaponWheel(false)
 
--- Enable weapon wheel
+-- Enable GTA5 weapon wheel (enable only for minigames)
 exports['jaksam_inventory']:setWeaponWheel(true)
 
--- Disable weapon wheel during FFA minigame
-exports['jaksam_inventory']:setWeaponWheel(false)
+-- Enable default GTA 5 weapon wheel during FFA minigame
+exports['jaksam_inventory']:setWeaponWheel(true)
 -- ... minigame code ...
-exports['jaksam_inventory']:setWeaponWheel(true)
+exports['jaksam_inventory']:setWeaponWheel(false) -- Disable GTA5 wheel again, returning to normal jaksam_inventory 
 ```
 
 ## registerActionButton
