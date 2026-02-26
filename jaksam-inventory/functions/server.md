@@ -50,6 +50,244 @@ local success, result = exports['jaksam_inventory']:addItem(1, 'WEAPON_PISTOL', 
 local success, result = exports['jaksam_inventory']:addItem(1, 'bread', 1, nil, 5) -- slot 5
 ```
 
+## addItemToTrunk
+Adds items to a vehicle trunk using only the vehicle plate, automatically resolving the full inventory ID
+
+```lua
+exports['jaksam_inventory']:addItemToTrunk(plate, itemName, amount, metadata, slotId)
+```
+
+### Parameters
+
+- `plate`: string
+  - The vehicle license plate
+- `itemName`: string
+  - The name of the item to add
+- `amount`: number
+  - How many items to add
+- `metadata`: table (optional)
+  - Additional data for the item
+- `slotId`: number (optional)
+  - Specific slot to place the item in
+
+### Returns
+
+- `success`: boolean
+  - true if items were added successfully
+- `resultCode`: string
+  - Error message if the operation failed (e.g., "vehicle_not_found")
+- `notificationType`: string
+  - Type of notification to show to the user
+
+### Example
+
+```lua
+-- Add 5 water bottles to vehicle trunk
+local plate = GetVehicleNumberPlateText(vehicle)
+local success, result = exports['jaksam_inventory']:addItemToTrunk(plate, 'water', 5)
+
+if not success then
+    print("Failed to add item: " .. result)
+end
+
+-- Add item with metadata
+local success = exports['jaksam_inventory']:addItemToTrunk("ABC 123", 'phone', 1, {
+    number = "555-0123"
+})
+```
+
+### Notes
+
+- Works with owned vehicles (even if not spawned/in garage)
+- Works with NPC vehicles (if currently spawned)
+- Automatically creates trunk inventory if it doesn't exist
+- For owned vehicles, inventory is persistent (saved to database)
+
+## addItemToGlovebox
+Adds items to a vehicle glovebox using only the vehicle plate, automatically resolving the full inventory ID
+
+```lua
+exports['jaksam_inventory']:addItemToGlovebox(plate, itemName, amount, metadata, slotId)
+```
+
+### Parameters
+
+- `plate`: string
+  - The vehicle license plate
+- `itemName`: string
+  - The name of the item to add
+- `amount`: number
+  - How many items to add
+- `metadata`: table (optional)
+  - Additional data for the item
+- `slotId`: number (optional)
+  - Specific slot to place the item in
+
+### Returns
+
+- `success`: boolean
+  - true if items were added successfully
+- `resultCode`: string
+  - Error message if the operation failed (e.g., "vehicle_not_found")
+- `notificationType`: string
+  - Type of notification to show to the user
+
+### Example
+
+```lua
+-- Add documents to glovebox
+local plate = GetVehicleNumberPlateText(vehicle)
+local success = exports['jaksam_inventory']:addItemToGlovebox(plate, 'documents', 1)
+
+-- Add multiple items
+local success = exports['jaksam_inventory']:addItemToGlovebox("XYZ 789", 'money', 500)
+```
+
+### Notes
+
+- Works with owned vehicles (even if not spawned/in garage)
+- Works with NPC vehicles (if currently spawned)
+- Automatically creates glovebox inventory if it doesn't exist
+- For owned vehicles, inventory is persistent (saved to database)
+
+## removeItemFromTrunk
+Removes items from a vehicle trunk using only the vehicle plate, automatically resolving the full inventory ID
+
+```lua
+exports['jaksam_inventory']:removeItemFromTrunk(plate, itemName, amount, metadata, slotId)
+```
+
+### Parameters
+
+- `plate`: string
+  - The vehicle license plate
+- `itemName`: string
+  - The name of the item to remove
+- `amount`: number
+  - How many items to remove
+- `metadata`: table (optional)
+  - Metadata to match for removal (optional filtering)
+- `slotId`: number (optional)
+  - Specific slot to remove from
+
+### Returns
+
+- `success`: boolean
+  - true if items were removed successfully
+- `resultCode`: string
+  - Error message if the operation failed
+- `notificationType`: string
+  - Type of notification to show to the user
+
+### Example
+
+```lua
+-- Remove 3 water bottles from trunk
+local plate = GetVehicleNumberPlateText(vehicle)
+local success = exports['jaksam_inventory']:removeItemFromTrunk(plate, 'water', 3)
+
+-- Remove from specific slot
+local success = exports['jaksam_inventory']:removeItemFromTrunk("ABC 123", 'weapon', 1, nil, 5)
+```
+
+### Notes
+
+- Vehicle must exist (owned vehicle in database or NPC vehicle currently spawned)
+- Returns false with "vehicle_not_found" if vehicle doesn't exist
+
+## removeItemFromGlovebox
+Removes items from a vehicle glovebox using only the vehicle plate, automatically resolving the full inventory ID
+
+```lua
+exports['jaksam_inventory']:removeItemFromGlovebox(plate, itemName, amount, metadata, slotId)
+```
+
+### Parameters
+
+- `plate`: string
+  - The vehicle license plate
+- `itemName`: string
+  - The name of the item to remove
+- `amount`: number
+  - How many items to remove
+- `metadata`: table (optional)
+  - Metadata to match for removal (optional filtering)
+- `slotId`: number (optional)
+  - Specific slot to remove from
+
+### Returns
+
+- `success`: boolean
+  - true if items were removed successfully
+- `resultCode`: string
+  - Error message if the operation failed
+- `notificationType`: string
+  - Type of notification to show to the user
+
+### Example
+
+```lua
+-- Remove documents from glovebox
+local plate = GetVehicleNumberPlateText(vehicle)
+local success = exports['jaksam_inventory']:removeItemFromGlovebox(plate, 'documents', 1)
+
+if not success then
+    print("Document not found in glovebox")
+end
+```
+
+### Notes
+
+- Vehicle must exist (owned vehicle in database or NPC vehicle currently spawned)
+- Returns false with "vehicle_not_found" if vehicle doesn't exist
+
+## getInventoryIdFromPlate
+Resolves the full inventory ID for a vehicle compartment using only the vehicle plate
+
+```lua
+exports['jaksam_inventory']:getInventoryIdFromPlate(plate, compartment)
+```
+
+### Parameters
+
+- `plate`: string
+  - The vehicle license plate
+- `compartment`: string
+  - Either "trunk" or "glovebox"
+
+### Returns
+
+- `inventoryId`: string | nil
+  - The full inventory ID (format: "vehicle:plate:model:compartment")
+  - nil if vehicle not found
+
+### Example
+
+```lua
+-- Get trunk inventory ID
+local plate = GetVehicleNumberPlateText(vehicle)
+local trunkId = exports['jaksam_inventory']:getInventoryIdFromPlate(plate, "trunk")
+
+if trunkId then
+    print("Trunk ID: " .. trunkId)
+    -- Now you can use standard inventory functions
+    local inventory = exports['jaksam_inventory']:getInventory(trunkId)
+end
+
+-- Get glovebox inventory ID
+local gloveboxId = exports['jaksam_inventory']:getInventoryIdFromPlate("ABC 123", "glovebox")
+```
+
+### Notes
+
+- Searches in this order:
+  1. Owned vehicles database (ESX: `owned_vehicles`, QBCore: `player_vehicles`)
+  2. Existing inventories in `jaksam_inventory` table
+  3. Currently spawned vehicles (GetAllVehicles - NPC vehicles)
+- For owned vehicles, automatically creates inventory if it doesn't exist
+- Created inventories are persistent for owned vehicles, temporary for NPC vehicles
+- Works even if vehicle is not currently spawned (garage)
+
 ## canCarryItem
 Checks if an inventory has space for additional items, considering both weight and slot limits
 
