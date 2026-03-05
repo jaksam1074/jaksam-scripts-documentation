@@ -648,3 +648,78 @@ else
     notify("Can't do it while inventory is open")
 end
 ```
+
+## setInventoryDisabled
+Completely disables or re-enables inventory opening. When disabled, all inventory interactions are blocked: hotkeys, keybinds, and direct export/event calls. If the inventory is currently open when disabling, it will be closed and the weapon will be dequipped automatically
+
+This is useful for cutscenes, minigames, progress bars, or any scenario where the player should not be able to open the inventory.
+
+```lua
+exports['jaksam_inventory']:setInventoryDisabled(disabled)
+```
+
+### Parameters
+
+- `disabled`: boolean
+  - If true, inventory opening is completely blocked
+  - If false, inventory opening is re-enabled
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Disable inventory during a cutscene
+exports['jaksam_inventory']:setInventoryDisabled(true)
+-- ... cutscene code ...
+exports['jaksam_inventory']:setInventoryDisabled(false)
+
+-- Disable inventory during a progress bar
+exports['jaksam_inventory']:setInventoryDisabled(true)
+-- ... progress bar logic ...
+exports['jaksam_inventory']:setInventoryDisabled(false)
+```
+
+### ox_inventory compatibility
+
+If you are migrating from ox_inventory, this export replaces the `invBusy` state bag pattern. Scripts that set `LocalPlayer.state:set('invBusy', true, true)` will continue to work automatically - jaksam_inventory listens for `invBusy` state bag changes and maps them to the same internal flag.
+
+```lua
+-- ox_inventory pattern (still works with jaksam_inventory)
+LocalPlayer.state:set('invBusy', true, true)
+
+-- jaksam_inventory native export (recommended)
+exports['jaksam_inventory']:setInventoryDisabled(true)
+```
+
+## isInventoryDisabled
+Returns whether inventory opening is currently disabled
+
+```lua
+exports['jaksam_inventory']:isInventoryDisabled()
+```
+
+### Parameters
+None
+
+### Returns
+
+- `disabled`: boolean
+  - True if inventory opening is currently disabled, false otherwise
+
+### Example
+
+```lua
+-- Check if inventory is disabled before doing something
+local disabled = exports['jaksam_inventory']:isInventoryDisabled()
+
+if disabled then
+    print('Inventory is currently disabled')
+end
+
+-- Guard a custom action
+if not exports['jaksam_inventory']:isInventoryDisabled() then
+    exports['jaksam_inventory']:openInventory('my_stash')
+end
+```
