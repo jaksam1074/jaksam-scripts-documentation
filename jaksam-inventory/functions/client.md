@@ -62,6 +62,37 @@ exports['jaksam_inventory']:openInventory('police_stash_1')
 exports['jaksam_inventory']:openInventory('car_trunk_123')
 ```
 
+## closeInventory
+Closes the inventory UI. Can either close a specific inventory or close the entire inventory UI
+
+```lua
+exports['jaksam_inventory']:closeInventory(inventoryId)
+```
+
+### Parameters
+
+- `inventoryId`: string | nil
+  - If provided, removes only the specified inventory from the UI
+  - If nil, closes the entire inventory UI and all open inventories
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Close the entire inventory UI
+exports['jaksam_inventory']:closeInventory()
+
+-- Close a specific inventory (e.g., a stash)
+exports['jaksam_inventory']:closeInventory('police_stash_1')
+
+-- Force close inventory after a specific event
+AddEventHandler('myScript:forceCloseInventory', function()
+    exports['jaksam_inventory']:closeInventory()
+end)
+```
+
 ## getInventory
 Gets the player's self inventory
 
