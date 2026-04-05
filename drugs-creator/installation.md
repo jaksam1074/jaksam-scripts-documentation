@@ -63,6 +63,11 @@ To add the new items, you have to edit `qb-core/shared/items.lua` file and add a
 ['green_gelato_cannabis'] = {['name'] = 'green_gelato_cannabis', ['label'] = 'Green Gelato Cannabis', ['weight'] = 500, ['type'] = 'item', ['image'] = 'green_gelato_cannabis.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 ['opium'] = {['name'] = 'opium', ['label'] = 'Opium', ['weight'] = 500, ['type'] = 'item', ['image'] = 'opium.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 ['cocaine'] = {['name'] = 'cocaine', ['label'] = 'Cocaine', ['weight'] = 500, ['type'] = 'item', ['image'] = 'cocaine.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+['meth_raw'] = {['name'] = 'meth_raw', ['label'] = 'Raw Meth', ['weight'] = 500, ['type'] = 'item', ['image'] = 'meth_raw.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+['meth_processed'] = {['name'] = 'meth_processed', ['label'] = 'Processed Meth', ['weight'] = 500, ['type'] = 'item', ['image'] = 'meth_processed.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+['meth'] = {['name'] = 'meth', ['label'] = 'Meth', ['weight'] = 500, ['type'] = 'item', ['image'] = 'meth.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+['cocaine_raw'] = {['name'] = 'cocaine_raw', ['label'] = 'Raw Cocaine', ['weight'] = 500, ['type'] = 'item', ['image'] = 'cocaine_raw.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+['cocaine_packaged'] = {['name'] = 'cocaine_packaged', ['label'] = 'Packaged Cocaine', ['weight'] = 500, ['type'] = 'item', ['image'] = 'cocaine_packaged.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 ['trap_phone'] = {['name'] = 'trap_phone', ['label'] = 'Trap Phone', ['weight'] = 500, ['type'] = 'item', ['image'] = 'trap_phone.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil},
 ```
 
@@ -229,6 +234,41 @@ Here's a list for items to use with OX inventory, you can even use it with jaksa
 
 ['cocaine'] = {
     label = 'Cocaine',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['meth_raw'] = {
+    label = 'Raw Meth',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['meth_processed'] = {
+    label = 'Processed Meth',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['meth'] = {
+    label = 'Meth',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['cocaine_raw'] = {
+    label = 'Raw Cocaine',
+    weight = 500,
+    stack = true,
+    close = false,
+},
+
+['cocaine_packaged'] = {
+    label = 'Packaged Cocaine',
     weight = 500,
     stack = true,
     close = false,
