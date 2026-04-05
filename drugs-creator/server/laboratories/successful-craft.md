@@ -28,7 +28,7 @@ RegisterNetEvent("drugs_creator:laboratory:successfulCraft", function(playerId, 
         local itemName = resultItem.itemName
         local quantity = resultItem.itemQuantity
 
-        TriggerEvent("xp_system:addXp", playerId, itemQuantity)
+        TriggerEvent("xp_system:addXp", playerId, quantity)
     end
 end)
 ```

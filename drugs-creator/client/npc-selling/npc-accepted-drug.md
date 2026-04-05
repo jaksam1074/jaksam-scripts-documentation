@@ -29,7 +29,7 @@ RegisterNetEvent("drugs_creator:npc:acceptedDrug", function(targetPedNetworkId)
     local plyPed = PlayerPedId()
     local plyCoords = GetEntityCoords(plyPed)
 
-    local targetPed = NetworkGetEntityFromNetworkId(pedNetId)
+    local targetPed = NetworkGetEntityFromNetworkId(targetPedNetworkId)
     local targetCoords = GetEntityCoords(targetPed)
 
     local animDict = "mp_common"

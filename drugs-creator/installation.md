@@ -63,6 +63,7 @@ To add the new items, you have to edit `qb-core/shared/items.lua` file and add a
 ['green_gelato_cannabis'] = {['name'] = 'green_gelato_cannabis', ['label'] = 'Green Gelato Cannabis', ['weight'] = 500, ['type'] = 'item', ['image'] = 'green_gelato_cannabis.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 ['opium'] = {['name'] = 'opium', ['label'] = 'Opium', ['weight'] = 500, ['type'] = 'item', ['image'] = 'opium.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 ['cocaine'] = {['name'] = 'cocaine', ['label'] = 'Cocaine', ['weight'] = 500, ['type'] = 'item', ['image'] = 'cocaine.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+['trap_phone'] = {['name'] = 'trap_phone', ['label'] = 'Trap Phone', ['weight'] = 500, ['type'] = 'item', ['image'] = 'trap_phone.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil},
 ```
 
 **Screenshot example**
@@ -231,6 +232,13 @@ Here's a list for items to use with OX inventory, you can even use it with jaksa
     weight = 500,
     stack = true,
     close = false,
+},
+
+['trap_phone'] = {
+    label = 'Trap Phone',
+    weight = 500,
+    stack = false,
+    close = true,
 },
 ```
 {% endtab %}

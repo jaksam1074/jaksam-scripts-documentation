@@ -1,6 +1,6 @@
 # Sold to pusher
 
-Triggered after a player sells to narcos
+Triggered after a player sells to a pusher
 
 ## Event
 
