@@ -15,7 +15,11 @@ Use [WinSCP](https://winscp.net/eng/download.php) instead
 {% tab title="ESX 1.10.7" %}
 1. Download the script and extract it in your resources
 2. Download the jaksam_core and extract it in your resources
-3. Add the script in your auto start, **right after** `es_extended` (example: server.cfg)
+3. Add this code, **right after** `es_extended` (example: server.cfg)
+```
+add_unsafe_worker_permission jaksam_inventory # Allows jaksam's inventory to automatically install itself
+ensure jaksam_inventory
+```
 4. Set in `es_extended\config.lua` -> `Config.OxInventory = false`
 5. Set in `es_extended\config.lua` -> `Config.EnableDefaultInventory = false`
 6. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jaksam_inventory/sql/` folder
@@ -42,7 +46,11 @@ If it doesn't work, be sure to use the latest version of the official ESX with t
 {% tab title="ESX 1.11.3+" %}
 1. Download the script and extract it in your resources
 2. Download the jaksam_core and extract it in your resources
-3. Add the script in your auto start, **right after** `es_extended` (example: server.cfg)
+3. Add this code, **right after** `es_extended` (example: server.cfg)
+```
+add_unsafe_worker_permission jaksam_inventory # Allows jaksam's inventory to automatically install itself
+ensure jaksam_inventory
+```
 4. Set in `es_extended\config.lua` -> `Config.CustomInventory = "jaksam_inventory"`
 5. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jaksam_inventory/sql/` folder
 
@@ -66,7 +74,11 @@ start [core]
 1. Download the script and extract it in your resources
 2. Download the jaksam_core and extract it in your resources
 3. Enable `Integrations.backwardsCompatibility` for qb-inventory in `jaksam_inventory\integrations\sv_integrations.lua`
-4. Add `jaksam_inventory` in your auto start, **right after** `qb-core` (example: server.cfg)
+4. Add this code, **right after** `qb-core` (example: server.cfg)
+```
+add_unsafe_worker_permission jaksam_inventory # Allows jaksam's inventory to automatically install itself
+ensure jaksam_inventory
+```
 5. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jaksam_inventory/sql/` folder
 
 Start order example
@@ -91,7 +103,11 @@ If it doesn't work, be sure to use the latest version of the official QBCore wit
 1. Download the script and extract it in your resources
 2. Download the jaksam_core and extract it in your resources
 3. Enable `Integrations.backwardsCompatibility` for ox_inventory in `jaksam_inventory\integrations\sv_integrations.lua`
-4. Add `jaksam_inventory` in your auto start, **right after** `qbx_core` (example: server.cfg)
+4. Add this code, **right after** `qbx_core` (example: server.cfg)
+```
+add_unsafe_worker_permission jaksam_inventory # Allows jaksam's inventory to automatically install itself
+ensure jaksam_inventory
+```
 5. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jaksam_inventory/sql/` folder
 
 Start order example
