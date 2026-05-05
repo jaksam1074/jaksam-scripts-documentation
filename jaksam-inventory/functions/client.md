@@ -461,6 +461,32 @@ exports['jaksam_inventory']:setWeaponWheel(true)
 exports['jaksam_inventory']:setWeaponWheel(false) -- Disable GTA5 wheel again, returning to normal jaksam_inventory 
 ```
 
+## setJaksamWeaponWheel
+Enables or disables the jaksam custom radial weapon wheel at runtime. Useful when you need to prevent players from switching weapons via the radial wheel during specific scenarios (cutscenes, minigames, etc.)
+
+```lua
+exports['jaksam_inventory']:setJaksamWeaponWheel(state)
+```
+
+### Parameters
+
+- `state`: boolean | nil
+  - If true, the jaksam radial weapon wheel is enabled
+  - If false, the jaksam radial weapon wheel is disabled (closes it immediately if open)
+  - If nil, uses the current internal state
+
+### Returns
+None
+
+### Example
+
+```lua
+-- Disable jaksam weapon wheel during a cutscene
+exports['jaksam_inventory']:setJaksamWeaponWheel(false)
+-- ... cutscene code ...
+exports['jaksam_inventory']:setJaksamWeaponWheel(true) -- Re-enable after
+```
+
 ## registerActionButton
 Registers a custom action button in the inventory UI toolbar. Action buttons appear on the right side of the inventory and can trigger any custom logic when clicked
 
