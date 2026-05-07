@@ -98,6 +98,8 @@
 * [Installation](drugs-creator/installation.md)
 * [FAQ](drugs-creator/faq.md)
 * [Modules](drugs-creator/modules.md)
+* [Guides](drugs-creator/guides/)
+  * [Custom audio and images](drugs-creator/guides/custom-audio-and-images.md)
 * [Client](drugs-creator/client/README.md)
   * [Replace default notifications](drugs-creator/client/replace-default-notifications.md)
   * [Progress bar](drugs-creator/client/replace-disable-default-progress-bar.md)
