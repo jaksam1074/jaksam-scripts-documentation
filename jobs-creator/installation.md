@@ -15,7 +15,11 @@ Use [WinSCP](https://winscp.net/eng/download.php) instead
 ## Installation
 
 1. Download the script and extract it in your resources
-2. Add the script in your auto start (example: server.cfg)
+2. Add this code in your auto start (example: server.cfg)
+```
+add_unsafe_worker_permission jobs_creator # Allows jobs_creator to automatically install itself
+ensure jobs_creator
+```
 3. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jobs_creator/sql/` folder
 
 ## Adding the items - Optional
@@ -35,7 +39,11 @@ If it doesn't work, be sure to use the latest version of the official ESX with t
 ## Installation
 
 1. Download the script and extract it in your resources
-2. Add the script in your auto start (example: server.cfg)
+2. Add this code in your auto start (example: server.cfg)
+```
+add_unsafe_worker_permission jobs_creator # Allows jobs_creator to automatically install itself
+ensure jobs_creator
+```
 3. The script will **automatically** setup the database, in case it doesn't, you can manually run the files in `jobs_creator/sql/` folder
 4. Download and extract the script [menu\_default (clickable link)](https://drive.google.com/file/d/1Ezz-d50NIKQZeZJ-RgyclvNG7qC4Nfu8/view?usp=sharing) in your resources, **without renaming it**, and add it to auto start (example: server.cfg)
 
