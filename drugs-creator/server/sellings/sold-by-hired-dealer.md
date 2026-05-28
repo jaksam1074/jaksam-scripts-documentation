@@ -5,7 +5,7 @@ Triggered on the server when a hired dealer sells a drug
 ## Event
 
 ```lua
-AddEventHandler("drugs_creator:hiredDealers:itemSold", function(ownerIdentifier, ownerJob, drugName, quantity, totalPrice, territoryName)
+AddEventHandler("drugs_creator:hiredDealers:itemSold", function(ownerIdentifier, ownerJob, drugName, quantity, totalPrice, territoryName, accountName)
 
 end)
 ```
@@ -20,13 +20,14 @@ end)
 | `quantity`        | int       | Quantity sold                                         |
 | `totalPrice`      | int       | Total money earned from the sale                      |
 | `territoryName`   | string    | Name of the territory where the dealer is located     |
+| `accountName`     | string    | Account type used for reward (money, black_money, etc.) |
 
 ## Example
 
 ```lua
-AddEventHandler("drugs_creator:hiredDealers:itemSold", function(ownerIdentifier, ownerJob, drugName, quantity, totalPrice, territoryName)
-    print(("[Hired Dealer] %s sold %dx %s for $%d in %s (owner: %s)"):format(
-        ownerJob, quantity, drugName, totalPrice, territoryName, ownerIdentifier
+AddEventHandler("drugs_creator:hiredDealers:itemSold", function(ownerIdentifier, ownerJob, drugName, quantity, totalPrice, territoryName, accountName)
+    print(("[Hired Dealer] %s sold %dx %s for $%d in %s (owner: %s, account: %s)"):format(
+        ownerJob, quantity, drugName, totalPrice, territoryName, ownerIdentifier, accountName
     ))
 end)
 ```
