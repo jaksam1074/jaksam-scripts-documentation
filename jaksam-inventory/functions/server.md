@@ -1084,6 +1084,115 @@ end)
 -- exports['jaksam_inventory']:openInventory('stashId')
 ```
 
+## registerItem
+Registers a new item definition at runtime (in-memory only, not saved to file). Only safe, declarative fields are accepted everything else is rejected at any depth.
+
+Items registered this way will be lost on resource restart. Use this to let external scripts define their own items without editing `_data/items.lua`.
+
+```lua
+exports['jaksam_inventory']:registerItem(itemName, itemData)
+```
+
+### Parameters
+
+- `itemName`: string
+  - Unique item identifier (e.g. `'custom_radio'`)
+  - Must not already exist in the item registry
+- `itemData`: table
+  - Item definition table. Only the following safe fields are accepted; any other field is silently stripped:
+  - **Required fields:**
+    - `label` (string): Display name
+    - `weight` (number): Item weight (>= 0)
+    - `stackable` (boolean): Whether the item can stack
+  - **Optional fields:**
+    - `description` (string): Item description text
+    - `image` (string): Image filename (looked up in `_images/` folder)
+    - `close` (boolean): Close inventory UI on use
+    - `maxStack` (number): Maximum stack size
+    - `rarity` (string): Rarity tier
+    - `type` (string): Item type (`'item'`, `'weapon'`, `'ammo'`, `'currency'`, `'container'`, etc.)
+    - `customSymbol` (string): Currency symbol (only with `type = 'currency'`)
+    - `ammo` (string): Ammo item name (weapons)
+    - `durability` (number): Durability loss per use (weapons)
+    - `degrade` (number): Minutes until expiry
+    - `decay` (boolean): Remove item when expired/broken
+    - `consume` (number): Quantity removed on use
+    - `isGrenadeType` (boolean): Grenade-like throwable
+    - `separateWeight` (boolean): Container weight not counted in parent
+    - `universal` (boolean): Universal ammo
+    - `oxClientEvent` (string): ox_inventory client event compatibility
+    - `oxClientExport` (string): ox_inventory client export compatibility
+    - `oxServerExport` (string): ox_inventory server export compatibility
+  - **Optional table fields** (validated recursively — no functions allowed inside):
+    - `metadata` (table): Default metadata for new instances
+    - `status` (table): Status effects on use (e.g. `{ hunger = 10, thirst = 5 }`)
+    - `useOptions` (table): Use animation, delay, progress, freeze
+    - `inventoryOptions` (table): Container config (slots, weight, whitelist, etc.)
+    - `throwableOptions` (table): Throwable model/coords/rotation
+    - `dynamicMetadata` (table): Dynamic metadata templates
+
+### Returns
+
+- `success`: boolean
+  - true if the item was registered successfully
+- `errorMessage`: string | nil
+  - Error description if registration failed
+
+### Example
+
+```lua
+-- Register a simple consumable item
+local success, err = exports['jaksam_inventory']:registerItem('energy_drink', {
+    label = 'Energy Drink',
+    weight = 0.3,
+    stackable = true,
+    maxStack = 10,
+    description = 'Restores some energy',
+    image = 'energy_drink.webp',
+    consume = 1,
+    status = { hunger = 5, thirst = 15 },
+})
+
+if not success then
+    print('Failed to register item: ' .. err)
+end
+```
+
+```lua
+-- Register a weapon item
+local success, err = exports['jaksam_inventory']:registerItem('WEAPON_YOURWEAPON', {
+    label = 'Custom Weapon',
+    weight = 2.0,
+    stackable = false,
+    type = 'weapon',
+    ammo = 'ammo_9mm',
+    durability = 0.15,
+    decay = true,
+})
+```
+
+```lua
+-- Register a container item
+local success, err = exports['jaksam_inventory']:registerItem('custom_bag', {
+    label = 'Custom Bag',
+    weight = 1.0,
+    stackable = false,
+    type = 'container',
+    inventoryOptions = {
+        maxSlots = 5,
+        maxWeight = 10.0,
+    },
+})
+```
+
+### Notes
+
+- Items registered with `registerItem` exist **only in memory**. They are lost on resource restart. If you need persistent items, use the in-game admin menu or add them to `_data/items.lua`.
+- Unknown items are cleaned up lazily when each inventory is first loaded, not at startup. This means your script can safely call `registerItem` at any time before the player's inventory is accessed, typically on your resource start is fine.
+- You can combine `registerItem` with `registerUsableItem` to define both the item and its use behavior from an external script.
+- If the item name already exists, registration is rejected to prevent overwriting file-defined items.
+- Table fields (like `metadata`, `useOptions`, etc.) are deep-copied, so changes to the original table after registration have no effect.
+
 ## removeItem
 Removes items from an inventory
 
